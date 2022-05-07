@@ -1,0 +1,24 @@
+#cards{
+    background-color: black;
+    .container{
+       background-color: black;
+        .row{
+    
+            .exam{
+                position: relative;
+                img{
+                    height: 300px;
+                    width: 100%;
+                }
+                h3{
+                    position: absolute;
+                    top: 10px;
+                    left: 30px;
+                    color: white;
+                }
+    
+            }
+           
+        }
+    }
+}
