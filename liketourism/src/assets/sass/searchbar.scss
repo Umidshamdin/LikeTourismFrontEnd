@@ -1,0 +1,13 @@
+input:focus{
+    outline: none;
+}
+.searchIcon {
+    height: 60px;
+    width: 50px;
+    background-color: white;
+    display: grid;
+    place-items: center;
+  }
+.searchIcon svg{
+    font-size: 35px;
+}

@@ -1,5 +1,4 @@
 import React from 'react'
-import Header from '../components/layout/Header'
 import Slider from '../components/Slider'
 import Card from '../components/Card'
 import Accordion from '../components/Accordion'
@@ -15,7 +14,6 @@ function Home() {
   return (
     <div>
 
-      <Header></Header>
       <Slider></Slider>
       <Card></Card>
 

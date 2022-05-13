@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../assets/sass/accordion.scss";
 
 function Accordions() {
@@ -60,109 +61,110 @@ function Accordions() {
               <div className="col-2 ex">
                 <ul>
                   <li>
-                    <a href="">Saqqız adası</a>
+                    <Link to={"/"}>Saqqız adası</Link>
+
                     <h6>255 məkan</h6>
                   </li>
                   <li>
-                    <a href="">Lviv Oblastı</a>
-                    <h6>255 məkan</h6>
+                    <Link to={"/"}>Saqqız adası</Link>
 
+                    <h6>255 məkan</h6>
                   </li>
                   <li>
-                    <a href="">Mikonos</a>
-                    <h6>255 məkan</h6>
+                    <Link to={"/"}>Saqqız adası</Link>
 
+                    <h6>255 məkan</h6>
                   </li>
                   <li>
-                    <a href="">Santoron</a>
-                    <h6>255 məkan</h6>
+                    <Link to={"/"}>Saqqız adası</Link>
 
+                    <h6>255 məkan</h6>
                   </li>
                   <li>
-                    <a href="">Phuket</a>
-                    <h6>255 məkan</h6>
+                    <Link to={"/"}>Saqqız adası</Link>
 
-                  </li>
-                </ul>
-                <ul>
-                  <li>
-                    <a href="">Kapadokya</a>
                     <h6>255 məkan</h6>
-
-                  </li>
-                  <li>
-                    <a href="">Malta</a>
-                    <h6>255 məkan</h6>
-
-                  </li>
-                  <li>
-                    <a href="">Ibiza</a>
-                    <h6>255 məkan</h6>
-
-                  </li>
-                  <li>
-                    <a href="">Hawaii</a>
-                    <h6>255 məkan</h6>
-
-                  </li>
-                  <li>
-                    <a href="">Santa Provinse</a>
-                    <h6>255 məkan</h6>
-
                   </li>
                 </ul>
                 <ul>
                   <li>
-                    <a href="">Kapadokya</a>
-                    <h6>255 məkan</h6>
+                    <Link to={"/"}>Saqqız adası</Link>
 
+                    <h6>255 məkan</h6>
                   </li>
                   <li>
-                    <a href="">Malta</a>
-                    <h6>255 məkan</h6>
+                    <Link to={"/"}>Saqqız adası</Link>
 
+                    <h6>255 məkan</h6>
                   </li>
                   <li>
-                    <a href="">Ibiza</a>
-                    <h6>255 məkan</h6>
+                    <Link to={"/"}>Saqqız adası</Link>
 
+                    <h6>255 məkan</h6>
                   </li>
                   <li>
-                    <a href="">Hawaii</a>
-                    <h6>255 məkan</h6>
+                    <Link to={"/"}>Saqqız adası</Link>
 
+                    <h6>255 məkan</h6>
                   </li>
                   <li>
-                    <a href="">Santa Provinse</a>
-                    <h6>255 məkan</h6>
+                    <Link to={"/"}>Saqqız adası</Link>
 
+                    <h6>255 məkan</h6>
                   </li>
                 </ul>
                 <ul>
                   <li>
-                    <a href="">Kapadokya</a>
-                    <h6>255 məkan</h6>
+                    <Link to={"/"}>Saqqız adası</Link>
 
+                    <h6>255 məkan</h6>
                   </li>
                   <li>
-                    <a href="">Malta</a>
-                    <h6>255 məkan</h6>
+                    <Link to={"/"}>Saqqız adası</Link>
 
+                    <h6>255 məkan</h6>
                   </li>
                   <li>
-                    <a href="">Ibiza</a>
-                    <h6>255 məkan</h6>
+                    <Link to={"/"}>Saqqız adası</Link>
 
+                    <h6>255 məkan</h6>
                   </li>
                   <li>
-                    <a href="">Hawaii</a>
-                    <h6>255 məkan</h6>
+                    <Link to={"/"}>Saqqız adası</Link>
 
+                    <h6>255 məkan</h6>
                   </li>
                   <li>
-                    <a href="">Santa Provinse</a>
-                    <h6>255 məkan</h6>
+                    <Link to={"/"}>Saqqız adası</Link>
 
+                    <h6>255 məkan</h6>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <Link to={"/"}>Saqqız adası</Link>
+
+                    <h6>255 məkan</h6>
+                  </li>
+                  <li>
+                    <Link to={"/"}>Saqqız adası</Link>
+
+                    <h6>255 məkan</h6>
+                  </li>
+                  <li>
+                    <Link to={"/"}>Saqqız adası</Link>
+
+                    <h6>255 məkan</h6>
+                  </li>
+                  <li>
+                    <Link to={"/"}>Saqqız adası</Link>
+
+                    <h6>255 məkan</h6>
+                  </li>
+                  <li>
+                    <Link to={"/"}>Saqqız adası</Link>
+
+                    <h6>255 məkan</h6>
                   </li>
                 </ul>
               </div>
@@ -174,112 +176,112 @@ function Accordions() {
               aria-labelledby="pills-profile-tab"
             >
               <div className="col-2 ex">
-              <ul>
+                <ul>
                   <li>
-                    <a href="">Kapadokya</a>
-                    <h6>255 məkan</h6>
+                    <Link to={"/"}>Saqqız adası</Link>
 
+                    <h6>255 məkan</h6>
                   </li>
                   <li>
-                    <a href="">Malta</a>
-                    <h6>255 məkan</h6>
+                    <Link to={"/"}>Saqqız adası</Link>
 
+                    <h6>255 məkan</h6>
                   </li>
                   <li>
-                    <a href="">Ibiza</a>
-                    <h6>255 məkan</h6>
+                    <Link to={"/"}>Saqqız adası</Link>
 
+                    <h6>255 məkan</h6>
                   </li>
                   <li>
-                    <a href="">Hawaii</a>
-                    <h6>255 məkan</h6>
+                    <Link to={"/"}>Saqqız adası</Link>
 
+                    <h6>255 məkan</h6>
                   </li>
                   <li>
-                    <a href="">Santa Provinse</a>
-                    <h6>255 məkan</h6>
+                    <Link to={"/"}>Saqqız adası</Link>
 
+                    <h6>255 məkan</h6>
                   </li>
                 </ul>
                 <ul>
                   <li>
-                    <a href="">Kapadokya</a>
-                    <h6>255 məkan</h6>
+                    <Link to={"/"}>Saqqız adası</Link>
 
+                    <h6>255 məkan</h6>
                   </li>
                   <li>
-                    <a href="">Malta</a>
-                    <h6>255 məkan</h6>
+                    <Link to={"/"}>Saqqız adası</Link>
 
+                    <h6>255 məkan</h6>
                   </li>
                   <li>
-                    <a href="">Ibiza</a>
-                    <h6>255 məkan</h6>
+                    <Link to={"/"}>Saqqız adası</Link>
 
+                    <h6>255 məkan</h6>
                   </li>
                   <li>
-                    <a href="">Hawaii</a>
-                    <h6>255 məkan</h6>
+                    <Link to={"/"}>Saqqız adası</Link>
 
+                    <h6>255 məkan</h6>
                   </li>
                   <li>
-                    <a href="">Santa Provinse</a>
-                    <h6>255 məkan</h6>
+                    <Link to={"/"}>Saqqız adası</Link>
 
-                  </li>
-                </ul>
-                <ul>
-                  <li>
-                    <a href="">Kapadokya</a>
                     <h6>255 məkan</h6>
-
-                  </li>
-                  <li>
-                    <a href="">Malta</a>
-                    <h6>255 məkan</h6>
-
-                  </li>
-                  <li>
-                    <a href="">Ibiza</a>
-                    <h6>255 məkan</h6>
-
-                  </li>
-                  <li>
-                    <a href="">Hawaii</a>
-                    <h6>255 məkan</h6>
-
-                  </li>
-                  <li>
-                    <a href="">Santa Provinse</a>
-                    <h6>255 məkan</h6>
-
                   </li>
                 </ul>
                 <ul>
                   <li>
-                    <a href="">Kapadokya</a>
-                    <h6>255 məkan</h6>
+                    <Link to={"/"}>Saqqız adası</Link>
 
+                    <h6>255 məkan</h6>
                   </li>
                   <li>
-                    <a href="">Malta</a>
-                    <h6>255 məkan</h6>
+                    <Link to={"/"}>Saqqız adası</Link>
 
+                    <h6>255 məkan</h6>
                   </li>
                   <li>
-                    <a href="">Ibiza</a>
-                    <h6>255 məkan</h6>
+                    <Link to={"/"}>Saqqız adası</Link>
 
+                    <h6>255 məkan</h6>
                   </li>
                   <li>
-                    <a href="">Hawaii</a>
-                    <h6>255 məkan</h6>
+                    <Link to={"/"}>Saqqız adası</Link>
 
+                    <h6>255 məkan</h6>
                   </li>
                   <li>
-                    <a href="">Santa Provinse</a>
-                    <h6>255 məkan</h6>
+                    <Link to={"/"}>Saqqız adası</Link>
 
+                    <h6>255 məkan</h6>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <Link to={"/"}>Saqqız adası</Link>
+
+                    <h6>255 məkan</h6>
+                  </li>
+                  <li>
+                    <Link to={"/"}>Saqqız adası</Link>
+
+                    <h6>255 məkan</h6>
+                  </li>
+                  <li>
+                    <Link to={"/"}>Saqqız adası</Link>
+
+                    <h6>255 məkan</h6>
+                  </li>
+                  <li>
+                    <Link to={"/"}>Saqqız adası</Link>
+
+                    <h6>255 məkan</h6>
+                  </li>
+                  <li>
+                    <Link to={"/"}>Saqqız adası</Link>
+
+                    <h6>255 məkan</h6>
                   </li>
                 </ul>
               </div>
@@ -291,112 +293,111 @@ function Accordions() {
               aria-labelledby="pills-contact-tab"
             >
               <div className="col-2 ex">
-              <ul>
+                <ul>
                   <li>
-                    <a href="">Kapadokya</a>
-                    <h6>255 məkan</h6>
+                    <Link to={"/"}>Saqqız adası</Link>
 
+                    <h6>255 məkan</h6>
                   </li>
                   <li>
-                    <a href="">Malta</a>
-                    <h6>255 məkan</h6>
+                    <Link to={"/"}>Saqqız adası</Link>
 
+                    <h6>255 məkan</h6>
                   </li>
                   <li>
-                    <a href="">Ibiza</a>
-                    <h6>255 məkan</h6>
+                    <Link to={"/"}>Saqqız adası</Link>
 
+                    <h6>255 məkan</h6>
                   </li>
                   <li>
-                    <a href="">Hawaii</a>
-                    <h6>255 məkan</h6>
+                    <Link to={"/"}>Saqqız adası</Link>
 
+                    <h6>255 məkan</h6>
                   </li>
                   <li>
-                    <a href="">Santa Provinse</a>
-                    <h6>255 məkan</h6>
+                    <Link to={"/"}>Saqqız adası</Link>
 
+                    <h6>255 məkan</h6>
                   </li>
                 </ul>
                 <ul>
                   <li>
-                    <a href="">Kapadokya</a>
-                    <h6>255 məkan</h6>
+                    <Link to={"/"}>Saqqız adası</Link>
 
+                    <h6>255 məkan</h6>
                   </li>
                   <li>
-                    <a href="">Malta</a>
-                    <h6>255 məkan</h6>
+                    <Link to={"/"}>Saqqız adası</Link>
 
+                    <h6>255 məkan</h6>
                   </li>
                   <li>
-                    <a href="">Ibiza</a>
-                    <h6>255 məkan</h6>
+                    <Link to={"/"}>Saqqız adası</Link>
 
+                    <h6>255 məkan</h6>
                   </li>
                   <li>
-                    <a href="">Hawaii</a>
-                    <h6>255 məkan</h6>
+                    <Link to={"/"}>Saqqız adası</Link>
 
+                    <h6>255 məkan</h6>
                   </li>
                   <li>
-                    <a href="">Santa Provinse</a>
-                    <h6>255 məkan</h6>
+                    <Link to={"/"}>Saqqız adası</Link>
 
-                  </li>
-                </ul>
-                <ul>
-                  <li>
-                    <a href="">Kapadokya</a>
                     <h6>255 məkan</h6>
-
-                  </li>
-                  <li>
-                    <a href="">Malta</a>
-                    <h6>255 məkan</h6>
-
-                  </li>
-                  <li>
-                    <a href="">Ibiza</a>
-                    <h6>255 məkan</h6>
-
-                  </li>
-                  <li>
-                    <a href="">Hawaii</a>
-                    <h6>255 məkan</h6>
-
-                  </li>
-                  <li>
-                    <a href="">Santa Provinse</a>
-                    <h6>255 məkan</h6>
-
                   </li>
                 </ul>
                 <ul>
                   <li>
-                    <a href="">Kapadokya</a>
-                    <h6>255 məkan</h6>
+                    <Link to={"/"}>Saqqız adası</Link>
 
+                    <h6>255 məkan</h6>
                   </li>
                   <li>
-                    <a href="">Malta</a>
-                    <h6>255 məkan</h6>
+                    <Link to={"/"}>Saqqız adası</Link>
 
+                    <h6>255 məkan</h6>
                   </li>
                   <li>
-                    <a href="">Ibiza</a>
-                    <h6>255 məkan</h6>
+                    <Link to={"/"}>Saqqız adası</Link>
 
+                    <h6>255 məkan</h6>
                   </li>
                   <li>
-                    <a href="">Hawaii</a>
+                    <Link to={"/"}>Saqqız adası</Link>
                     <h6>255 məkan</h6>
-
                   </li>
                   <li>
-                    <a href="">Santa Provinse</a>
-                    <h6>255 məkan</h6>
+                    <Link to={"/"}>Saqqız adası</Link>
 
+                    <h6>255 məkan</h6>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <Link to={"/"}>Saqqız adası</Link>
+
+                    <h6>255 məkan</h6>
+                  </li>
+                  <li>
+                    <Link to={"/"}>Saqqız adası</Link>
+
+                    <h6>255 məkan</h6>
+                  </li>
+                  <li>
+                    <Link to={"/"}>Saqqız adası</Link>
+
+                    <h6>255 məkan</h6>
+                  </li>
+                  <li>
+                    <Link to={"/"}>Saqqız adası</Link>
+
+                    <h6>255 məkan</h6>
+                  </li>
+                  <li>
+                    <Link to={"/"}>Saqqız adası</Link>
+
+                    <h6>255 məkan</h6>
                   </li>
                 </ul>
               </div>

@@ -1,0 +1,30 @@
+.container{
+    .row{
+        h3{
+            margin-top: 50px;
+        }
+        .info{
+            border: 1px solid black;
+            height: 300px;
+            position: relative;
+            display: flex;
+            img{
+                width: 300px;
+                height: 100%;
+            }
+            h4{
+                position: absolute;
+                top: 20px;
+                left: 350px;
+             
+            }
+            .star{
+                margin-left: 100px;
+                display: flex;
+                i{
+                    color: orange;
+                }
+            }
+        }
+    }
+}

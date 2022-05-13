@@ -1,5 +1,6 @@
 import React from "react";
 import { Nav, Navbar, NavbarBrand, NavDropdown } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 import "../../assets/sass/layout/header.scss";
 function Header() {
@@ -18,29 +19,43 @@ function Header() {
                     alt=""
                   />
                 </NavbarBrand>
-                <NavDropdown title="Otellər" className="basic-nav-dropdown">
-                  <NavDropdown.Item className="nav-dropdown-item" href="#">
-                    <a href="">Sign-In</a>
+                <NavDropdown title="Otellər" className="basic-nav-dropdown ">
+                  <NavDropdown.Item className="nav-dropdown-item ss" href="#">
+                    <Link className="navs" to={"/"}>
+                      Azerbaycan
+                    </Link>
                   </NavDropdown.Item>
                   <NavDropdown.Divider />
                   <NavDropdown.Item className="nav-dropdown-item" href="#">
-                    <a href="">Sign-In</a>
+                    <Link className="navs" to={"/"}>
+                      Sign In
+                    </Link>
                   </NavDropdown.Item>
                 </NavDropdown>
                 <Nav.Link className="nav-sign-in" href="/signin">
-                  <a href="">Sign-In</a>
+                  <Link className="navs" to={"/"}>
+                    Sign In
+                  </Link>
                 </Nav.Link>
                 <Nav.Link className="nav-sign-in" href="/signin">
-                  <a href="">Sign-In</a>
+                  <Link className="navs" to={"/"}>
+                    Sign In
+                  </Link>
                 </Nav.Link>
                 <Nav.Link className="nav-sign-in" href="/signin">
-                  <a href="">Sign-In</a>
+                  <Link className="navs" to={"/"}>
+                    Sign In
+                  </Link>
                 </Nav.Link>
                 <Nav.Link className="nav-sign-in" href="/signin">
-                  <a href="">Sign-In</a>
+                  <Link className="navs" to={"/"}>
+                    Sign In
+                  </Link>
                 </Nav.Link>
                 <Nav.Link className="nav-sign-in" href="/signin">
-                  <a href="">Sign-In</a>
+                  <Link className="navs" to={"/"}>
+                    Sign In
+                  </Link>
                 </Nav.Link>
               </Nav>
             </Navbar.Collapse>
