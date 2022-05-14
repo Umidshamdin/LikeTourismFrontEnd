@@ -1,5 +1,5 @@
 import React from "react";
-import '../assets/sass/slider.scss'
+import "../assets/sass/slider.scss";
 function Slider() {
   return (
     <div>
@@ -10,24 +10,26 @@ function Slider() {
       >
         <div class="carousel-inner exam">
           <div class="carousel-item active">
-          <img
+            <img
               src={require("../assets/img/home/slider1.jpg")}
               className="d-block w-100"
               alt="sk"
             />
           </div>
           <div class="carousel-item">
-          <img
+            <img
               src={require("../assets/img/home/slider2.webp")}
               className="d-block w-100"
               alt="sk"
-            />          </div>
+            />{" "}
+          </div>
           <div class="carousel-item">
-          <img
+            <img
               src={require("../assets/img/home/slider3.avif")}
               className="d-block w-100"
               alt="sk"
-            />          </div>
+            />{" "}
+          </div>
         </div>
         <button
           class="carousel-control-prev"
