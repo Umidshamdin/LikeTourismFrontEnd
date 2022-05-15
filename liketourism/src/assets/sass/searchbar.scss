@@ -1,13 +1,26 @@
-input:focus{
-    outline: none;
-}
-.searchIcon {
-    height: 60px;
-    width: 50px;
-    background-color: white;
-    display: grid;
-    place-items: center;
-  }
-.searchIcon svg{
-    font-size: 35px;
+.search{
+    position: relative;
+    margin-top: 100px;
+    .searchInputs{
+        input{
+            height: 50px;
+            width: 300px;
+        }
+    }
+    input:focus{
+        outline: none;
+    }
+    .searchIcon {
+        height: 60px;
+        width: 50px;
+        
+        display: grid;
+        place-items: center;
+        position: absolute;
+        top: 0;
+        left: 250px;
+      }
+    .searchIcon svg{
+        font-size: 35px;
+    }
 }

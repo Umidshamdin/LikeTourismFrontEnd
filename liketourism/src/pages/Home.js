@@ -4,6 +4,9 @@ import Card from '../components/Card'
 import Accordion from '../components/Accordion'
 import Footer from '../components/layout/Footer'
 import Carusel from '../components/Carusel'
+import AntDesign from '../components/AntDesign'
+
+
 
 
 
@@ -23,7 +26,10 @@ function Home() {
       <Accordion></Accordion>
       <Carusel></Carusel>
       <Footer></Footer>
+      <AntDesign></AntDesign>
 
+      
+    
       
     </div>
   )

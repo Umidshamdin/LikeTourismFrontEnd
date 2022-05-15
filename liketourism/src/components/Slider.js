@@ -11,7 +11,7 @@ function Slider() {
         <div class="carousel-inner exam">
           <div class="carousel-item active">
             <img
-              src={require("../assets/img/home/slider1.jpg")}
+              src={require("../assets/img/home/navbarbackground.jpg")}
               className="d-block w-100"
               alt="sk"
             />

@@ -1,40 +1,28 @@
-.background {
-  background-color: wheat;
-  width: 100%;
-  z-index: -1;
-  height: 150px;
-  .sticky-nav {
-    background-color: inherit;
-    position: sticky;
-    .ml-auto {
-      .images {
-        border-top-left-radius: 100px;
-      }
-      .navs {
-        color: white;
-        text-decoration: none;
-      }
-      .nav-dropdown-item {
-          background-color: green;
-          color: green;
-        .navs {
-          color: white;
-          text-decoration: none;
-        }
-      }
+.sticky {
+  position: fixed;
+  background-image: url(../../img/home/afina.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  .imagelogo{
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+  }
+  img {
+    width: 100%;
+  }
+  .navlinks {
+    margin-left: 30px;
+    b {
+      color: white;
 
-      width: 100%;
-      .basic-nav-dropdown {
-        margin-top: 50px;
-      }
-      .nav-sign-in {
-        margin-top: 50px;
-        margin-left: 50px;
-      }
-
-      img {
-        width: 200px;
-      }
+    }
+    &:hover b{
+        text-decoration: underline;
+    }
+  }
+  .navdropdown {
+    b {
+      color: red;
     }
   }
 }

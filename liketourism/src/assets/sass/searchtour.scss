@@ -1,0 +1,20 @@
+.container{
+    .row{
+        .center{
+            text-align: center;
+            .forms{
+                display: flex;
+                .btn{
+                    margin-left: 10px;
+                }
+                .form-control{
+                    width: 500px;
+                    margin-left: 400px;
+                    border-color: red;
+                
+                }
+            }
+          
+        }
+    }
+}
