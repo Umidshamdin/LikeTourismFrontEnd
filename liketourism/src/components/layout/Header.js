@@ -22,13 +22,13 @@ function Header() {
                 <NavDropdown title="Otellər" className="basic-nav-dropdown ">
                   <NavDropdown.Item className="nav-dropdown-item ss" href="#">
                     <Link className="navs" to={"/"}>
-                      Azerbaycan
+                      Azerbaycanda
                     </Link>
                   </NavDropdown.Item>
                   <NavDropdown.Divider />
                   <NavDropdown.Item className="nav-dropdown-item" href="#">
                     <Link className="navs" to={"/"}>
-                      Sign In
+                      Dünyada
                     </Link>
                   </NavDropdown.Item>
                 </NavDropdown>

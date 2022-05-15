@@ -23,6 +23,7 @@ function Home() {
       <Accordion></Accordion>
       <Carusel></Carusel>
       <Footer></Footer>
+
       
     </div>
   )

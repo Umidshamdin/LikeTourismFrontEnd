@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
+import "../assets/sass/carusel.scss";
+
 
 export default class Responsive extends Component {
   render() {
@@ -39,8 +41,10 @@ export default class Responsive extends Component {
     };
     return (
       <div>
-        <h2> Responsive </h2>
-        <Slider {...settings}>
+       <div className="container">
+         
+       <div className="row">
+       <Slider {...settings}>
           <div>
             <h3>
               <img
@@ -113,7 +117,10 @@ export default class Responsive extends Component {
               />
             </h3>
           </div>
+          
         </Slider>
+       </div>
+       </div>
       </div>
     );
   }
