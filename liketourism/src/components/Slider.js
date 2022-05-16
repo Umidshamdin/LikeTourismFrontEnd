@@ -11,14 +11,14 @@ function Slider() {
         <div class="carousel-inner exam">
           <div class="carousel-item active">
             <img
-              src={require("../assets/img/home/navbarbackground.jpg")}
+              src={require("../assets/img/home/indian-hotels.jpg")}
               className="d-block w-100"
               alt="sk"
             />
           </div>
           <div class="carousel-item">
             <img
-              src={require("../assets/img/home/slider2.webp")}
+              src={require("../assets/img/home/travel.jpg")}
               className="d-block w-100"
               alt="sk"
             />{" "}

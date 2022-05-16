@@ -6,6 +6,7 @@ import Footer from '../components/layout/Footer'
 import Carusel from '../components/Carusel'
 import AntDesign from '../components/AntDesign'
 import Subscripe from '../components/Subscripe'
+import Slickycarusel from '../components/Slickycarusel'
 
 
 
@@ -26,6 +27,9 @@ function Home() {
 
       <Accordion></Accordion>
       <Carusel></Carusel>
+      <Carusel></Carusel>
+      <Carusel></Carusel>
+
       <Subscripe></Subscripe>
       <Footer></Footer>
       <AntDesign></AntDesign>

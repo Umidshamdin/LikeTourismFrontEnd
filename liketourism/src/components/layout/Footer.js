@@ -4,161 +4,91 @@ import "../../assets/sass/layout/footer.scss";
 
 function Footer() {
   return (
-    <div className="footer">
+    <div className="foot">
       <div className="container">
         <div className="row">
-          <div className="col-lg-3 col-md-4 col-sm-6">
-            <ul>
-              <li>
-                <Link className="link" to={"/"}>
-                  Ölkələr
-                </Link>
-              </li>
-              <li>
-                <Link className="link" to={"/"}>
-                  Şəhərlər
-                </Link>
-              </li>
-              <li>
-                <Link className="link" to={"/"}>
-                  Bölgələr
-                </Link>
-              </li>
-              <li>
-                <Link className="link" to={"/"}>
-                  Havalimanları
-                </Link>
-              </li>
-              <li>
-                <Link className="link" to={"/"}>
-                  Otellər
-                </Link>
-              </li>
-              <li>
-                <Link className="link" to={"/"}>
-                  Simvolik yerlər
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div className="col-lg-3 col-md-4 col-sm-6">
-            <ul>
-              <li>
-                <Link className="link" to={"/"}>
-                  Ölkələr
-                </Link>
-              </li>
-              <li>
-                <Link className="link" to={"/"}>
-                  Şəhərlər
-                </Link>
-              </li>
-              <li>
-                <Link className="link" to={"/"}>
-                  Bölgələr
-                </Link>
-              </li>
-              <li>
-                <Link className="link" to={"/"}>
-                  Havalimanları
-                </Link>
-              </li>
-              <li>
-                <Link className="link" to={"/"}>
-                  Otellər
-                </Link>
-              </li>
-              <li>
-                <Link className="link" to={"/"}>
-                  Simvolik yerlər
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div className="col-lg-3 col-md-4 col-sm-6">
-            <ul>
-              <li>
-                <Link className="link" to={"/"}>
-                  Ölkələr
-                </Link>
-              </li>
-              <li>
-                <Link className="link" to={"/"}>
-                  Şəhərlər
-                </Link>
-              </li>
-              <li>
-                <Link className="link" to={"/"}>
-                  Bölgələr
-                </Link>
-              </li>
-              <li>
-                <Link className="link" to={"/"}>
-                  Havalimanları
-                </Link>
-              </li>
-              <li>
-                <Link className="link" to={"/"}>
-                  Otellər
-                </Link>
-              </li>
-              <li>
-                <Link className="link" to={"/"}>
-                  Simvolik yerlər
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div className="col-lg-3 col-md-4 col-sm-6">
-            <ul>
-              <li>
-                <Link className="link" to={"/"}>
-                  Ölkələr
-                </Link>
-              </li>
-              <li>
-                <Link className="link" to={"/"}>
-                  Şəhərlər
-                </Link>
-              </li>
-              <li>
-                <Link className="link" to={"/"}>
-                  Bölgələr
-                </Link>
-              </li>
-              <li>
-                <Link className="link" to={"/"}>
-                  Havalimanları
-                </Link>
-              </li>
-              <li>
-                <Link className="link" to={"/"}>
-                  Otellər
-                </Link>
-              </li>
-              <li>
-                <Link className="link" to={"/"}>
-                  Simvolik yerlər
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-6 finish">
-            <p>dodlddll</p>
-          </div>
-          <div className="col-6 finish">
-            <div className="icon">
+          <div className="col-lg-3 col-md-4 col-sm-6 footer mt-5">
+            <img
+              className="imagelogo"
+              style={{ width: "150px" }}
+              src={require("../../assets/img/home/logo.png")}
+              alt=""
+            />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur
+              
+            </p>
+
+            <div className="icons">
               <i class="fab fa-facebook"></i>
-              <i class="fab fa-instagram-square"></i>
+              <i class="fab fa-instagram"></i>
               <i class="fab fa-twitter"></i>
-              <i class="fab fa-linkedin"></i>
+              <i class="fab fa-youtube"></i>
             </div>
           </div>
+          <div className="col-lg-3 col-md-4 col-sm-6 footer mt-5">
+            <ul>
+              <h4>QUICK LINKS</h4>
+              <li>
+                <Link className="linkfooter" to={"/"}>Home</Link>
+              </li>
+              <li>
+                <Link className="linkfooter" to={"/"}>Home</Link>
+              </li>
+              <li>
+                <Link className="linkfooter" to={"/"}>Home</Link>
+              </li>
+              <li>
+                <Link className="linkfooter" to={"/"}>Home</Link>
+              </li>
+            </ul>
+          </div>
+          <div className="col-lg-3 col-md-4 col-sm-6 footer mt-5">
+            <ul>
+              <h4>QUICK LINKS</h4>
+              <li>
+                <Link className="linkfooter" to={"/"}>Home</Link>
+              </li>
+              <li>
+                <Link className="linkfooter" to={"/"}>Home</Link>
+              </li>
+              <li>
+                <Link className="linkfooter" to={"/"}>Home</Link>
+              </li>
+              <li>
+                <Link className="linkfooter" to={"/"}>Home</Link>
+              </li>
+            </ul>
+          </div>
+          <div className="col-lg-3 col-md-4 col-sm-6 footer mt-5">
+            <ul>
+              <h4>QUICK LINKS</h4>
+              <li>
+                <Link className="linkfooter" to={"/"}>Home</Link>
+              </li>
+              <li>
+                <Link className="linkfooter" to={"/"}>Home</Link>
+              </li>
+              <li>
+                <Link className="linkfooter" to={"/"}>Home</Link>
+              </li>
+              <li>
+                <Link className="linkfooter" to={"/"}>Home</Link>
+              </li>
+            </ul>
+          </div>
+
+        <div className="col-12">
+        <div className="image">
+          <img src={require("../../assets/img/home/footerimg.png")} alt="" />
+          <img src={require("../../assets/img/home/footerimg.png")} alt="" />
+          <img src={require("../../assets/img/home/footerimg.png")} alt="" />
+          <img src={require("../../assets/img/home/footerimg.png")} alt="" />
+          <img src={require("../../assets/img/home/footerimg.png")} alt="" />
+          </div>
+        </div>
         </div>
       </div>
-      <div className="contact"></div>
     </div>
   );
 }

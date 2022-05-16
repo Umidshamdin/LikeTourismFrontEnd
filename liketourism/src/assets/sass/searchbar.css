@@ -1,0 +1,29 @@
+.search {
+  position: relative;
+  margin-top: 100px;
+}
+
+.search .searchInputs input {
+  height: 50px;
+  width: 300px;
+}
+
+.search input:focus {
+  outline: none;
+}
+
+.search .searchIcon {
+  height: 60px;
+  width: 50px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  position: absolute;
+  top: 0;
+  left: 250px;
+}
+
+.search .searchIcon svg {
+  font-size: 35px;
+}
+/*# sourceMappingURL=searchbar.css.map */

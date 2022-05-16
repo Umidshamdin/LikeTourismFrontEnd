@@ -2,13 +2,13 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import "../assets/sass/carusel.scss";
 
-
 export default class Responsive extends Component {
   render() {
     var settings = {
       dots: true,
-      infinite: false,
-      speed: 500,
+      infinite: true,
+      speed: 400,
+  
       slidesToShow: 4,
       slidesToScroll: 1,
       initialSlide: 0,
@@ -41,86 +41,87 @@ export default class Responsive extends Component {
     };
     return (
       <div>
-       <div className="container">
-         
-       <div className="row">
-       <Slider {...settings}>
-          <div>
-            <h3>
-              <img
-                style={{ width: "100%" }}
-                src={require("../assets/img/home/slider1.jpg")}
-                alt="sk"
-              />
-            </h3>
+        <div className="container">
+          <div className="row">
+            <Slider {...settings}>
+              <div className="px-1">
+                <h3>
+                  <img
+                    style={{ width: "80%", height: "230px" }}
+                    src={require("../assets/img/home/slider1.jpg")}
+                    alt="sk"
+                  />
+                  <p>oteller</p>
+                </h3>
+              </div>
+              <div className="px-1">
+                <h3>
+                  <img
+                    style={{ width: "80%", height: "230px" }}
+                    src={require("../assets/img/home/slider1.jpg")}
+                    alt="sk"
+                  />
+                  <p>oteller</p>
+                </h3>
+              </div>
+              <div className="px-1">
+                <h3>
+                  <img
+                    style={{ width: "80%", height: "230px" }}
+                    src={require("../assets/img/home/slider1.jpg")}
+                    alt="sk"
+                  />
+                  <p>oteller</p>
+                </h3>
+              </div>
+              <div className="px-1">
+                <h3>
+                  <img
+                    style={{ width: "80%", height: "230px" }}
+                    src={require("../assets/img/home/slider1.jpg")}
+                    alt="sk"
+                  />
+                </h3>
+              </div>
+              <div className="px-1">
+                <h3>
+                  <img
+                    style={{ width: "80%", height: "230px" }}
+                    src={require("../assets/img/home/slider1.jpg")}
+                    alt="sk"
+                  />
+                </h3>
+              </div>
+              <div className="px-1">
+                <h3>
+                  <img
+                    style={{ width: "80%", height: "230px" }}
+                    src={require("../assets/img/home/slider1.jpg")}
+                    alt="sk"
+                  />
+                </h3>
+              </div>
+              <div className="px-1">
+                <h3>
+                  <img
+                    style={{ width: "80%", height: "230px" }}
+                    src={require("../assets/img/home/slider1.jpg")}
+                    alt="sk"
+                  />
+                </h3>
+              </div>
+              <div className="px-1">
+                <h3>
+                  <img
+                    style={{ width: "80%", height: "230px" }}
+                    src={require("../assets/img/home/slider1.jpg")}
+                    alt="sk"
+                  />
+                </h3>
+              </div>
+            </Slider>
           </div>
-          <div>
-          <h3>
-              <img
-                style={{ width: "100%" }}
-                src={require("../assets/img/home/slider1.jpg")}
-                alt="sk"
-              />
-            </h3>
-          </div>
-          <div>
-          <h3>
-              <img
-                style={{ width: "100%" }}
-                src={require("../assets/img/home/slider1.jpg")}
-                alt="sk"
-              />
-            </h3>
-          </div>
-          <div>
-          <h3>
-              <img
-                style={{ width: "100%" }}
-                src={require("../assets/img/home/slider1.jpg")}
-                alt="sk"
-              />
-            </h3>
-          </div>
-          <div>
-          <h3>
-              <img
-                style={{ width: "100%" }}
-                src={require("../assets/img/home/slider1.jpg")}
-                alt="sk"
-              />
-            </h3>
-          </div>
-          <div>
-          <h3>
-              <img
-                style={{ width: "100%" }}
-                src={require("../assets/img/home/slider1.jpg")}
-                alt="sk"
-              />
-            </h3>
-          </div>
-          <div>
-          <h3>
-              <img
-                style={{ width: "100%" }}
-                src={require("../assets/img/home/slider1.jpg")}
-                alt="sk"
-              />
-            </h3>
-          </div>
-          <div>
-          <h3>
-              <img
-                style={{ width: "100%" }}
-                src={require("../assets/img/home/slider1.jpg")}
-                alt="sk"
-              />
-            </h3>
-          </div>
-          
-        </Slider>
-       </div>
-       </div>
+        </div>
       </div>
     );
   }
