@@ -1,0 +1,41 @@
+.footer {
+  background-image: url(../../img/tours/footer_bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  ul {
+    li {
+      list-style: none;
+
+      .link {
+        text-decoration: none;
+        color: red;
+      }
+      &:hover .link {
+        color: white;
+      }
+    }
+  }
+  .contact {
+    background-color: #00224f;
+    height: 100px;
+  }
+  .finish {
+    position: relative;
+    p {
+      color: white;
+      position: absolute;
+      top: 30px;
+    }
+    .icon {
+      position: absolute;
+      top: 30px;
+      background-color: white;
+      i {
+        margin-left: 10px;
+        font-size: 30px;
+        color: orange;
+      }
+    }
+  }
+}

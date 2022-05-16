@@ -5,6 +5,7 @@ import Accordion from '../components/Accordion'
 import Footer from '../components/layout/Footer'
 import Carusel from '../components/Carusel'
 import AntDesign from '../components/AntDesign'
+import Subscripe from '../components/Subscripe'
 
 
 
@@ -25,6 +26,7 @@ function Home() {
 
       <Accordion></Accordion>
       <Carusel></Carusel>
+      <Subscripe></Subscripe>
       <Footer></Footer>
       <AntDesign></AntDesign>
 

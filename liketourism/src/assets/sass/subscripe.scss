@@ -1,0 +1,25 @@
+.subscripe {
+  background-color: #00224f;
+  height: 230px;
+  .infos {
+    text-align: center;
+    margin-top: 70px;
+
+    h4 {
+      color: white;
+    }
+    p {
+      color: white;
+    }
+    .input {
+      display: flex;
+      justify-content: center;
+      .form-control {
+        width: 300px;
+      }
+      .btn-primary {
+        margin-left: 10px;
+      }
+    }
+  }
+}
