@@ -3,9 +3,9 @@ import "slick-carousel/slick/slick-theme.css";
 import './App.css';
 import Home from "./pages/Home"
 import { BrowserRouter as Router, Route,Routes } from 'react-router-dom';
-import Header from './components/layout/Header';
 import Citydetail from './pages/Citydetail';
 import Tours from "./pages/Tours";
+import Navbar2 from "./components/Navbar2";
 
 
 
@@ -15,7 +15,7 @@ function App() {
        <Router>
       <div>
 
-        <Header></Header>
+        <Navbar2></Navbar2>
 
           <Routes>
           <Route  path="/" element={<Home/>}/>

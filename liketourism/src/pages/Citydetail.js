@@ -1,7 +1,7 @@
 import React from "react";
 import "../assets/sass/citydetail/citydetail.scss";
 import SearchBar from "../components/SearchBar";
-import BookData from '../Data.json'
+import BookData from "../Data.json";
 function Citydetail() {
   return (
     <div>
@@ -33,6 +33,11 @@ function Citydetail() {
                 </p>
               </div>
               <h4>Happy Inn Hotel</h4>
+              <p>
+                Bakü'de, Özgürlük Meydanı'na 1,2 km mesafede yer alan Happy Inn
+                Hotel, klimalı konaklama birimleri ve ortak salonuyla hizmet
+                vermektedir.
+              </p>
             </div>
           </div>
         </div>
