@@ -2,7 +2,7 @@ import React from "react";
 import "../assets/sass/slider.scss";
 function Slider() {
   return (
-    <div>
+    <div className="slider">
       <div
         id="carouselExampleControls"
         class="carousel slide "
@@ -11,10 +11,13 @@ function Slider() {
         <div class="carousel-inner exam">
           <div class="carousel-item active">
             <img
-              src={require("../assets/img/home/indian-hotels.jpg")}
+              src={require("../assets/img/home/cheapus1.webp")}
               className="d-block w-100"
               alt="sk"
             />
+            <h1>Məhşur səyahət yerləri kəşf et</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, quod.</p>
+            <button className="btn btn-primary">Rezerve et</button>
           </div>
           <div class="carousel-item">
             <img
@@ -22,6 +25,10 @@ function Slider() {
               className="d-block w-100"
               alt="sk"
             />{" "}
+            <h1>Məhşur səyahət yerləri kəşf et</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, quod.</p>
+            <button className="btn btn-primary">Rezerve et</button>
+
           </div>
           <div class="carousel-item">
             <img
@@ -29,6 +36,10 @@ function Slider() {
               className="d-block w-100"
               alt="sk"
             />{" "}
+           <h1>Məhşur səyahət yerləri kəşf et</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, quod.</p>
+            <button className="btn btn-primary">Rezerve et</button>
+
           </div>
         </div>
         <button
@@ -50,6 +61,8 @@ function Slider() {
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+
+      
     </div>
   );
 }

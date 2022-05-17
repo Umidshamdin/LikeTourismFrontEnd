@@ -53,6 +53,21 @@ function Navbar2() {
               Demo
             </a>
           </li>
+          <li className="nav-item">
+            <a href="#demo" onClick={closeMenu}>
+              Demo
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="#demo" onClick={closeMenu}>
+              Demo
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="#demo" onClick={closeMenu}>
+              Demo
+            </a>
+          </li>
         </ul>
       </nav>
     </div>

@@ -1,26 +1,25 @@
-#cards{
-//    background-image: url(../img/home/afina.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    .container{
-       
-        .row{
-    
-            .exam{
-                position: relative;
-                img{
-                    height: 300px;
-                    width: 100%;
-                }
-                h3{
-                    position: absolute;
-                    top: 10px;
-                    left: 30px;
-                    color: white;
-                }
-    
-            }
-           
+#famous-cities {
+  .container {
+    .row {
+      .cards {
+        position: relative;
+        .link {
+          img {
+            height: 300px;
+            width: 100%;
+          }
+          &:hover img {
+            opacity: 0.9;
+          }
+          b {
+            position: absolute;
+            top: 60px;
+            left: 30px;
+            color: white;
+            font-size: 30px;
+          }
         }
+      }
     }
+  }
 }
