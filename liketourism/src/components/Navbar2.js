@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import logo from "../assets/img/home/logo.png";
 import "../assets/sass/navbar2.scss";
 
@@ -35,13 +36,11 @@ function Navbar2() {
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li className="nav-item">
             <a href="/" onClick={closeMenu}>
-              Home
+              Otellər
             </a>
           </li>
           <li className="nav-item">
-            <a href="#about" onClick={closeMenu}>
-              About
-            </a>
+            <Link className="link" to={"/Tours"} onClick={closeMenu}></Link>
           </li>
           <li className="nav-item">
             <a href="#testimonials" onClick={closeMenu}>
