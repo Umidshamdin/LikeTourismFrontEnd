@@ -52,6 +52,10 @@ function SearchBar({ placeholder, data }) {
               </a>
             );
           })}
+
+          {/* <SearchBar  data={BookData} placeholder={"Enter"}></SearchBar> */}
+          {/* 
+          import BookData from "../Data.json"; */}
         </div>
       )}
     </div>

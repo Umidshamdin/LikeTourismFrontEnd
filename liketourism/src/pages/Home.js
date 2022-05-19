@@ -28,9 +28,7 @@ function Home() {
       <Carusel></Carusel>
       <Carusel></Carusel>
       <Carusel></Carusel>
-
       <Subscripe></Subscripe>
-      <Footer></Footer>
       <AntDesign></AntDesign>
 
 

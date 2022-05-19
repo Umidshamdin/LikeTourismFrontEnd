@@ -1,11 +1,40 @@
-import React from 'react'
+import  React from "react";
+import TextField from "@mui/material/TextField";
+import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFns";
+import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
+import { DateTimePicker } from "@mui/x-date-pickers/DateTimePicker";
+import Stack from "@mui/material/Stack";
 
 function Datetimes() {
+  const [value, setValue] = (React.useState < Date) | (null > new Date());
   return (
     <div>
-
+      <LocalizationProvider dateAdapter={AdapterDateFns}>
+        <Stack spacing={3}>
+          <DateTimePicker
+            renderInput={(params) => <TextField {...params} />}
+            label="Ignore date and time"
+            value={value}
+            onChange={(newValue) => {
+              setValue(newValue);
+            }}
+            minDateTime={new Date()}
+          />
+          <DateTimePicker
+            renderInput={(params) => <TextField {...params} />}
+            label="Ignore time in each day"
+            value={value}
+            onChange={(newValue) => {
+              setValue(newValue);
+            }}
+            minDate={new Date("2020-02-14")}
+            minTime={new Date(0, 0, 0, 8)}
+            maxTime={new Date(0, 0, 0, 18, 45)}
+          />
+        </Stack>
+      </LocalizationProvider>
     </div>
-  )
+  );
 }
 
-export default Datetimes
+export default Datetimes;

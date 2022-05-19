@@ -7,7 +7,7 @@ function Papularplace() {
     <div>
       <div className="container mt-5">
         <div className="row">
-          <h3>Məhşur səyahət yerləri</h3>
+          
 
           <div className="col-lg-4 col-md-6 col-sm-12 mt-3 exam ">
             <img src={require("../assets/img/tours/dubay.jpg")} alt="" />

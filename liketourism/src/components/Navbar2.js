@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import {Link} from 'react-router-dom'
 import logo from "../assets/img/home/logo.png";
 import "../assets/sass/navbar2.scss";
 
@@ -40,7 +40,9 @@ function Navbar2() {
             </a>
           </li>
           <li className="nav-item">
-            <Link className="link" to={"/Tours"} onClick={closeMenu}></Link>
+            <Link to={"/tours"}  onClick={closeMenu}>
+            <b>Gormeli yerler</b>
+            </Link>
           </li>
           <li className="nav-item">
             <a href="#testimonials" onClick={closeMenu}>
