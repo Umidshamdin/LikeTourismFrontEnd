@@ -6,10 +6,13 @@
         .link {
           img {
             height: 300px;
+           
             width: 100%;
+            
           }
           &:hover img {
             opacity: 0.9;
+            transform: scale(1.1);
           }
           b {
             position: absolute;

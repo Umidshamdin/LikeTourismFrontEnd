@@ -1,72 +1,88 @@
-import React from "react";
-import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
-
+import React, { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
-
+import logo from "../../assets/img/home/logo.png";
 import "../../assets/sass/layout/header.scss";
 
-function Header() {
+function Navbar2() {
+  const [click, setClick] = useState(false);
+  const handleClick = () => setClick(!click);
+
+  const [color, setColor] = useState(false);
+  const changeColor = () => {
+    if (window.scrollY >= 90) {
+      setColor(true);
+    } else {
+      setColor(false);
+    }
+  };
+  window.addEventListener("scroll", changeColor);
+
+  const closeMenu = () => setClick(false);
+
   return (
-    <div>
-      <Navbar
-        className="sticky"
-        
-        expand="lg"
-        
-        variant="dark"
-      >
-        <Container>
-          <Navbar.Brand href="#home">
-            <img className="imagelogo"
-              style={{ width: "200px" }}
-              src={require("../../assets/img/home/logo.png")}
-              alt=""
-            />
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="me-auto">
-            <NavDropdown className="navdropdown" title="Otellər" id="collasible-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">
-                <b>Azərbaycanda</b>
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  <b>Dünyada</b>
-                </NavDropdown.Item>
-               
-              </NavDropdown>
-              <Nav.Link className="navlinks" href="#features"><b>Uçuş biletləri</b></Nav.Link>
-              <Nav.Link className="navlinks" href="#pricing"><b>Features</b></Nav.Link>
-              <Nav.Link className="navlinks" href="#pricing"><b>
-              <Link to="/Tours">Görməli yerlər</Link>
-
-              </b></Nav.Link>
-              <Nav.Link className="navlinks" href="#pricing"><b>Haqqında</b></Nav.Link>
-              <Nav.Link className="navlinks" href="#pricing"><b>Əlaqə</b></Nav.Link>
-
-            
-            </Nav>
-            <Nav  className="navlinks">
-            <Nav.Link href="#deets">
-            <select>
-            <option value="">Az</option>
-            <option value="">En</option>
-
-            
-
-        </select>
-            </Nav.Link>
-
-              <Nav.Link href="#deets"><b>Login</b></Nav.Link>
-              <Nav.Link eventKey={2} href="#memes">
-                <b>Register</b>
-              </Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
+    <div className={color ? "header header-bg" : "header"}>
+      <nav className="navbar">
+        <a href="/" className="logo">
+          <img src={logo} alt="logo" />
+        </a>
+        <div className="hamburger" onClick={handleClick}>
+          {click ? (
+            <FaTimes size={30} style={{ color: "#ffffff" }} />
+          ) : (
+            <FaBars size={30} style={{ color: "#ffffff" }} />
+          )}
+        </div>
+        <ul className={click ? "nav-menu active" : "nav-menu"}>
+          <li className="nav-item">
+            <a href="/" onClick={closeMenu}>
+              Otellər
+            </a>
+          </li>
+          <li className="nav-item">
+            <Link to={"/tours"} onClick={closeMenu}>
+              <b>Gormeli yerler</b>
+            </Link>
+          </li>
+          <li className="nav-item">
+            <a href="#testimonials" onClick={closeMenu}>
+              Testimonials
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="#demo" onClick={closeMenu}>
+              Demo
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="#demo" onClick={closeMenu}>
+              Demo
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="#demo" onClick={closeMenu}>
+              Demo
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="#demo" onClick={closeMenu}>
+              Demo
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="#demo" onClick={closeMenu}>
+              Demo
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="#demo" onClick={closeMenu}>
+              Demo
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
   );
 }
 
-export default Header;
+export default Navbar2;

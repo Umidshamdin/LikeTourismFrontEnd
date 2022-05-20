@@ -21,6 +21,7 @@ function Navbar2() {
   const closeMenu = () => setClick(false);
 
   return (
+    
     <div className={color ? "header header-bg" : "header"}>
       <nav className="navbar">
         <a href="/" className="logo">
@@ -69,6 +70,17 @@ function Navbar2() {
               Demo
             </a>
           </li>
+          <li className="nav-item">
+            <a href="#demo" onClick={closeMenu}>
+              Demo
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="#demo" onClick={closeMenu}>
+              Demo
+            </a>
+          </li>
+          
         </ul>
       </nav>
     </div>

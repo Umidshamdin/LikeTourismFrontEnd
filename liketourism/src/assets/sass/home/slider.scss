@@ -6,22 +6,24 @@
     }
     h1 {
       position: absolute;
-      top: 230px;
+      top: 120px;
       left: 500px;
-      color: green;
-      
+      color: white;
+      text-shadow: 4px 4px 8px #000000;
     }
-    p{
-        position: absolute;
-        top: 330px;
-        left: 450px;
-        font-size: 20px;
+
+    p {
+      position: absolute;
+      top: 230px;
+      left: 450px;
+      font-size: 20px;
+      color:  white;
     }
-    .btn-primary{
-        position: absolute;
-        top: 400px;
-        left: 750px;
-        font-size: 20px;
+    .btn-primary {
+      position: absolute;
+      top: 400px;
+      left: 750px;
+      font-size: 20px;
     }
   }
 
