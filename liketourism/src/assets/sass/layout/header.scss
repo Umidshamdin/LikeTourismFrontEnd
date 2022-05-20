@@ -1,5 +1,5 @@
 .header {
-  position: fixed;
+  position: sticky;
   height: 80px;
   width: 100%;
   top: 0;
@@ -24,20 +24,33 @@
     transform: scale(1);
     transition: all 0.6s ease-in-out 0.2s;
   }
-  
+
   ul li:hover {
     transform: translateY(10px);
     transition: all 0.1s ease-in-out 0.1s;
+    
   }
 }
 
 .header .nav-menu a {
   color: red;
+}
+.header .nav-item b {
+  color: black;
+ 
+  text-decoration: none;
+
   
 }
-.header .nav-item b{
-  color: white;
-      text-shadow: 2px 2px 4px #000000;
+.header{
+  .nav-item{
+    .linknav{
+      text-decoration: none;
+      &:hover b{
+        color: green;
+      }
+    }
+  }
 }
 
 .header .navbar img {
@@ -47,10 +60,10 @@
 
   height: auto;
 }
-.header .navbar ul{
+.header .navbar ul {
   list-style: none;
-  li{
-    .link{
+  li {
+    .link {
       text-decoration: none;
     }
   }
@@ -63,13 +76,12 @@
 .header .nav-item {
   padding: 1rem;
   font-weight: 500;
-  &:hover a{
+  &:hover a {
     color: green;
     text-decoration: dashed;
   }
- 
 }
-.nav-item .ex{
+.nav-item .ex {
   color: green;
   margin-top: 100px;
 }
@@ -91,7 +103,6 @@
 
   .header .navbar {
     max-width: 100%;
-   
   }
 
   .hamburger {
@@ -109,7 +120,6 @@
     z-index: 999;
     text-align: center;
     transition: 0.3s;
-   
   }
 
   .nav-menu.active {
@@ -118,7 +128,6 @@
 
   .nav-item {
     margin: 1.5rem 0;
-    
   }
 
   .header .navbar img {

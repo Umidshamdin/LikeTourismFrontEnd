@@ -16,33 +16,32 @@ function Card() {
 
           <div className="col-lg-6 col-md-6 col-sm-12 cards">
             <Link className="link" to={"/citydetail"}>
-            <img src={require("../../assets/img/home/sofya.jpg")} alt="" />
-
+              <img src={require("../../assets/img/home/sofya.jpg")} alt="" />
               <b>Bakı</b>
             </Link>
           </div>
 
           <div className="col-lg-4 col-md-6 col-sm-12 mt-3 cards">
             <Link className="link" to={"/citydetail"}>
-            <img src={require("../../assets/img/home/sofya.jpg")} alt="" />
-
+              <img src={require("../../assets/img/home/sofya.jpg")} alt="" />
               <b>Bakı</b>
             </Link>
           </div>
 
           <div className="col-lg-4 col-md-6 col-sm-12 mt-3 cards">
             <Link className="link" to={"/citydetail"}>
-            <img src={require("../../assets/img/home/sofya.jpg")} alt="" />
+              <img src={require("../../assets/img/home/sofya.jpg")} alt="" />
               <b>Bakı</b>
             </Link>
           </div>
 
           <div className="col-lg-4 col-md-6 col-sm-12 mt-3 cards">
             <Link className="link" to={"/citydetail"}>
-            <img src={require("../../assets/img/home/sofya.jpg")} alt="" />
+              <img src={require("../../assets/img/home/sofya.jpg")} alt="" />
               <b>Bakı</b>
             </Link>
           </div>
+          
         </div>
       </div>
     </section>

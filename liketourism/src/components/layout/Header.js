@@ -35,49 +35,34 @@ function Navbar2() {
         </div>
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li className="nav-item">
-            <a href="/" onClick={closeMenu}>
-              Otellər
-            </a>
-          </li>
-          <li className="nav-item">
-            <Link to={"/tours"} onClick={closeMenu}>
+            <Link className="linknav" to={"/tours"} onClick={closeMenu}>
               <b>Gormeli yerler</b>
             </Link>
           </li>
           <li className="nav-item">
-            <a href="#testimonials" onClick={closeMenu}>
-              Testimonials
-            </a>
+            <Link className="linknav" to={"/tours"} onClick={closeMenu}>
+              <b>Gormeli yerler</b>
+            </Link>
           </li>
           <li className="nav-item">
-            <a href="#demo" onClick={closeMenu}>
-              Demo
-            </a>
+            <Link className="linknav" to={"/tours"} onClick={closeMenu}>
+              <b>Gormeli yerler</b>
+            </Link>
           </li>
           <li className="nav-item">
-            <a href="#demo" onClick={closeMenu}>
-              Demo
-            </a>
+            <Link className="linknav" to={"/tours"} onClick={closeMenu}>
+              <b>Gormeli yerler</b>
+            </Link>
           </li>
           <li className="nav-item">
-            <a href="#demo" onClick={closeMenu}>
-              Demo
-            </a>
+            <Link className="linknav" to={"/tours"} onClick={closeMenu}>
+              <button className="btn btn-primary">Login</button>
+            </Link>
           </li>
           <li className="nav-item">
-            <a href="#demo" onClick={closeMenu}>
-              Demo
-            </a>
-          </li>
-          <li className="nav-item">
-            <a href="#demo" onClick={closeMenu}>
-              Demo
-            </a>
-          </li>
-          <li className="nav-item">
-            <a href="#demo" onClick={closeMenu}>
-              Demo
-            </a>
+            <Link className="linknav" to={"/tours"} onClick={closeMenu}>
+              <button className="btn btn-primary">Login</button>
+            </Link>
           </li>
         </ul>
       </nav>
