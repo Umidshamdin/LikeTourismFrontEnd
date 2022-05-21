@@ -1,0 +1,21 @@
+.cityimage{
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    .cityitem{
+        position: relative;
+        color: white;
+        border-radius: 10px;
+        overflow: hidden;
+        .cityimg{
+            width: 100%;
+            object-fit: cover;
+        }
+        .citytitle{
+            position: absolute;
+            bottom: 20px;
+        }
+    }
+}
