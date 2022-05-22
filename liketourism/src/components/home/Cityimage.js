@@ -29,29 +29,9 @@ function Cityimage() {
               </div>
             </div>
 
-            <div className="cityitem">
-              <img className="cityimg"  src={require("../../assets/img/home/afina.jpg")} alt="" />
-              <div className="citytitle">
-                <h1>Dublin</h1>
-                <h2>123 property</h2>
-              </div>
-            </div>
+           
 
-            <div className="cityitem">
-              <img className="cityimg"  src={require("../../assets/img/home/afina.jpg")} alt="" />
-              <div className="citytitle">
-                <h1>Dublin</h1>
-                <h2>123 property</h2>
-              </div>
-            </div>
-
-            <div className="cityitem">
-              <img className="cityimg"  src={require("../../assets/img/home/afina.jpg")} alt="" />
-              <div className="citytitle">
-                <h1>Dublin</h1>
-                <h2>123 property</h2>
-              </div>
-            </div>
+       
           </div>
         </div>
       </div>

@@ -9,7 +9,6 @@ import "../../assets/sass/home/searchheader.scss";
 import { DateRange } from "react-date-range";
 import "react-date-range/dist/styles.css"; // main css file
 import "react-date-range/dist/theme/default.css"; // theme css file
-import { format } from "date-fns";
 function SearchHeader() {
   const [openDate, setOpenDate] = useState(false);
   const [date, setDate] = useState([

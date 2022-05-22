@@ -6,7 +6,7 @@ function Accordions() {
   return (
     <div>
       <div className="container">
-        <div className="row">
+        <div className="row mt-5">
           <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
             <li class="nav-item" role="presentation">
               <button
