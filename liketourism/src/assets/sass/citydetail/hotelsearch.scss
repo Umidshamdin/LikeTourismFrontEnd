@@ -1,0 +1,72 @@
+.searchContainer {
+  display: flex;
+  justify-self: center;
+  margin-top: 20px;
+  .searchCommon {
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    gap: 20px;
+    .listSearch {
+      flex: 1;
+      background-color: yellow;
+      border-radius: 10px;
+      width: 200px;
+      position: sticky;
+      top: 10px;
+      margin-top: 50px;
+      height: max-content;
+      .searchTitle {
+        font-size: 20px;
+        color: gray;
+        margin-bottom: 10px;
+      }
+      button {
+        padding: 10px;
+        background-color: #0071c2;
+        color: white;
+        border: none;
+        width: 100%;
+        font-weight: 500;
+        cursor: pointer;
+      }
+      .searchItem {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-bottom: 10px;
+        label {
+          font-size: 12px;
+        }
+        input {
+          height: 30px;
+
+          padding: 5px;
+        }
+        span {
+          height: 30px;
+          padding: 5px;
+          background-color: white;
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+        }
+
+        .options {
+          padding: 10px;
+          .searchOptionItem {
+            display: flex;
+            justify-self: center;
+            margin-bottom: 10px;
+            color: #555;
+            font-size: 12px;
+            .searchOptionInput {
+              width: 50px;
+            }
+          }
+        }
+      }
+    }
+    
+  }
+}

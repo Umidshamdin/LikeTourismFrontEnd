@@ -1,14 +1,22 @@
-import React from 'react'
-import Cityinfo from '../components/Cityinfo'
+import React from "react";
+import HotelList from "../components/citydetail/HotelList";
+import HotelSearch from "../components/citydetail/HotelSearch";
 
 function Citydetail() {
   return (
-    <div>
-      <Cityinfo></Cityinfo>
-      
-
-    </div>
-  )
+    <>
+      <div className="container">
+        <div className="row">
+          <div className="col-4">
+            <HotelSearch></HotelSearch>
+          </div>
+          <div className="col-8">
+            <HotelList></HotelList>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }
 
-export default Citydetail
+export default Citydetail;
