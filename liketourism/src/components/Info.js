@@ -8,7 +8,7 @@ function Info() {
       <div className="row">
         <div className="col-lg-4 col-md-6 col-sm-12 mt-3">
           <h2>Yaninizda biz variz</h2>
-          <i class="fas fa-cannabis"></i>
+          <i className="fas fa-cannabis"></i>
           <span>En iyi turistik noktaları keşfedin</span>
           <p>
             Turistik noktalar, turlar, aktiviteler ve daha fazlasıyla seyahat
@@ -16,7 +16,7 @@ function Info() {
           </p>
         </div>
         <div className="col-lg-4 col-md-6 col-sm-12 mt-3">
-          <i class="fas fa-cannabis mt-5"></i>
+          <i className="fas fa-cannabis mt-5"></i>
           <span>Hızlı ve esnek</span>
           <p>
             Çoğu turistik noktada ücretsiz iptal avantajıyla biletlerinizi
@@ -24,7 +24,7 @@ function Info() {
           </p>
         </div>
         <div className="col-lg-4 col-md-6 col-sm-12 mt-3">
-          <i class="fas fa-cannabis mt-5"></i>
+          <i className="fas fa-cannabis mt-5"></i>
           <span>En iyi turistik noktaları keşfedin</span>
           <p>
             Booking.com'un küresel Müşteri Hizmetleri ekibi 7/24 yardımcı

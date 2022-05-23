@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
+import { Link } from "react-router-dom";
 import "../assets/sass/carusel.scss";
 
 export default class Responsive extends Component {
@@ -8,7 +9,7 @@ export default class Responsive extends Component {
       dots: true,
       infinite: true,
       speed: 400,
-  
+
       slidesToShow: 4,
       slidesToScroll: 1,
       initialSlide: 0,
@@ -42,82 +43,209 @@ export default class Responsive extends Component {
     return (
       <div>
         <div className="container">
-          <div className="row">
+          <div className="row ">
+            <h2>Bəyənilən evlər</h2>
             <Slider {...settings}>
-              <div className="px-1">
-                <h3>
+              <div className="col-lg-3 col-md-6 col-sm-12">
+                <div className="homeItem px-1">
                   <img
-                    style={{ width: "80%", height: "230px" }}
-                    src={require("../assets/img/home/slider1.jpg")}
-                    alt="sk"
+                    className="homeImg"
+                    src={require("../assets/img/home/afina.jpg")}
+                    alt=""
                   />
-                  <p>oteller</p>
-                </h3>
+                  <span className="homeName">
+                    <Link className="linkhome" to={"/citydetail"}>
+                      Apart Hotel
+                    </Link>
+                  </span>
+                  <span className="cityName">Madrid</span>
+                  <span className="roomPrise">Staeting from $130</span>
+                  <div className="rating">
+                    <button>8.9</button>
+                    <span>Excellent</span>
+                  </div>
+                </div>
               </div>
-              <div className="px-1">
-                <h3>
+
+              <div className="col-lg-3 col-md-6 col-sm-12">
+                <div className="homeItem px-1">
                   <img
-                    style={{ width: "80%", height: "230px" }}
-                    src={require("../assets/img/home/slider1.jpg")}
-                    alt="sk"
+                    className="homeImg"
+                    src={require("../assets/img/home/afina.jpg")}
+                    alt=""
                   />
-                  <p>oteller</p>
-                </h3>
+                  <span className="homeName">
+                    <Link className="linkhome" to={"/citydetail"}>
+                      Apart Hotel
+                    </Link>
+                  </span>
+                  <span className="cityName">Madrid</span>
+                  <span className="roomPrise">Staeting from $130</span>
+                  <div className="rating">
+                    <button>8.9</button>
+                    <span>Excellent</span>
+                  </div>
+                </div>
               </div>
-              <div className="px-1">
-                <h3>
+              <div className="col-lg-3 col-md-6 col-sm-12">
+                <div className="homeItem px-1">
                   <img
-                    style={{ width: "80%", height: "230px" }}
-                    src={require("../assets/img/home/slider1.jpg")}
-                    alt="sk"
+                    className="homeImg"
+                    src={require("../assets/img/home/afina.jpg")}
+                    alt=""
                   />
-                  <p>oteller</p>
-                </h3>
+                  <span className="homeName">
+                    <Link className="linkhome" to={"/citydetail"}>
+                      Apart Hotel
+                    </Link>
+                  </span>
+                  <span className="cityName">Madrid</span>
+                  <span className="roomPrise">Staeting from $130</span>
+                  <div className="rating">
+                    <button>8.9</button>
+                    <span>Excellent</span>
+                  </div>
+                </div>
               </div>
-              <div className="px-1">
-                <h3>
+              <div className="col-lg-3 col-md-6 col-sm-12">
+                <div className="homeItem px-1">
                   <img
-                    style={{ width: "80%", height: "230px" }}
-                    src={require("../assets/img/home/slider1.jpg")}
-                    alt="sk"
+                    className="homeImg"
+                    src={require("../assets/img/home/afina.jpg")}
+                    alt=""
                   />
-                </h3>
+                  <span className="homeName">
+                    <Link className="linkhome" to={"/citydetail"}>
+                      Apart Hotel
+                    </Link>
+                  </span>
+                  <span className="cityName">Madrid</span>
+                  <span className="roomPrise">Staeting from $130</span>
+                  <div className="rating">
+                    <button>8.9</button>
+                    <span>Excellent</span>
+                  </div>
+                </div>
               </div>
-              <div className="px-1">
-                <h3>
+              <div className="col-lg-3 col-md-6 col-sm-12">
+                <div className="homeItem px-1">
                   <img
-                    style={{ width: "80%", height: "230px" }}
-                    src={require("../assets/img/home/slider1.jpg")}
-                    alt="sk"
+                    className="homeImg"
+                    src={require("../assets/img/home/afina.jpg")}
+                    alt=""
                   />
-                </h3>
+                  <span className="homeName">
+                    <Link className="linkhome" to={"/citydetail"}>
+                      Apart Hotel
+                    </Link>
+                  </span>
+                  <span className="cityName">Madrid</span>
+                  <span className="roomPrise">Staeting from $130</span>
+                  <div className="rating">
+                    <button>8.9</button>
+                    <span>Excellent</span>
+                  </div>
+                </div>
               </div>
-              <div className="px-1">
-                <h3>
+              <div className="col-lg-3 col-md-6 col-sm-12">
+                <div className="homeItem px-1">
                   <img
-                    style={{ width: "80%", height: "230px" }}
-                    src={require("../assets/img/home/slider1.jpg")}
-                    alt="sk"
+                    className="homeImg"
+                    src={require("../assets/img/home/afina.jpg")}
+                    alt=""
                   />
-                </h3>
+                  <span className="homeName">
+                    <Link className="linkhome" to={"/citydetail"}>
+                      Apart Hotel
+                    </Link>
+                  </span>
+                  <span className="cityName">Madrid</span>
+                  <span className="roomPrise">Staeting from $130</span>
+                  <div className="rating">
+                    <button>8.9</button>
+                    <span>Excellent</span>
+                  </div>
+                </div>
               </div>
-              <div className="px-1">
-                <h3>
+              <div className="col-lg-3 col-md-6 col-sm-12">
+                <div className="homeItem px-1">
                   <img
-                    style={{ width: "80%", height: "230px" }}
-                    src={require("../assets/img/home/slider1.jpg")}
-                    alt="sk"
+                    className="homeImg"
+                    src={require("../assets/img/home/afina.jpg")}
+                    alt=""
                   />
-                </h3>
+                  <span className="homeName">
+                    <Link className="linkhome" to={"/citydetail"}>
+                      Apart Hotel
+                    </Link>
+                  </span>
+                  <span className="cityName">Madrid</span>
+                  <span className="roomPrise">Staeting from $130</span>
+                  <div className="rating">
+                    <button>8.9</button>
+                    <span>Excellent</span>
+                  </div>
+                </div>
               </div>
-              <div className="px-1">
-                <h3>
+              <div className="col-lg-3 col-md-6 col-sm-12">
+                <div className="homeItem px-1">
                   <img
-                    style={{ width: "80%", height: "230px" }}
-                    src={require("../assets/img/home/slider1.jpg")}
-                    alt="sk"
+                    className="homeImg"
+                    src={require("../assets/img/home/afina.jpg")}
+                    alt=""
                   />
-                </h3>
+                  <span className="homeName">
+                    <Link className="linkhome" to={"/citydetail"}>
+                      Apart Hotel
+                    </Link>
+                  </span>
+                  <span className="cityName">Madrid</span>
+                  <span className="roomPrise">Staeting from $130</span>
+                  <div className="rating">
+                    <button>8.9</button>
+                    <span>Excellent</span>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-3 col-md-6 col-sm-12">
+                <div className="homeItem px-1">
+                  <img
+                    className="homeImg"
+                    src={require("../assets/img/home/afina.jpg")}
+                    alt=""
+                  />
+                  <span className="homeName">
+                    <Link className="linkhome" to={"/citydetail"}>
+                      Apart Hotel
+                    </Link>
+                  </span>
+                  <span className="cityName">Madrid</span>
+                  <span className="roomPrise">Staeting from $130</span>
+                  <div className="rating">
+                    <button>8.9</button>
+                    <span>Excellent</span>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-3 col-md-6 col-sm-12">
+                <div className="homeItem px-1">
+                  <img
+                    className="homeImg"
+                    src={require("../assets/img/home/afina.jpg")}
+                    alt=""
+                  />
+                  <span className="homeName">
+                    <Link className="linkhome" to={"/citydetail"}>
+                      Apart Hotel
+                    </Link>
+                  </span>
+                  <span className="cityName">Madrid</span>
+                  <span className="roomPrise">Staeting from $130</span>
+                  <div className="rating">
+                    <button>8.9</button>
+                    <span>Excellent</span>
+                  </div>
+                </div>
               </div>
             </Slider>
           </div>

@@ -1,0 +1,30 @@
+.cityimage {
+  width: 100%;
+  max-width: 1024px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+}
+
+.cityimage .cityitem {
+  position: relative;
+  color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.cityimage .cityitem .cityimg {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.cityimage .cityitem .citytitle {
+  position: absolute;
+  bottom: 20px;
+}
+/*# sourceMappingURL=cityimage.css.map */

@@ -7,10 +7,10 @@ function Accordions() {
     <div>
       <div className="container">
         <div className="row mt-5">
-          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-            <li class="nav-item" role="presentation">
+          <ul className="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li className="nav-item" role="presentation">
               <button
-                class="nav-link active"
+                className="nav-link active"
                 id="pills-home-tab"
                 data-bs-toggle="pill"
                 data-bs-target="#pills-home"
@@ -22,9 +22,9 @@ function Accordions() {
                 Home
               </button>
             </li>
-            <li class="nav-item" role="presentation">
+            <li className="nav-item" role="presentation">
               <button
-                class="nav-link"
+                className="nav-link"
                 id="pills-profile-tab"
                 data-bs-toggle="pill"
                 data-bs-target="#pills-profile"
@@ -36,9 +36,9 @@ function Accordions() {
                 Profile
               </button>
             </li>
-            <li class="nav-item" role="presentation">
+            <li className="nav-item" role="presentation">
               <button
-                class="nav-link"
+                className="nav-link"
                 id="pills-contact-tab"
                 data-bs-toggle="pill"
                 data-bs-target="#pills-contact"
@@ -51,20 +51,10 @@ function Accordions() {
               </button>
             </li>
           </ul>
-          <div class="tab-content" id="pills-tabContent">
-            <div
-              class="tab-pane fade show active"
-              id="pills-home"
-              role="tabpanel"
-              aria-labelledby="pills-home-tab"
-            >
-              <div className="col-2 ex">
+          <div className="tab-content" id="pills-tabContent">
+            <div className="tab-pane fade show active"id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+              <div className="col-lg-3 col-md-4 col-sm-6 ex">
                 <ul>
-                  <li>
-                    <Link to={"/"}>Saqqız adası</Link>
-
-                    <h6>255 məkan</h6>
-                  </li>
                   <li>
                     <Link to={"/"}>Saqqız adası</Link>
 
@@ -107,11 +97,6 @@ function Accordions() {
 
                     <h6>255 məkan</h6>
                   </li>
-                  <li>
-                    <Link to={"/"}>Saqqız adası</Link>
-
-                    <h6>255 məkan</h6>
-                  </li>
                 </ul>
                 <ul>
                   <li>
@@ -134,18 +119,8 @@ function Accordions() {
 
                     <h6>255 məkan</h6>
                   </li>
-                  <li>
-                    <Link to={"/"}>Saqqız adası</Link>
-
-                    <h6>255 məkan</h6>
-                  </li>
                 </ul>
                 <ul>
-                  <li>
-                    <Link to={"/"}>Saqqız adası</Link>
-
-                    <h6>255 məkan</h6>
-                  </li>
                   <li>
                     <Link to={"/"}>Saqqız adası</Link>
 
@@ -169,19 +144,9 @@ function Accordions() {
                 </ul>
               </div>
             </div>
-            <div
-              class="tab-pane fade"
-              id="pills-profile"
-              role="tabpanel"
-              aria-labelledby="pills-profile-tab"
-            >
-              <div className="col-2 ex">
+            <div className="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+              <div className="col-lg-3 col-md-4 col-sm-6 ex">
                 <ul>
-                  <li>
-                    <Link to={"/"}>Saqqız adası</Link>
-
-                    <h6>255 məkan</h6>
-                  </li>
                   <li>
                     <Link to={"/"}>Saqqız adası</Link>
 
@@ -224,11 +189,6 @@ function Accordions() {
 
                     <h6>255 məkan</h6>
                   </li>
-                  <li>
-                    <Link to={"/"}>Saqqız adası</Link>
-
-                    <h6>255 məkan</h6>
-                  </li>
                 </ul>
                 <ul>
                   <li>
@@ -251,18 +211,8 @@ function Accordions() {
 
                     <h6>255 məkan</h6>
                   </li>
-                  <li>
-                    <Link to={"/"}>Saqqız adası</Link>
-
-                    <h6>255 məkan</h6>
-                  </li>
                 </ul>
                 <ul>
-                  <li>
-                    <Link to={"/"}>Saqqız adası</Link>
-
-                    <h6>255 məkan</h6>
-                  </li>
                   <li>
                     <Link to={"/"}>Saqqız adası</Link>
 
@@ -286,19 +236,9 @@ function Accordions() {
                 </ul>
               </div>
             </div>
-            <div
-              class="tab-pane fade"
-              id="pills-contact"
-              role="tabpanel"
-              aria-labelledby="pills-contact-tab"
-            >
-              <div className="col-2 ex">
+            <div className="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+              <div className="col-lg-3 col-md-4 col-sm-6 ex">
                 <ul>
-                  <li>
-                    <Link to={"/"}>Saqqız adası</Link>
-
-                    <h6>255 məkan</h6>
-                  </li>
                   <li>
                     <Link to={"/"}>Saqqız adası</Link>
 
@@ -341,11 +281,6 @@ function Accordions() {
 
                     <h6>255 məkan</h6>
                   </li>
-                  <li>
-                    <Link to={"/"}>Saqqız adası</Link>
-
-                    <h6>255 məkan</h6>
-                  </li>
                 </ul>
                 <ul>
                   <li>
@@ -367,18 +302,8 @@ function Accordions() {
                     <Link to={"/"}>Saqqız adası</Link>
                     <h6>255 məkan</h6>
                   </li>
-                  <li>
-                    <Link to={"/"}>Saqqız adası</Link>
-
-                    <h6>255 məkan</h6>
-                  </li>
                 </ul>
                 <ul>
-                  <li>
-                    <Link to={"/"}>Saqqız adası</Link>
-
-                    <h6>255 məkan</h6>
-                  </li>
                   <li>
                     <Link to={"/"}>Saqqız adası</Link>
 

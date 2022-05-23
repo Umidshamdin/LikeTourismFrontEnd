@@ -1,0 +1,83 @@
+.headerSearch {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  background-color: white;
+  border: 3px solid yellow;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  max-width: 1024px;
+}
+
+.headerSearch .headerSearchItem {
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.headerSearch .headerSearchItem .headerIcon {
+  color: lightgray;
+}
+
+.headerSearch .headerSearchItem .date {
+  position: absolute;
+  top: 50px;
+}
+
+.headerSearch .headerSearchItem .options {
+  position: absolute;
+  top: 50px;
+  background-color: green;
+  color: gray;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0);
+}
+
+.headerSearch .headerSearchItem .optionItem {
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10px;
+}
+
+.headerSearch .headerSearchItem .optionItem .optionCounter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: black;
+}
+
+.headerSearch .headerSearchItem .optionItem .optionCounter .optionCounterButton {
+  width: 30px;
+  height: 30px;
+  border: 1px solid blue;
+  color: blue;
+  cursor: pointer;
+  background-color: white;
+}
+
+.headerSearch .headerSearchItem .optionItem .optionCounter .optionCounterButton :disabled {
+  cursor: not-allowed;
+}
+/*# sourceMappingURL=searchheader.css.map */

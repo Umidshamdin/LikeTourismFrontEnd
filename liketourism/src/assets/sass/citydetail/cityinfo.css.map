@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAEE,SAFO,CAEP,SAAS,CAAC;EACR,MAAM,EAAE,eAAe;EACvB,OAAO,EAAE,IAAI;EACb,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,IAAI;CAKjB;;AAXH,AAQI,SARK,CAEP,SAAS,CAMP,UAAU,CAAC;EACT,KAAK,EAAE,IAAI;CACZ",
+    "sources": [
+        "cityinfo.scss"
+    ],
+    "names": [],
+    "file": "cityinfo.css"
+}

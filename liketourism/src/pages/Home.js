@@ -6,7 +6,7 @@ import Subscripe from "../components/Subscripe";
 import Slider from "../components/home/Slider";
 import Card from "../components/home/Card";
 import SearchHeader from "../components/home/SearchHeader";
-import BelovedHomes from "../components/home/BelovedHomes";
+
 
 
 function Home() {
@@ -14,14 +14,14 @@ function Home() {
     <div>
       <Slider></Slider>
       <SearchHeader></SearchHeader>
-      <BelovedHomes></BelovedHomes>
+      <Card/>
+     
     
 
       
       <Accordion></Accordion>
       <Carusel></Carusel>
-      <Carusel></Carusel>
-      <Carusel></Carusel>
+      
       <Subscripe></Subscripe>
       <AntDesign></AntDesign>
 

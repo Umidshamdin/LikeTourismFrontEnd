@@ -1,31 +1,27 @@
-.container{
-    .row{
-        
-        .tab-pane{
-           
-            .ex{
-                ul{
-                    list-style: none;
-                    display: flex;
-                    
-                    li{
-                        
-                        a{
-                            display: flex;
-                            width: 200px;
-                            margin-left: 50px;
-                            text-decoration: none;
-                            color: blue;
-                        }
-                        h6{
-                            font-size: 11px;
-                            margin-left: 50px;
-                            color: gray;
-                        }
-                    }
-                }
+.container {
+  .row {
+    .tab-pane {
+      .ex {
+        ul {
+          list-style: none;
+          display: flex;
+
+          li {
+            a {
+              display: flex;
+              width: 200px;
+              margin-left: 50px;
+              text-decoration: none;
+              color: blue;
             }
-         
+            h6 {
+              font-size: 11px;
+              margin-left: 50px;
+              color: gray;
+            }
+          }
         }
+      }
     }
+  }
 }

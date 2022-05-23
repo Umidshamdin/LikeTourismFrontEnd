@@ -1,0 +1,48 @@
+.foot {
+  margin-top: 10px;
+  background-color: #00224f;
+}
+
+.foot .image img {
+  margin-left: 150px;
+}
+
+.foot .footer {
+  text-align: center;
+}
+
+.foot .footer p {
+  color: white;
+  text-decoration: none;
+}
+
+.foot .footer h4 {
+  color: white;
+}
+
+.foot .footer ul li {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.foot .footer ul li .linkfooter {
+  text-decoration: none;
+  color: white;
+}
+
+.foot .footer .icons i {
+  margin-left: 10px;
+  background-color: teal;
+  width: 50px;
+  padding: 15px;
+  height: 50px;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+.foot .footer img {
+  margin-left: 50px;
+}
+/*# sourceMappingURL=footer.css.map */

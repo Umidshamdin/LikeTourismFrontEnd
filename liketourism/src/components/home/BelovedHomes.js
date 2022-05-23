@@ -3,7 +3,7 @@ import React from "react";
 import "../../assets/sass/home/belovedhomes.scss";
 function BelovedHomes() {
   return (
-    <div className="container">
+    <div className="container mt-5">
       <div className="row">
         <div className="col-lg-3 col-md-6 col-sm-12">
           <div className="homeItem">
@@ -127,7 +127,7 @@ function BelovedHomes() {
               alt=""
             />
             <span className="homeName">
-              <Link to={"/citydetail"}>Apart Hotel</Link>
+              <Link to={"/Citydetail"}>Apart Hotel</Link>
             </span>
             <span className="cityName">Istanbul</span>
             <span className="roomPrise">Staeting from $130</span>

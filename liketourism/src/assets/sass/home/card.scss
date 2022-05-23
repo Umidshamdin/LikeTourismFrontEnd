@@ -6,13 +6,11 @@
         .link {
           img {
             height: 300px;
-           
+
             width: 100%;
-            
           }
           &:hover img {
             opacity: 0.9;
-            transform: scale(1.1);
           }
           b {
             position: absolute;
@@ -23,12 +21,10 @@
             background-color: black;
             width: 80%;
             opacity: 0.6;
+            text-shadow: 1cm;
           }
-
-        }
-        &:hover .link{
-          b{
-            height: 60%;
+          &:hover b {
+            height: 70%;
           }
         }
       }
