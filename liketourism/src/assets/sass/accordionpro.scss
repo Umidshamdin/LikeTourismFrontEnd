@@ -1,0 +1,15 @@
+.container {
+  .row {
+    .nav-pills {
+      overflow-x: none;
+    }
+    @media screen {
+      min-width: 480px;
+      .nav-pills {
+        overflow-x: scroll;
+        overflow-wrap: none;
+        flex-wrap: nowrap;
+      }
+    }
+  }
+}

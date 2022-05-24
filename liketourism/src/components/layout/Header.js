@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import logo from "../../assets/img/home/logo.png";
 import "../../assets/sass/layout/header.scss";
 
-function Navbar2() {
+function Header() {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
 
@@ -41,7 +41,7 @@ function Navbar2() {
           </li>
           <li className="nav-item">
             <Link className="linknav" to={"/tours"} onClick={closeMenu}>
-              <b>Gormeli yerler</b>
+              <b>Turistik yerlər</b>
             </Link>
           </li>
           <li className="nav-item">
@@ -70,4 +70,4 @@ function Navbar2() {
   );
 }
 
-export default Navbar2;
+export default Header;

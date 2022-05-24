@@ -4,27 +4,21 @@ import Carusel from "../components/Carusel";
 import AntDesign from "../components/AntDesign";
 import Subscripe from "../components/Subscripe";
 import Slider from "../components/home/Slider";
-import Card from "../components/home/Card";
 import SearchHeader from "../components/home/SearchHeader";
-
-
+import FamousCity from "../components/home/FamousCity";
 
 function Home() {
   return (
     <div>
       <Slider></Slider>
       <SearchHeader></SearchHeader>
-      <Card/>
-     
-    
-
-      
-      <Accordion></Accordion>
+      <FamousCity></FamousCity>
       <Carusel></Carusel>
-      
+      <Carusel></Carusel>
+      <Carusel></Carusel>
+      <Accordion></Accordion>
       <Subscripe></Subscripe>
       <AntDesign></AntDesign>
-
     </div>
   );
 }

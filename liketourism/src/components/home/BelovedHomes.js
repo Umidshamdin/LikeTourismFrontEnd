@@ -5,6 +5,7 @@ function BelovedHomes() {
   return (
     <div className="container mt-5">
       <div className="row">
+        
         <div className="col-lg-3 col-md-6 col-sm-12">
           <div className="homeItem">
             <img

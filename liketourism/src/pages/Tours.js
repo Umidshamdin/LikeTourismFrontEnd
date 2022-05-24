@@ -1,6 +1,8 @@
 import React from "react";
+import Accordionpro from "../components/Accordionpro";
 import Info from "../components/Info";
 import Papularplace from "../components/Papularplace";
+
 
 
 function Tours() {
@@ -8,6 +10,8 @@ function Tours() {
     <div>
       <Papularplace></Papularplace>
       <Info></Info>
+      <Accordionpro></Accordionpro>
+      
     
     </div>
   );

@@ -1,0 +1,32 @@
+.miniimg {
+  width: 100%;
+  height: 50vh;
+}
+.container{
+  .row{
+    .mini{
+      .slick-arrow{
+        width: 30px;
+      }
+      .slick-next {
+        height: 100%;
+        width: 70px;
+    
+        background: red;
+      }
+      .slick-prev {
+        height: 100%;
+        width: 70px;
+    
+        background: #00224f;
+      }
+      h4{
+        text-align: center;
+      }
+      p{
+        text-align: center;
+      }
+    }
+  }
+}
+

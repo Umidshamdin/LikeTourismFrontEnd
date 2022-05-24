@@ -22,7 +22,7 @@ function HotelSearch() {
 
                 <div className="searchItem">
                   <label>Destination</label>
-                  <input type="text" placeholder={destination} />
+                  <input type="text" placeholder={destination} onChange={(e)=>setDestination(e.target.value)} />
                 </div>
 
                 <div className="searchItem">
@@ -67,6 +67,7 @@ function HotelSearch() {
                         min={1}
                         className="searchOptionInput"
                         placeholder={options.adult}
+                        onChange={(e)=>setOptions(e.target.value)}
                       />
                     </div>
                     <div className="searchOptionItem">
@@ -76,6 +77,8 @@ function HotelSearch() {
                         min={0}
                         className="searchOptionInput"
                         placeholder={options.children}
+                        onChange={(e)=>setOptions(e.target.value)}
+
                       />
                     </div>
                     <div className="searchOptionItem">
@@ -85,14 +88,15 @@ function HotelSearch() {
                         min={1}
                         className="searchOptionInput"
                         placeholder={options.room}
+                        onChange={(e)=>setOptions(e.target.value)}
+
                       />
                     </div>
                   </div>
                 </div>
                 <button>Search</button>
               </div>
-              <div className="listResult">
-              </div>
+              <div className="listResult"></div>
             </div>
           </div>
         </div>

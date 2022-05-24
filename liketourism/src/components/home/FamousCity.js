@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import "../../assets/sass/home/card.scss";
+import "../../assets/sass/home/famouscity.scss";
 
-function Card() {
+function FamousCity() {
   const [cards, setCards] = useState([]);
   console.log(cards.slice(1, 3));
   useEffect(() => {
@@ -53,4 +53,4 @@ function Card() {
   );
 }
 
-export default Card;
+export default FamousCity;

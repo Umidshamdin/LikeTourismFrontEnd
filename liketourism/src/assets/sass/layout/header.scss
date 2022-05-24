@@ -1,5 +1,5 @@
 .header {
-  position: sticky;
+  position: fixed;
   height: 80px;
   width: 100%;
   top: 0;
@@ -8,7 +8,8 @@
   transition: 0.3s ease-in;
 }
 .header-bg {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: black;
+  opacity: 1;
 }
 
 .header .navbar {
@@ -28,7 +29,6 @@
   ul li:hover {
     transform: translateY(10px);
     transition: all 0.1s ease-in-out 0.1s;
-    
   }
 }
 
@@ -36,17 +36,15 @@
   color: red;
 }
 .header .nav-item b {
-  color: black;
- 
-  text-decoration: none;
+  color: white;
 
-  
+  text-decoration: none;
 }
-.header{
-  .nav-item{
-    .linknav{
+.header {
+  .nav-item {
+    .linknav {
       text-decoration: none;
-      &:hover b{
+      &:hover b {
         color: green;
       }
     }

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import "../assets/sass/touraccordion.scss";
 import { Link } from "react-router-dom";
 
@@ -7,8 +7,8 @@ function Touraccordion() {
     <div>
       <div className="container">
         <div className="row">
-            <h4>Daha çox səyahət yeri kəşf edin</h4>
-            <p>Dünyanın dört bir yanındaki şehirlerde yapılacak şeyler bulun</p>
+          <h4>Daha çox səyahət yeri kəşf edin</h4>
+          <p>Dünyanın dört bir yanındaki şehirlerde yapılacak şeyler bulun</p>
           <ul className="nav nav-pills mb-3" id="pills-tab" role="tablist">
             <li className="nav-item" role="presentation">
               <button
@@ -144,7 +144,7 @@ function Touraccordion() {
               role="tabpanel"
               aria-labelledby="pills-home-tab"
             >
-              <div className="col-2 ex">
+              <div className="col-lg-2 col-md-3 col-sm-12 ex">
                 <ul>
                   <li>
                     <Link to={"/"}>Saqqız adası</Link>
@@ -153,7 +153,6 @@ function Touraccordion() {
                   </li>
                   <li>
                     <Link to={"/"}>Saqqız adası</Link>
-
                     <h6>255 məkan</h6>
                   </li>
                   <li>
@@ -261,7 +260,7 @@ function Touraccordion() {
               role="tabpanel"
               aria-labelledby="pills-profile-tab"
             >
-              <div className="col-2 ex">
+              <div className="col-lg-2 col-md-3 col-sm-12 ex">
                 <ul>
                   <li>
                     <Link to={"/"}>Saqqız adası</Link>
@@ -378,7 +377,7 @@ function Touraccordion() {
               role="tabpanel"
               aria-labelledby="pills-contact-tab"
             >
-              <div className="col-2 ex">
+              <div className="col-lg-2 col-md-3 col-sm-12 ex">
                 <ul>
                   <li>
                     <Link to={"/"}>Saqqız adası</Link>
@@ -492,7 +491,7 @@ function Touraccordion() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Touraccordion
+export default Touraccordion;
