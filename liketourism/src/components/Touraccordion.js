@@ -144,7 +144,7 @@ function Touraccordion() {
               role="tabpanel"
               aria-labelledby="pills-home-tab"
             >
-              <div className="col-lg-2 col-md-3 col-sm-12 ex">
+              <div className="col-lg-2 col-md-3 col-sm-12 tab-content" >
                 <ul>
                   <li>
                     <Link to={"/"}>Saqqız adası</Link>

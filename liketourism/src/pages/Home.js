@@ -1,5 +1,4 @@
 import React from "react";
-import Accordion from "../components/Accordion";
 import Carusel from "../components/Carusel";
 import AntDesign from "../components/AntDesign";
 import Subscripe from "../components/Subscripe";
@@ -16,7 +15,6 @@ function Home() {
       <Carusel></Carusel>
       <Carusel></Carusel>
       <Carusel></Carusel>
-      <Accordion></Accordion>
       <Subscripe></Subscripe>
       <AntDesign></AntDesign>
     </div>

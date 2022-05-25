@@ -1,7 +1,7 @@
 .container {
   .row {
     .nav-pills {
-      overflow-x: none;
+      overflow-x: hidden;
     }
     @media screen {
       min-width: 480px;
@@ -11,5 +11,6 @@
         flex-wrap: nowrap;
       }
     }
+   
   }
 }

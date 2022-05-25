@@ -96,7 +96,9 @@ function HotelSearch() {
                 </div>
                 <button>Search</button>
               </div>
-              <div className="listResult"></div>
+              <div className="listResult">
+                
+              </div>
             </div>
           </div>
         </div>

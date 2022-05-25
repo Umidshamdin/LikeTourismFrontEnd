@@ -16,8 +16,10 @@ function Slider() {
               alt="sk"
             />
             <h1>Məhşur səyahət yerləri kəşf et</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, quod.</p>
-            <button className="btn btn-primary">Rezerve et</button>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.             
+            </p>
+            {/* <button className="btn btn-primary">Rezerve et</button> */}
           </div>
           <div className="carousel-item">
             <img
@@ -26,9 +28,11 @@ function Slider() {
               alt="sk"
             />{" "}
             <h1>Məhşur səyahət yerləri kəşf et</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, quod.</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Praesentium, quod.
+            </p>
             <button className="btn btn-primary">Rezerve et</button>
-
           </div>
           <div className="carousel-item">
             <img
@@ -36,10 +40,12 @@ function Slider() {
               className="d-block w-100"
               alt="sk"
             />{" "}
-           <h1>Məhşur səyahət yerləri kəşf et</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, quod.</p>
+            <h1>Məhşur səyahət yerləri kəşf et</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Praesentium, quod.
+            </p>
             <button className="btn btn-primary">Rezerve et</button>
-
           </div>
         </div>
         <button
@@ -48,7 +54,10 @@ function Slider() {
           data-bs-target="#carouselExampleControls"
           data-bs-slide="prev"
         >
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span
+            className="carousel-control-prev-icon"
+            aria-hidden="true"
+          ></span>
           <span className="visually-hidden">Previous</span>
         </button>
         <button
@@ -57,12 +66,13 @@ function Slider() {
           data-bs-target="#carouselExampleControls"
           data-bs-slide="next"
         >
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span
+            className="carousel-control-next-icon"
+            aria-hidden="true"
+          ></span>
           <span className="visually-hidden">Next</span>
         </button>
       </div>
-
-      
     </div>
   );
 }

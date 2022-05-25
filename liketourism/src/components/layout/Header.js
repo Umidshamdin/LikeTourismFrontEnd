@@ -35,8 +35,8 @@ function Header() {
         </div>
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li className="nav-item">
-            <Link className="linknav" to={"/tours"} onClick={closeMenu}>
-              <b>Gormeli yerler</b>
+            <Link className="linknav" to={"/"} onClick={closeMenu}>
+              <b>Otellər</b>
             </Link>
           </li>
           <li className="nav-item">
@@ -45,23 +45,23 @@ function Header() {
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="linknav" to={"/tours"} onClick={closeMenu}>
-              <b>Gormeli yerler</b>
+            <Link className="linknav" to={"/"} onClick={closeMenu}>
+              <b>Xidmətlər</b>
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="linknav" to={"/tours"} onClick={closeMenu}>
-              <b>Gormeli yerler</b>
+            <Link className="linknav" to={"/"} onClick={closeMenu}>
+              <b>Haqqında</b>
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="linknav" to={"/tours"} onClick={closeMenu}>
+            <Link className="linknav" to={"/"} onClick={closeMenu}>
               <button className="btn btn-primary">Login</button>
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="linknav" to={"/tours"} onClick={closeMenu}>
-              <button className="btn btn-primary">Login</button>
+            <Link className="linknav" to={"/"} onClick={closeMenu}>
+              <button className="btn btn-primary">Register</button>
             </Link>
           </li>
         </ul>
