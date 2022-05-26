@@ -6,9 +6,10 @@ import "../../assets/sass/layout/header.scss";
 
 function Header() {
   const [click, setClick] = useState(false);
+  const [color, setColor] = useState(false);
+
   const handleClick = () => setClick(!click);
 
-  const [color, setColor] = useState(false);
   const changeColor = () => {
     if (window.scrollY >= 90) {
       setColor(true);
@@ -26,7 +27,7 @@ function Header() {
         <a href="/" className="logo">
           <img src={logo} alt="logo" />
         </a>
-        <div className="hamburger" onClick={handleClick}>
+        <div className="closeicon" onClick={handleClick}>
           {click ? (
             <FaTimes size={30} style={{ color: "#ffffff" }} />
           ) : (

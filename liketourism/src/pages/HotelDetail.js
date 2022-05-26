@@ -11,7 +11,9 @@ function HotelDetail() {
           <SearchCard></SearchCard>
         </div>
         <div className="col-9">
-          
+          <div>
+            
+          </div>
         </div>
       </div>
     </div>
