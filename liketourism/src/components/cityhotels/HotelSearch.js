@@ -1,7 +1,7 @@
 import { DateRange } from "react-date-range";
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
-import "../../assets/sass/citydetail/hotelsearch.scss";
+import "../../assets/sass/cityhotels/hotelsearch.scss";
 function HotelSearch() {
   const location = useLocation();
   const [destination, setDestination] = useState(location.state.destination);

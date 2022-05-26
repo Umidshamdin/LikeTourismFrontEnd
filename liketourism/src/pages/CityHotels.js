@@ -1,10 +1,10 @@
 import React from "react";
-import HotelList from "../components/citydetail/HotelList";
-import HotelSearch from "../components/citydetail/HotelSearch";
+import HotelList from "../components/cityhotels/HotelList";
+import HotelSearch from "../components/cityhotels/HotelSearch";
 
 
 
-function Citydetail() {
+function CityHotels() {
   return (
     <>
       <div className="container">
@@ -21,4 +21,4 @@ function Citydetail() {
   );
 }
 
-export default Citydetail;
+export default CityHotels;

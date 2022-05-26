@@ -1,6 +1,6 @@
 import React from "react";
-import "../../assets/sass/citydetail/hotellist.scss";
-
+import "../../assets/sass/cityhotels/hotellist.scss";
+import { Link } from "react-router-dom";
 function HotelList() {
   return (
     <>
@@ -39,7 +39,9 @@ function HotelList() {
           alt=""
         />
         <div className="listDesc">
-          <h1 className="listTitle">Towe Strret Department</h1>
+          <h1 className="listTitle">
+            <Link to={"/HotelDetail"}>Towe Strret Department</Link>
+          </h1>
           <span className="listDistance"> 500m from center</span>
           <span className="listSubTitle">
             Studia Apartment with air condiskk
