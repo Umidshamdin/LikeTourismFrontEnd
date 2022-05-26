@@ -136,3 +136,14 @@
     width: 100px;
   }
 }
+
+@media screen and (max-width: 415px){
+  .closeicon {
+    display: block;
+    margin-right: 150px;
+  }
+  .nav-item{
+    margin-left: -90px;
+   
+  }
+}

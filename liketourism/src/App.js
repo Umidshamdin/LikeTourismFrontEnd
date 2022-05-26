@@ -21,7 +21,6 @@ function App() {
             <Route path="/Tours" element={<Tours />} />
             <Route path="/CityHotels" element={<CityHotels />} />
             <Route path="/HotelDetail" element={<HotelDetail />} />
-
           </Routes>
 
           <Footer></Footer>

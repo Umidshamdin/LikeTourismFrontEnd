@@ -1,208 +1,61 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+
 import "../../assets/sass/cityhotels/hotellist.scss";
 import { Link } from "react-router-dom";
 function HotelList() {
+  const [hotel, setHotels] = useState([]);
+
+  useEffect(() => {
+    // Update the document title using the browser API
+    loadHotels();
+  }, []);
+
+  async function loadHotels() {
+    await axios
+      .get(`https://localhost:44363/api/HotelList/GetAll`)
+      .then((res) => {
+        const result = res.data;
+        setHotels(result);
+      });
+  }
+
   return (
-    <>
-      <div className="listItem">
-        <img
-          className="listimg"
-          src={require("../../assets/img/home/sofya.jpg")}
-          alt=""
-        />
-        <div className="listDesc">
-          <h1 className="listTitle">Towe Strret Department</h1>
-          <span className="listDistance"> 500m from center</span>
-          <span className="listSubTitle">
-            Studia Apartment with air condiskk
-          </span>
-          <span className="listFeatures">
-            entire studio 1 bathroom 21m2dldl
-          </span>
-          <span className="listCancel">Free Cancaled</span>
-        </div>
-        <div className="listDetails">
-          <div className="listRating">
-            <span>Excellent</span>
-            <button>8.9</button>
+    <div className="hotels">
+      {hotel.map((listhotel) => (
+        <div className="listItem">
+          <img
+            className="listimg"
+            src={`data:image/jpeg;base64,${listhotel.image}`}
+            alt=""
+          />
+
+          <div className="listDesc">
+            <h1 className="listTitle">
+              <Link to={"/HotelDetail"}>{listhotel.name}</Link>
+            </h1>
+            <span className="listDistance">{listhotel.distance}</span>
+            <span className="listSubTitle">
+             {listhotel.desc}
+            </span>
+            <span className="listFeatures">
+              entire studio 1 bathroom 21m2dldl
+            </span>
+            <span className="listCancel">Free Cancaled</span>
           </div>
-          <div className="listDetailText">
-            <span className="listPrise">123$</span>
-            <button className="listCheckButton">See availability</button>
-          </div>
-        </div>
-      </div>
-      <div className="listItem">
-        <img
-          className="listimg"
-          src={require("../../assets/img/home/sofya.jpg")}
-          alt=""
-        />
-        <div className="listDesc">
-          <h1 className="listTitle">
-            <Link to={"/HotelDetail"}>Towe Strret Department</Link>
-          </h1>
-          <span className="listDistance"> 500m from center</span>
-          <span className="listSubTitle">
-            Studia Apartment with air condiskk
-          </span>
-          <span className="listFeatures">
-            entire studio 1 bathroom 21m2dldl
-          </span>
-          <span className="listCancel">Free Cancaled</span>
-        </div>
-        <div className="listDetails">
-          <div className="listRating">
-            <span>Excellent</span>
-            <button>8.9</button>
-          </div>
-          <div className="listDetailText">
-            <span className="listPrise">123$</span>
-            <button className="listCheckButton">See availability</button>
+          <div className="listDetails">
+            <div className="listRating">
+              <span>Excellent</span>
+              <button>{listhotel.rating}</button>
+            </div>
+            <div className="listDetailText">
+              <span className="listPrise">{listhotel.prise}$</span>
+              <button className="listCheckButton">See availability</button>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="listItem">
-        <img
-          className="listimg"
-          src={require("../../assets/img/home/sofya.jpg")}
-          alt=""
-        />
-        <div className="listDesc">
-          <h1 className="listTitle">Towe Strret Department</h1>
-          <span className="listDistance"> 500m from center</span>
-          <span className="listSubTitle">
-            Studia Apartment with air condiskk
-          </span>
-          <span className="listFeatures">
-            entire studio 1 bathroom 21m2dldl
-          </span>
-          <span className="listCancel">Free Cancaled</span>
-        </div>
-        <div className="listDetails">
-          <div className="listRating">
-            <span>Excellent</span>
-            <button>8.9</button>
-          </div>
-          <div className="listDetailText">
-            <span className="listPrise">123$</span>
-            <button className="listCheckButton">See availability</button>
-          </div>
-        </div>
-      </div>
-      <div className="listItem">
-        <img
-          className="listimg"
-          src={require("../../assets/img/home/sofya.jpg")}
-          alt=""
-        />
-        <div className="listDesc">
-          <h1 className="listTitle">Towe Strret Department</h1>
-          <span className="listDistance"> 500m from center</span>
-          <span className="listSubTitle">
-            Studia Apartment with air condiskk
-          </span>
-          <span className="listFeatures">
-            entire studio 1 bathroom 21m2dldl
-          </span>
-          <span className="listCancel">Free Cancaled</span>
-        </div>
-        <div className="listDetails">
-          <div className="listRating">
-            <span>Excellent</span>
-            <button>8.9</button>
-          </div>
-          <div className="listDetailText">
-            <span className="listPrise">123$</span>
-            <button className="listCheckButton">See availability</button>
-          </div>
-        </div>
-      </div>
-      <div className="listItem">
-        <img
-          className="listimg"
-          src={require("../../assets/img/home/sofya.jpg")}
-          alt=""
-        />
-        <div className="listDesc">
-          <h1 className="listTitle">Towe Strret Department</h1>
-          <span className="listDistance"> 500m from center</span>
-          <span className="listSubTitle">
-            Studia Apartment with air condiskk
-          </span>
-          <span className="listFeatures">
-            entire studio 1 bathroom 21m2dldl
-          </span>
-          <span className="listCancel">Free Cancaled</span>
-        </div>
-        <div className="listDetails">
-          <div className="listRating">
-            <span>Excellent</span>
-            <button>8.9</button>
-          </div>
-          <div className="listDetailText">
-            <span className="listPrise">123$</span>
-            <button className="listCheckButton">See availability</button>
-          </div>
-        </div>
-      </div>
-      <div className="listItem">
-        <img
-          className="listimg"
-          src={require("../../assets/img/home/sofya.jpg")}
-          alt=""
-        />
-        <div className="listDesc">
-          <h1 className="listTitle">Towe Strret Department</h1>
-          <span className="listDistance"> 500m from center</span>
-          <span className="listSubTitle">
-            Studia Apartment with air condiskk
-          </span>
-          <span className="listFeatures">
-            entire studio 1 bathroom 21m2dldl
-          </span>
-          <span className="listCancel">Free Cancaled</span>
-        </div>
-        <div className="listDetails">
-          <div className="listRating">
-            <span>Excellent</span>
-            <button>8.9</button>
-          </div>
-          <div className="listDetailText">
-            <span className="listPrise">123$</span>
-            <button className="listCheckButton">See availability</button>
-          </div>
-        </div>
-      </div>
-      <div className="listItem">
-        <img
-          className="listimg"
-          src={require("../../assets/img/home/sofya.jpg")}
-          alt=""
-        />
-        <div className="listDesc">
-          <h1 className="listTitle">Towe Strret Department</h1>
-          <span className="listDistance"> 500m from center</span>
-          <span className="listSubTitle">
-            Studia Apartment with air condiskk
-          </span>
-          <span className="listFeatures">
-            entire studio 1 bathroom 21m2dldl
-          </span>
-          <span className="listCancel">Free Cancaled</span>
-        </div>
-        <div className="listDetails">
-          <div className="listRating">
-            <span>Excellent</span>
-            <button>8.9</button>
-          </div>
-          <div className="listDetailText">
-            <span className="listPrise">123$</span>
-            <button className="listCheckButton">See availability</button>
-          </div>
-        </div>
-      </div>
-    </>
+      ))}
+    </div>
   );
 }
 

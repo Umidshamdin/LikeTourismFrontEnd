@@ -1,77 +1,80 @@
-.listItem {
-  border: 1px solid lightgray;
-  padding: 10px;
-  border-radius: 5px;
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  width: 100%;
-  
-  margin-top: 30px;
-  .listimg {
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
-  }
-  .listDesc {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    flex: 2;
-    .listTitle {
-      font-size: 20px;
-      color: blue;
-    }
-    .listDistance {
-      font-size: 12px;
-    }
-    .listSubTitle {
-      font-size: 12px;
-      font-weight: bold;
-    }
-    .listFeatures {
-      font-size: 12px;
-    }
-    .listCancel {
-      font-size: 12px;
-      color: green;
-      font-weight: bold;
-    }
-  }
-  .listDetails {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    .listRating {
-      display: flex;
-      justify-content: space-between;
-      span {
-        font-weight: 500;
-      }
-      button {
-        background-color: blue;
-        color: white;
-        padding: 5px;
-        font-weight: bold;
-        border: none;
-      }
-    }
-    .listDetailText {
-      text-align: right;
-      display: flex;
+.hotels {
+  margin-top: 100px;
+  .listItem {
+    border: 1px solid lightgray;
 
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+
+    margin-top: 30px;
+    .listimg {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+    }
+    .listDesc {
+      display: flex;
       flex-direction: column;
-      gap: 5px;
-      .listPrise {
-        font-size: 24px;
+      gap: 10px;
+      flex: 2;
+      .listTitle {
+        font-size: 20px;
+        color: blue;
       }
-      .listCheckButton {
-        background-color: blue;
-        color: white;
+      .listDistance {
+        font-size: 12px;
+      }
+      .listSubTitle {
+        font-size: 12px;
         font-weight: bold;
-        padding: 10px 5px;
-        border: none;
+      }
+      .listFeatures {
+        font-size: 12px;
+      }
+      .listCancel {
+        font-size: 12px;
+        color: green;
+        font-weight: bold;
+      }
+    }
+    .listDetails {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .listRating {
+        display: flex;
+        justify-content: space-between;
+        span {
+          font-weight: 500;
+        }
+        button {
+          background-color: blue;
+          color: white;
+          padding: 5px;
+          font-weight: bold;
+          border: none;
+        }
+      }
+      .listDetailText {
+        text-align: right;
+        display: flex;
+
+        flex-direction: column;
+        gap: 5px;
+        .listPrise {
+          font-size: 24px;
+        }
+        .listCheckButton {
+          background-color: blue;
+          color: white;
+          font-weight: bold;
+          padding: 10px 5px;
+          border: none;
+        }
       }
     }
   }

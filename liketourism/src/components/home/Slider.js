@@ -16,9 +16,7 @@ function Slider() {
               alt="sk"
             />
             <h1>Məhşur səyahət yerləri kəşf et</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.             
-            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             {/* <button className="btn btn-primary">Rezerve et</button> */}
           </div>
           <div className="carousel-item">

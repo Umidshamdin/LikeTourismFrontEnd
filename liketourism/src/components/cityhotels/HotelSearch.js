@@ -2,6 +2,7 @@ import { DateRange } from "react-date-range";
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import "../../assets/sass/cityhotels/hotelsearch.scss";
+import HotelList from "./HotelList";
 function HotelSearch() {
   const location = useLocation();
   const [destination, setDestination] = useState(location.state.destination);
@@ -14,7 +15,7 @@ function HotelSearch() {
   return (
     <>
       <div className="container">
-        <div className="row">
+        <div className="row mt-5">
           <div className="searchContainer">
             <div className="searchCommon">
               <div className="listSearch">
