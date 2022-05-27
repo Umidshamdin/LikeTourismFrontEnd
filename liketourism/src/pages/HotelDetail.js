@@ -1,22 +1,11 @@
 import React from "react";
-import SearchCard from "../components/hoteldetail/SearchCard";
+import HotelDetailImages from "../components/hoteldetail/HotelDetailImages";
 
 
 function HotelDetail() {
   return (
     <div>
-    <div className="container">
-      <div className="row mt-5">
-        <div className="col-3">
-          <SearchCard></SearchCard>
-        </div>
-        <div className="col-9">
-          <div>
-            
-          </div>
-        </div>
-      </div>
-    </div>
+     <HotelDetailImages></HotelDetailImages>
     </div>
   );
 }

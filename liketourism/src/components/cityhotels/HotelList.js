@@ -6,9 +6,6 @@ import { Link } from "react-router-dom";
 function HotelList() {
   const [hotel, setHotels] = useState([]);
 
-
-
-
   useEffect(() => {
     // Update the document title using the browser API
     loadHotels();
@@ -51,7 +48,9 @@ function HotelList() {
             </div>
             <div className="listDetailText">
               <span className="listPrise">{listhotel.prise}$</span>
-              <button className="listCheckButton">See availability</button>
+              <button className="listCheckButton">
+                <Link to={"/HotelDetail"}>See availability</Link>
+              </button>
             </div>
           </div>
         </div>
