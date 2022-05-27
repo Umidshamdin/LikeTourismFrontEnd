@@ -6,6 +6,9 @@ import { Link } from "react-router-dom";
 function HotelList() {
   const [hotel, setHotels] = useState([]);
 
+
+
+
   useEffect(() => {
     // Update the document title using the browser API
     loadHotels();
@@ -35,9 +38,7 @@ function HotelList() {
               <Link to={"/HotelDetail"}>{listhotel.name}</Link>
             </h1>
             <span className="listDistance">{listhotel.distance}</span>
-            <span className="listSubTitle">
-             {listhotel.desc}
-            </span>
+            <span className="listSubTitle">{listhotel.desc}</span>
             <span className="listFeatures">
               entire studio 1 bathroom 21m2dldl
             </span>

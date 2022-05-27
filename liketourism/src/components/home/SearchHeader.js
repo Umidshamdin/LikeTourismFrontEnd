@@ -13,7 +13,7 @@ import { useNavigate } from "react-router-dom";
 function SearchHeader() {
   const [openDate, setOpenDate] = useState(false);
   const [destination, setDestination] = useState("");
-
+  
   const [date, setDate] = useState([
     {
       startDate: new Date(),

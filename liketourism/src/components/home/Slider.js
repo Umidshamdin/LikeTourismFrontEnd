@@ -12,7 +12,7 @@ function Slider() {
           <div className="carousel-item active">
             <img
               src={require("../../assets/img/home/pramida.jpg")}
-              className="d-block w-100"
+              className="d-block images"
               alt="sk"
             />
             <h1>Məhşur səyahət yerləri kəşf et</h1>
@@ -22,7 +22,7 @@ function Slider() {
           <div className="carousel-item">
             <img
               src={require("../../assets/img/home/12-2-Iguazu.jpg")}
-              className="d-block w-100"
+              className="d-block images "
               alt="sk"
             />{" "}
             <h1>Məhşur səyahət yerləri kəşf et</h1>
@@ -35,7 +35,7 @@ function Slider() {
           <div className="carousel-item">
             <img
               src={require("../../assets/img/home/nemrut-dagi-3.jpg")}
-              className="d-block w-100"
+              className="d-block images"
               alt="sk"
             />{" "}
             <h1>Məhşur səyahət yerləri kəşf et</h1>
