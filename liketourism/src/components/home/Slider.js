@@ -9,6 +9,8 @@ function Slider() {
         data-bs-ride="carousel"
       >
         <div className="carousel-inner exam">
+
+
           <div className="carousel-item active">
             <img
               src={require("../../assets/img/home/pramida.jpg")}
@@ -45,6 +47,8 @@ function Slider() {
             </p>
             <button className="btn btn-primary">Rezerve et</button>
           </div>
+
+          
         </div>
         <button
           className="carousel-control-prev"

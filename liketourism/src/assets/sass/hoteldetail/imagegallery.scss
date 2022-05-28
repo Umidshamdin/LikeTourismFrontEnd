@@ -1,0 +1,28 @@
+.hotelDesc {
+  h4 {
+    color: blue;
+  }
+
+  .iconStar {
+    display: flex;
+    margin-left: 120px;
+
+    p {
+      .fa-star {
+        color: orange;
+      }
+    }
+  }
+  .infos {
+    margin-top: 20px;
+    background-color: aqua;
+    height: 435px;
+    position: relative;
+    .infodetail {
+      position: absolute;
+      top: 30px;
+      left: 140px;
+      
+    }
+  }
+}

@@ -1,4 +1,5 @@
 import React from "react";
+import "../../assets/sass/hoteldetail/imagegallery.scss";
 import "react-image-gallery/styles/scss/image-gallery.scss";
 import ImageGallery from "react-image-gallery";
 function HotelDetailImages() {
@@ -44,7 +45,39 @@ function HotelDetailImages() {
             <ImageGallery items={images} />;
           </div>
           <div className="col-4">
-              
+            <div className="hotelDesc">
+              <div className="iconStar">
+                <p>
+                  <i class="fas fa-star"></i>
+                </p>
+                <p>
+                  <i class="fas fa-star"></i>
+                </p>
+                <p>
+                  <i class="fas fa-star"></i>
+                </p>
+                <p>
+                  <i class="fas fa-star"></i>
+                </p>
+                <p>
+                  <i class="fas fa-star"></i>
+                </p>
+              </div>
+              <h4>Baku Marriott Hotel Boulevard</h4>
+
+              <p>
+                {" "}
+                Xaqani Rustamov Street 4C, Baku White City , AZ1052 Bakü,
+                Azerbaycan –
+              </p>
+
+              <div className="infos">
+                <div className="infodetail">
+                  <h6>Otelin reytinqdə yeri</h6>
+                  <i class="fas fa-bed"></i>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
