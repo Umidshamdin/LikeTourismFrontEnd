@@ -1,83 +1,37 @@
-.slider {
-  .exam {
-    .carousel-item {
-      .images {
-        width: 100%;
-        height: 100vh;
-      }
-
-      @media screen and (max-width: 415px) {
-        .images {
-          height: 40vh;
-          width: 100%;
-        }
-      }
-    }
-
-    h1 {
-      position: absolute;
-      top: 136px;
-      left: 436px;
-
-      color: white;
-      text-shadow: 4px 4px 8px #000000;
-    }
-
-    p {
-      position: absolute;
-      top: 230px;
-      left: 450px;
-      font-size: 20px;
-      color: white;
-    }
-    .btn-primary {
-      position: absolute;
-      top: 400px;
-      left: 750px;
-      font-size: 20px;
-    }
+.headerslider {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.carousel {
+  .thumbs {
+    display: none;
   }
-
-  @media screen and (max-width: 415px) {
-
-    .slider{
-      width: 500px;
-      .exam {
-        margin-top: 82px;
-  
-        width: 100%;
-        .images {
-          width: 100%;
-        }
-      }
-    }
- 
+  .control-prev{
+    background: rgba(0,0,0,1.2);
+    
+    width: 60px;
+    
   }
-  @media screen and (max-width: 769px) {
-    .exam {
-      margin-top: 82px;
-      width: 100%;
-
-      .carousel-item {
-        .images {
-          height: 430px;
-          width: 100%;
-        }
-      }
-    }
-  }
-
-  .carousel-control-prev-icon {
-    background-color: black;
-    border-radius: 50px;
-    width: 50px;
-    height: 50px;
-  }
-  .carousel-control-next-icon {
-    background-color: black;
-    border-radius: 50px;
-    color: black;
-    width: 50px;
-    height: 50px;
+  .control-next{
+    background: rgba(0,0,0,1.2);
+    
+    width: 60px;
+    
   }
 }
+.title {
+  color: green;
+  position: absolute;
+  font-size: 35px;
+  top: 150px;
+  left: 500px;
+}
+.description {
+  color: green;
+  position: absolute;
+  font-size: 15px;
+  top: 200px;
+  left: 500px;
+}
+

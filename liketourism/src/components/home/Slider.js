@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
-
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from "react-responsive-carousel";
 import "../../assets/sass/home/slider.scss";
-function Slider({props}) {
+import axios from "axios";
+function Slider() {
   const [slider, setSliders] = useState([]);
 
   useEffect(() => {
@@ -17,83 +18,23 @@ function Slider({props}) {
     });
   }
   return (
-    <div className="slider">
-      <div
-        id="carouselExampleControls"
-        className="carousel slide "
-        data-bs-ride="carousel"
-      >
-        <div className="carousel-inner exam">
-          {slider.map((slide, i) => (
-            <div
-              key={i}
-              active={i === 0}
-              className={"carousel item" + this.props.active ? " active" : ""}
-              data-interval="8000"
-            >
-              <img
-                src={`data:image/jpeg;base64,${slide.image}`}
-                className="d-block images"
-                alt="sk"
-              />
-              <h1>{slide.name}</h1>
-              <p>{slide.desc}</p>
-              <button className="btn btn-primary">Rezerve et</button>
-            </div>
-          ))}
-
-          {/* <div className="carousel-item">
+    <div>
+      <Carousel>
+        {slider.map((slide) => (
+          <div>
             <img
-              src={require("../../assets/img/home/12-2-Iguazu.jpg")}
-              className="d-block images "
-              alt="sk"
-            />{" "}
-            <h1>Məhşur səyahət yerləri kəşf et</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Praesentium, quod.
+              className="headerslider"
+              src={`data:image/jpeg;base64,${slide.image}`}
+              alt=""
+            />
+            <h2 className="title">Məşhur səyahət yerlərini kəşf et </h2>
+            <p className="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+              debitis?
             </p>
-            <button className="btn btn-primary">Rezerve et</button>
           </div>
-          <div className="carousel-item">
-            <img
-              src={require("../../assets/img/home/nemrut-dagi-3.jpg")}
-              className="d-block images"
-              alt="sk"
-            />{" "}
-            <h1>Məhşur səyahət yerləri kəşf et</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Praesentium, quod.
-            </p>
-            <button className="btn btn-primary">Rezerve et</button>
-          </div> */}
-        </div>
-        <button
-          className="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleControls"
-          data-bs-slide="prev"
-        >
-          <span
-            className="carousel-control-prev-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button
-          className="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleControls"
-          data-bs-slide="next"
-        >
-          <span
-            className="carousel-control-next-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="visually-hidden">Next</span>
-        </button>
-      </div>
+        ))}
+      </Carousel>
     </div>
   );
 }

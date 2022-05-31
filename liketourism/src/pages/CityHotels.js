@@ -11,6 +11,7 @@ function CityHotels() {
             <HotelSearch></HotelSearch>
           </div>
           <div className="col-8">
+            
             <HotelList />
           </div>
         </div>

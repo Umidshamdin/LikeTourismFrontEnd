@@ -12,7 +12,7 @@ function FamousCity() {
   }, []);
 
   async function loadCards() {
-    await axios.get(`https://localhost:44363/GetAll`).then((res) => {
+    await axios.get(`https://localhost:44363/api/FamousCity/GetAll`).then((res) => {
       const result = res.data;
       setCards(result);
     });

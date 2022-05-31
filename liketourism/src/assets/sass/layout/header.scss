@@ -1,12 +1,12 @@
 .header {
-  position: sticky;
+  position: fixed;
   height: 80px;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 1;
   transition: 0.3s ease-in;
-  background-color: green;
+  
 }
 .header-bg {
   background-color: black;
