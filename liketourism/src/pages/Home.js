@@ -1,6 +1,6 @@
 import React from "react";
 import Carusel from "../components/Carusel";
-import AntDesign from "../components/AntDesign";
+
 import Subscripe from "../components/Subscripe";
 import Slider from "../components/home/Slider";
 import SearchHeader from "../components/home/SearchHeader";
@@ -16,7 +16,7 @@ function Home() {
       <Carusel></Carusel>
       <Carusel></Carusel>
       <Subscripe></Subscripe>
-      <AntDesign></AntDesign>
+      
     </div>
   );
 }

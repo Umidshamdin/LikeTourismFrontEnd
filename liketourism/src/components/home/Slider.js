@@ -27,10 +27,9 @@ function Slider() {
               src={`data:image/jpeg;base64,${slide.image}`}
               alt=""
             />
-            <h2 className="title">Məşhur səyahət yerlərini kəşf et </h2>
+            <h2 className="title">{slide.title}</h2>
             <p className="description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
-              debitis?
+              {slide.desc}
             </p>
           </div>
         ))}
