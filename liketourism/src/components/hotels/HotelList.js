@@ -32,13 +32,19 @@ function HotelList() {
 
           <div className="listDesc">
             <h1 className="listTitle">
+              <div className="iconshotel">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+
               <Link to={"/HotelDetail"}>{listhotel.name}</Link>
             </h1>
             <span className="listDistance">{listhotel.distance}</span>
             <span className="listSubTitle">{listhotel.desc}</span>
-            <span className="listFeatures">
-              entire studio 1 bathroom 21m2dldl
-            </span>
+
             <span className="listCancel">Free Cancaled</span>
           </div>
           <div className="listDetails">

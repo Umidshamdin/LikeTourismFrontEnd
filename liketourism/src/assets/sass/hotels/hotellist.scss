@@ -2,7 +2,7 @@
   margin-top: 100px;
   .listItem {
     border: 1px solid lightgray;
-
+position: relative;
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
@@ -23,6 +23,11 @@
       .listTitle {
         font-size: 20px;
         color: blue;
+        .iconshotel{
+          i{
+            color: orange;
+          }
+        }
       }
       .listDistance {
         font-size: 12px;
@@ -35,8 +40,10 @@
         font-size: 12px;
       }
       .listCancel {
-        font-size: 12px;
+        font-size: 16px;
         color: green;
+        position: absolute;
+        top: 170px;
         font-weight: bold;
       }
     }
