@@ -15,13 +15,16 @@
   }
   .infos {
     margin-top: 20px;
-    background-color: aqua;
+    background-color: #ebf3ff;
     height: 435px;
     position: relative;
     .infodetail {
       position: absolute;
-      top: 30px;
-      left: 140px;
+      top: 20px;
+      left: 30px;
+      span{
+        margin-left: 5px;
+      }
       
     }
   }

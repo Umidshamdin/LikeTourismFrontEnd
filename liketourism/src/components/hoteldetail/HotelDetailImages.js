@@ -42,7 +42,7 @@ function HotelDetailImages() {
       <div className="container">
         <div className="row mt-5">
           <div className="col-8">
-            <ImageGallery items={images} />;
+            <ImageGallery items={images} />
           </div>
           <div className="col-4">
             <div className="hotelDesc">
@@ -73,8 +73,9 @@ function HotelDetailImages() {
 
               <div className="infos">
                 <div className="infodetail">
-                  <h6>Otelin reytinqdə yeri</h6>
-                  <i class="fas fa-bed"></i>
+                <i class="fas fa-bed"></i>
+                  <span>Otelin reytinqdə yeri</span>
+                  
                 </div>
               </div>
             </div>
