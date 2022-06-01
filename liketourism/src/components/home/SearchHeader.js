@@ -41,7 +41,7 @@ function SearchHeader() {
   };
 
   const handleSearch = () => {
-    navigate("/cityhotels", { state: { destination, date, options } });
+    navigate("/hotels", { state: { destination, date, options } });
   };
 
   return (

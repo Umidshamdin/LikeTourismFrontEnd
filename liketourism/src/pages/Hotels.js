@@ -1,8 +1,9 @@
 import React from "react";
-import HotelList from "../components/cityhotels/HotelList";
-import HotelSearch from "../components/cityhotels/HotelSearch";
+import HotelList from "../components/hotels/HotelList";
+import HotelSearch from "../components/hotels/HotelSearch";
 
-function CityHotels() {
+
+function Hotels() {
   return (
     <>
       <div className="container">
@@ -12,7 +13,7 @@ function CityHotels() {
           </div>
           <div className="col-8">
             
-            <HotelList />
+            <HotelList/>
           </div>
         </div>
       </div>
@@ -20,4 +21,4 @@ function CityHotels() {
   );
 }
 
-export default CityHotels;
+export default Hotels;

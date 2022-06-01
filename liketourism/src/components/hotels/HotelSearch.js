@@ -2,7 +2,7 @@ import { DateRange } from "react-date-range";
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 
-import "../../assets/sass/cityhotels/hotelsearch.scss";
+import "../../assets/sass/hotels/hotelsearch.scss";
 
 function HotelSearch() {
   const location = useLocation();
@@ -12,7 +12,7 @@ function HotelSearch() {
   const [openDate, setOpenDate] = useState(false);
 
   const [options, setOptions] = useState(location.state.options);
-  
+
   return (
     <>
       <div className="container">
@@ -24,16 +24,22 @@ function HotelSearch() {
 
                 <div className="searchItem">
                   <label>Destination</label>
-                  <input type="text" placeholder={destination} onChange={(e)=>setDestination(e.target.value)} />
+                  <input
+                    type="text"
+                    placeholder={destination}
+                    onChange={(e) => setDestination(e.target.value)}
+                  />
                 </div>
 
                 <div className="searchItem">
                   <label>Check In Date</label>
                   <span onClick={() => setOpenDate(!openDate)}>
-                    {" "}
+                    
                     {date[0].startDate
                       .toLocaleDateString("en-US")
                       .toString()}{" "}
+                    to{" "}
+                    
                     to {date[0].endDate.toLocaleDateString("en-US").toString()}{" "}
                   </span>
 
@@ -69,7 +75,7 @@ function HotelSearch() {
                         min={1}
                         className="searchOptionInput"
                         placeholder={options.adult}
-                        onChange={(e)=>setOptions(e.target.value)}
+                        onChange={(e) => setOptions(e.target.value)}
                       />
                     </div>
                     <div className="searchOptionItem">
@@ -79,8 +85,7 @@ function HotelSearch() {
                         min={0}
                         className="searchOptionInput"
                         placeholder={options.children}
-                        onChange={(e)=>setOptions(e.target.value)}
-
+                        onChange={(e) => setOptions(e.target.value)}
                       />
                     </div>
                     <div className="searchOptionItem">
@@ -90,16 +95,12 @@ function HotelSearch() {
                         min={1}
                         className="searchOptionInput"
                         placeholder={options.room}
-                        onChange={(e)=>setOptions(e.target.value)}
-
+                        onChange={(e) => setOptions(e.target.value)}
                       />
                     </div>
                   </div>
                 </div>
                 <button>Search</button>
-              </div>
-              <div className="listResult">
-                
               </div>
             </div>
           </div>

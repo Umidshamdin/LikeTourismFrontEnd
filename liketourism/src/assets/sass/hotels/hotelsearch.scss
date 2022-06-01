@@ -3,13 +3,13 @@
   justify-self: center;
   margin-top: 20px;
   .searchCommon {
-    width:80%;
+    width:100%;
     max-width: 1024px;
     display: flex;
     gap: 20px;
     .listSearch {
-      flex: 1;
-      background-color: yellow;
+      flex: 3;
+      background-color: #febb02;
       border-radius: 10px;
       width: 200px;
       position: sticky;
@@ -18,7 +18,7 @@
       height: max-content;
       .searchTitle {
         font-size: 20px;
-        color: gray;
+        color: black;
         margin-bottom: 10px;
       }
       button {

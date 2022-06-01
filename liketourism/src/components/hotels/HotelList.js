@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-import "../../assets/sass/cityhotels/hotellist.scss";
+import "../../assets/sass/hotels/hotellist.scss";
 import { Link } from "react-router-dom";
 function HotelList() {
   const [hotel, setHotels] = useState([]);

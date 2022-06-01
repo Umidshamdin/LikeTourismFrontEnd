@@ -6,8 +6,8 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Tours from "./pages/Tours";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
-import CityHotels from "./pages/CityHotels";
 import HotelDetail from "./pages/HotelDetail";
+import Hotels from "./pages/Hotels";
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/Tours" element={<Tours />} />
-            <Route path="/CityHotels" element={<CityHotels />} />
+            <Route path="/Hotels" element={<Hotels />} />
             <Route path="/HotelDetail" element={<HotelDetail />} />
             
 
