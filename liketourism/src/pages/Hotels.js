@@ -1,6 +1,9 @@
+
 import React from "react";
 import HotelList from "../components/hotels/HotelList";
 import HotelSearch from "../components/hotels/HotelSearch";
+
+
 
 
 function Hotels() {
@@ -14,6 +17,8 @@ function Hotels() {
           <div className="col-8">
             
             <HotelList/>
+
+           
           </div>
         </div>
       </div>
