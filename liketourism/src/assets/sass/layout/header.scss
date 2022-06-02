@@ -27,17 +27,14 @@
     transition: all 0.6s ease-in-out 0.2s;
   }
 
-  ul li:hover {
-    transform: translateY(10px);
-    transition: all 0.1s ease-in-out 0.1s;
-  }
+ 
 }
 
 .header .nav-menu a {
   color: red;
 }
 .header .nav-item b {
-  color: white;
+  color: green;
 
   text-decoration: none;
 }
@@ -53,7 +50,7 @@
 }
 
 .header .navbar img {
-  width: 150px;
+  width: 140px;
   border-top-right-radius: 100px;
   border-top-left-radius: 100px;
 
