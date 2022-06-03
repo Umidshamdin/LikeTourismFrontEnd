@@ -27,7 +27,7 @@ function FamousCity() {
               className="col-lg-6 col-md-6 col-sm-12 mt-3 cards"
               key={card.toString()}
             >
-              <Link className="link" to={"/cityhotels"}>
+              <Link className="link" to={`hotels/${card.id}`}>
                 <img src={`data:image/jpeg;base64,${card.image}`} alt="" />
 
                 <b>{card.name}</b>
@@ -40,7 +40,7 @@ function FamousCity() {
               className="col-lg-4 col-md-6 col-sm-12 mt-3 cards"
               key={cardx.toString()}
             >
-              <Link className="link" to={"/cityhotels"}>
+              <Link className="link" to={`hotels/${cardx.id}`}>
                 <img src={`data:image/jpeg;base64,${cardx.image}`} alt="" />
 
                 <b>{cardx.name}</b>

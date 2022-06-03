@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { useParams } from "react-router-dom";
 
 import "../../assets/sass/hotels/hotellist.scss";
 import { Link } from "react-router-dom";
 function HotelList() {
   const [hotel, setHotels] = useState([]);
-
+  const {id} = useParams();
   useEffect(() => {
     // Update the document title using the browser API
     loadHotels();
@@ -13,7 +14,7 @@ function HotelList() {
 
   async function loadHotels() {
     await axios
-      .get(`https://localhost:44363/api/HotelList/GetAll`)
+      .get(`https://localhost:44363/api/HotelList/GetAll/${id}`)
       .then((res) => {
         const result = res.data;
         setHotels(result);

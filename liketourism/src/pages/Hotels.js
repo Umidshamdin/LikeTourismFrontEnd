@@ -12,7 +12,7 @@ function Hotels() {
       <div className="container">
         <div className="row">
           <div className="col-4">
-            <HotelSearch></HotelSearch>
+        
           </div>
           <div className="col-8">
             
