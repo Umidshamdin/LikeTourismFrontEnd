@@ -67,7 +67,7 @@ function Carusel() {
               className="col-lg-3 col-md-6 col-sm-12 hous"
               key={hous.id.toString()}
             >
-              <div className="homeItem">
+              <div className="homeItem px-1">
                 <img
                   className="homeImg"
                   src={`data:image/jpeg;base64,${hous.image}`}
@@ -78,7 +78,7 @@ function Carusel() {
                     {hous.name}
                   </Link>
                 </span>
-                <span className="cityName">Madrid</span>
+                <span className="cityName">{hous.famousCity.name}</span>
                 <span className="roomPrise">{hous.prise}</span>
                 <div className="rating">
                   <button>8.9</button>
