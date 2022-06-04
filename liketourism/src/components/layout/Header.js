@@ -84,6 +84,11 @@ function Header() {
           </li>
           <li className="nav-item">
             <Link className="linknav" to={"/"} onClick={closeMenu}>
+            <b><i class="far fa-globe"></i></b>
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link className="linknav" to={"/"} onClick={closeMenu}>
               <button className="btn btn-primary">Login</button>
             </Link>
           </li>

@@ -1,256 +1,96 @@
-import React, { Component } from "react";
-import Slider from "react-slick";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+
 import { Link } from "react-router-dom";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick-theme.css";
 import "../assets/sass/carusel.scss";
+function Carusel() {
+  const [house, setHouse] = useState([]);
 
-export default class Responsive extends Component {
-  render() {
-    var settings = {
-      dots: true,
-      infinite: true,
-      speed: 400,
+  useEffect(() => {
+    // Update the document title using the browser API
+    loadHouse();
+  }, []);
 
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      initialSlide: 0,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: true,
-            dots: true,
-          },
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            initialSlide: 2,
-          },
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          },
-        },
-      ],
-    };
-    return (
-      <div>
-        <div className="container">
-          <div className="row ">
-            <h2>Bəyənilən evlər</h2>
-            <Slider {...settings}>
-              <div className="col-lg-3 col-md-6 col-sm-12">
-                <div className="homeItem px-1">
-                  <img
-                    className="homeImg"
-                    src={require("../assets/img/home/afina.jpg")}
-                    alt=""
-                  />
-                  <span className="homeName">
-                    <Link className="linkhome" to={"/citydetail"}>
-                      Apart Hotel
-                    </Link>
-                  </span>
-                  <span className="cityName">Madrid</span>
-                  <span className="roomPrise">Staeting from $130</span>
-                  <div className="rating">
-                    <button>8.9</button>
-                    <span>Excellent</span>
-                  </div>
-                </div>
-              </div>
+  async function loadHouse() {
+    const result = await axios.get(`https://localhost:44363/api/House/GetAll`);
 
-              <div className="col-lg-3 col-md-6 col-sm-12">
-                <div className="homeItem px-1">
-                  <img
-                    className="homeImg"
-                    src={require("../assets/img/home/afina.jpg")}
-                    alt=""
-                  />
-                  <span className="homeName">
-                    <Link className="linkhome" to={"/citydetail"}>
-                      Apart Hotel
-                    </Link>
-                  </span>
-                  <span className="cityName">Madrid</span>
-                  <span className="roomPrise">Staeting from $130</span>
-                  <div className="rating">
-                    <button>8.9</button>
-                    <span>Excellent</span>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-3 col-md-6 col-sm-12">
-                <div className="homeItem px-1">
-                  <img
-                    className="homeImg"
-                    src={require("../assets/img/home/afina.jpg")}
-                    alt=""
-                  />
-                  <span className="homeName">
-                    <Link className="linkhome" to={"/citydetail"}>
-                      Apart Hotel
-                    </Link>
-                  </span>
-                  <span className="cityName">Madrid</span>
-                  <span className="roomPrise">Staeting from $130</span>
-                  <div className="rating">
-                    <button>8.9</button>
-                    <span>Excellent</span>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-3 col-md-6 col-sm-12">
-                <div className="homeItem px-1">
-                  <img
-                    className="homeImg"
-                    src={require("../assets/img/home/afina.jpg")}
-                    alt=""
-                  />
-                  <span className="homeName">
-                    <Link className="linkhome" to={"/citydetail"}>
-                      Apart Hotel
-                    </Link>
-                  </span>
-                  <span className="cityName">Madrid</span>
-                  <span className="roomPrise">Staeting from $130</span>
-                  <div className="rating">
-                    <button>8.9</button>
-                    <span>Excellent</span>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-3 col-md-6 col-sm-12">
-                <div className="homeItem px-1">
-                  <img
-                    className="homeImg"
-                    src={require("../assets/img/home/afina.jpg")}
-                    alt=""
-                  />
-                  <span className="homeName">
-                    <Link className="linkhome" to={"/citydetail"}>
-                      Apart Hotel
-                    </Link>
-                  </span>
-                  <span className="cityName">Madrid</span>
-                  <span className="roomPrise">Staeting from $130</span>
-                  <div className="rating">
-                    <button>8.9</button>
-                    <span>Excellent</span>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-3 col-md-6 col-sm-12">
-                <div className="homeItem px-1">
-                  <img
-                    className="homeImg"
-                    src={require("../assets/img/home/afina.jpg")}
-                    alt=""
-                  />
-                  <span className="homeName">
-                    <Link className="linkhome" to={"/citydetail"}>
-                      Apart Hotel
-                    </Link>
-                  </span>
-                  <span className="cityName">Madrid</span>
-                  <span className="roomPrise">Staeting from $130</span>
-                  <div className="rating">
-                    <button>8.9</button>
-                    <span>Excellent</span>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-3 col-md-6 col-sm-12">
-                <div className="homeItem px-1">
-                  <img
-                    className="homeImg"
-                    src={require("../assets/img/home/afina.jpg")}
-                    alt=""
-                  />
-                  <span className="homeName">
-                    <Link className="linkhome" to={"/citydetail"}>
-                      Apart Hotel
-                    </Link>
-                  </span>
-                  <span className="cityName">Madrid</span>
-                  <span className="roomPrise">Staeting from $130</span>
-                  <div className="rating">
-                    <button>8.9</button>
-                    <span>Excellent</span>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-3 col-md-6 col-sm-12">
-                <div className="homeItem px-1">
-                  <img
-                    className="homeImg"
-                    src={require("../assets/img/home/afina.jpg")}
-                    alt=""
-                  />
-                  <span className="homeName">
-                    <Link className="linkhome" to={"/citydetail"}>
-                      Apart Hotel
-                    </Link>
-                  </span>
-                  <span className="cityName">Madrid</span>
-                  <span className="roomPrise">Staeting from $130</span>
-                  <div className="rating">
-                    <button>8.9</button>
-                    <span>Excellent</span>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-3 col-md-6 col-sm-12">
-                <div className="homeItem px-1">
-                  <img
-                    className="homeImg"
-                    src={require("../assets/img/home/afina.jpg")}
-                    alt=""
-                  />
-                  <span className="homeName">
-                    <Link className="linkhome" to={"/citydetail"}>
-                      Apart Hotel
-                    </Link>
-                  </span>
-                  <span className="cityName">Madrid</span>
-                  <span className="roomPrise">Staeting from $130</span>
-                  <div className="rating">
-                    <button>8.9</button>
-                    <span>Excellent</span>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-3 col-md-6 col-sm-12">
-                <div className="homeItem px-1">
-                  <img
-                    className="homeImg"
-                    src={require("../assets/img/home/afina.jpg")}
-                    alt=""
-                  />
-                  <span className="homeName">
-                    <Link className="linkhome" to={"/citydetail"}>
-                      Apart Hotel
-                    </Link>
-                  </span>
-                  <span className="cityName">Madrid</span>
-                  <span className="roomPrise">Staeting from $130</span>
-                  <div className="rating">
-                    <button>8.9</button>
-                    <span>Excellent</span>
-                  </div>
-                </div>
-              </div>
-            </Slider>
-          </div>
-        </div>
-      </div>
-    );
+    setHouse(result.data);
   }
+
+  var settings = {
+    dots: true,
+    infinite: true,
+    arrows: true,
+
+    speed: 400,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    initialSlide: true,
+    autoplay: true,
+    cssEase: "linear",
+
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 2,
+        },
+      },
+    ],
+  };
+  return (
+    <div className="container">
+      <div className="row mt-5">
+        <Slider {...settings}>
+          {house.map((hous) => (
+            <div
+              className="col-lg-3 col-md-6 col-sm-12 hous"
+              key={hous.id.toString()}
+            >
+              <div className="homeItem">
+                <img
+                  className="homeImg"
+                  src={`data:image/jpeg;base64,${hous.image}`}
+                  alt=""
+                />
+                <span className="homeName">
+                  <Link className="linkhome" to={"/citydetail"}>
+                    {hous.name}
+                  </Link>
+                </span>
+                <span className="cityName">Madrid</span>
+                <span className="roomPrise">{hous.prise}</span>
+                <div className="rating">
+                  <button>8.9</button>
+                  <span>Excellent</span>
+                </div>
+              </div>
+            </div>
+          ))}
+        </Slider>
+      </div>
+    </div>
+  );
 }
+
+export default Carusel;

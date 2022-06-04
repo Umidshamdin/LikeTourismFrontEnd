@@ -1,5 +1,51 @@
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
 .container {
   .row{
+    .hous{
+      width: 100%;
+      .homeItem {
+        width: 530px;
+         
+         gap: 10px;
+         display: flex;
+         flex-direction: column;
+         .homeImg {
+           width: 55%;
+           height: 30vh;
+         }
+         &:hover img {
+           transform: scale(1.1)
+         }
+         .homeName {
+           font-weight: bold;
+           .linkhome{
+             text-decoration: none;
+             color: blue;
+           }
+         }
+         .cityName {
+           font-weight: 300;
+         }
+         .roomPrise {
+           font-weight: 500;
+         }
+         .rating {
+           button {
+             background-color: blue;
+             color: white;
+             border: none;
+             padding: 3px;
+             margin-right: 10px;
+             font-weight: bold;
+           }
+           span {
+             font-size: 14px;
+           }
+         }
+       }
+      
+    }
     h2{
       color: #00224f;
       width: 100%;
@@ -23,45 +69,7 @@
     .slick-dots{
       display: none !important;
     }
-    .homeItem {
-      flex: 1;
-  
-      gap: 10px;
-      display: flex;
-      flex-direction: column;
-      .homeimg {
-        width: 100%;
-      }
-      &:hover img {
-        transform: scale(1.1)
-      }
-      .homeName {
-        font-weight: bold;
-        .linkhome{
-          text-decoration: none;
-          color: blue;
-        }
-      }
-      .cityName {
-        font-weight: 300;
-      }
-      .roomPrise {
-        font-weight: 500;
-      }
-      .rating {
-        button {
-          background-color: blue;
-          color: white;
-          border: none;
-          padding: 3px;
-          margin-right: 10px;
-          font-weight: bold;
-        }
-        span {
-          font-size: 14px;
-        }
-      }
-    }
+   
   }
 
 }
