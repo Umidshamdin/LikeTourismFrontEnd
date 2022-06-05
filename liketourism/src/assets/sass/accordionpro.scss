@@ -1,16 +1,42 @@
-.container {
-  .row {
-    .nav-pills {
-      overflow-x: hidden;
-    }
-    @media screen {
-      min-width: 480px;
-      .nav-pills {
-        overflow-x: scroll;
-        overflow-wrap: none;
-        flex-wrap: nowrap;
+.container{
+  .row{
+  
+      .imagess{
+      .uls{
+          margin-left: 20px;
       }
-    }
+      .nav-pills{
+        display: flex;
+        justify-content: center;
+      }
+      .uls2{
+          text-align: center;
+          .tab-pane{
+         
+              .ex{
+                  ul{
+                      list-style: none;
+                      display: flex;
+                      
+                      li{
+                          display: flex;
+                          img{
+                              width: 250px !important;
+                          }
+                          margin-left: 10px;
+                          
+                          a{
+                              display: flex;
+                              width: 100px;
+                              margin-left: 100px;
+                          }
+                      }
+                  }
+              }
+           
+          }
+          }
+      }
    
   }
 }

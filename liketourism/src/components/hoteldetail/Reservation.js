@@ -3,8 +3,9 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 import "../../assets/sass/hoteldetail/reservation.scss";
+import { list } from "@chakra-ui/react";
 
-function Reservation() {
+function Reservation(props) {
   // const region = ["Ekonomic 1 neferlik", "Ekonomic 2 neferlik", "Ekonomic 1 neferlik", "Luks 1 neferlik", "Luks 2 neferlik"];
 
   // const onChange = (e) => {
@@ -13,7 +14,6 @@ function Reservation() {
   const [room, setRooms] = useState([]);
 
   useEffect(() => {
-    // Update the document title using the browser API
     loadRooms();
   }, []);
 
@@ -25,6 +25,12 @@ function Reservation() {
         setRooms(result);
       });
   }
+
+  const handle = () => {
+    localStorage.setItem("room", JSON.stringify(room));
+  };
+
+  
 
   return (
     <div>
@@ -48,30 +54,25 @@ function Reservation() {
                     <td>{rooms.breakfast}</td>
                     <td>
                       <select>
-                        <option>
-                          1
-                        </option>
-                        <option>
-                          2
-                        </option>
-                        <option>
-                          3
-                        </option>
-                        <option>
-                          4
-                        </option>
-                        <option>
-                          5
-                        </option>
-                        <option>
-                          6
-                        </option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
                       </select>
+
+                      <button onClick={() => handle()}>add</button>
                     </td>
                   </tr>
                 ))}
               </tbody>
             </Table>
+          </div>
+          <div className="col-5">
+            <div className="basket">
+              
+            </div>
           </div>
         </div>
       </div>

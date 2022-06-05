@@ -70,7 +70,7 @@ function CategoryCarusel() {
             >
               <div className="homeItem px-1">
                 <img
-                  className="homeImg"
+                  className="homeImgs"
                   src={`data:image/jpeg;base64,${categories.image}`}
                   alt=""
                 />
