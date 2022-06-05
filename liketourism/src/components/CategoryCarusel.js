@@ -6,7 +6,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "../assets/sass/categorycarusel.scss";
 function CategoryCarusel() {
-  const [house, setHouse] = useState([]);
+  const [category, setCategory] = useState([]);
 
   useEffect(() => {
     // Update the document title using the browser API
@@ -14,9 +14,9 @@ function CategoryCarusel() {
   }, []);
 
   async function loadHouse() {
-    const result = await axios.get(`https://localhost:44363/api/House/GetAll`);
+    const result = await axios.get(`https://localhost:44363/api/Category/GetAll`);
 
-    setHouse(result.data);
+    setCategory(result.data);
   }
 
   var settings = {
@@ -63,20 +63,20 @@ function CategoryCarusel() {
       <div className="row mt-5 exams">
         <h2>Müəssisə tipinə görə seçim edin</h2>
         <Slider {...settings}>
-          {house.map((hous) => (
+          {category.map((categories) => (
             <div
               className="col-lg-3 col-md-6 col-sm-12 hous"
-              key={hous.id.toString()}
+              key={categories.id.toString()}
             >
               <div className="homeItem px-1">
                 <img
                   className="homeImg"
-                  src={`data:image/jpeg;base64,${hous.image}`}
+                  src={`data:image/jpeg;base64,${categories.image}`}
                   alt=""
                 />
                 <span className="homeName">
                   <Link className="linkhome" to={"/citydetail"}>
-                    {hous.name}
+                    {categories.name}
                   </Link>
                 </span>
               </div>
