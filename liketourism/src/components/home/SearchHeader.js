@@ -48,7 +48,7 @@ function SearchHeader() {
     <div>
       <div className="container">
         <div className="row">
-          <div className="headerSearch mt-5 mb-5">
+          <div className="headerSearch  mb-5">
             <div className="headerSearchItem">
               <FontAwesomeIcon icon={faBed} className="headerIcon" />
               <input

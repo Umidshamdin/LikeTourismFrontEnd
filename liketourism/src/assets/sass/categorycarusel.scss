@@ -1,0 +1,75 @@
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+.container {
+  .exams{
+    .hous{
+      width: 150%;
+      .homeItem {
+        width: 530px;
+         
+         gap: 10px;
+         display: flex;
+         flex-direction: column;
+         .homeImg {
+           width: 52%;
+           height: 25vh;
+         }
+         &:hover img {
+           transform: scale(1.1)
+         }
+         .homeName {
+           font-weight: bold;
+           .linkhome{
+             text-decoration: none;
+             color: blue;
+           }
+         }
+         .cityName {
+           font-weight: 300;
+         }
+         .roomPrise {
+           font-weight: 500;
+         }
+         .rating {
+           button {
+             background-color: blue;
+             color: white;
+             border: none;
+             padding: 3px;
+             margin-right: 10px;
+             font-weight: bold;
+           }
+           span {
+             font-size: 14px;
+           }
+         }
+       }
+      
+    }
+    h2{
+      color: #00224f;
+      width: 100%;
+    }
+    .slick-next {
+      height: 100%;
+      width: 70px;
+  
+      background: #00224f;
+    }
+    .slick-prev {
+      height: 100%;
+      width: 70px;
+  
+      background: #00224f;
+    }
+    .slick-list {
+      margin-left: 50px;
+      width: 92%;
+    }
+    .slick-dots{
+      display: none !important;
+    }
+   
+  }
+
+}

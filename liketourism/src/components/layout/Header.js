@@ -37,16 +37,6 @@ function Header() {
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li className="nav-item">
             <Link className="linknav" to={"/"} onClick={closeMenu}>
-              <b>Otellər</b>
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link className="linknav" to={"/tours"} onClick={closeMenu}>
-              <b>Turistik yerlər</b>
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link className="linknav" to={"/"} onClick={closeMenu}>
               <div class="dropdown">
                 <button
                   class="btn btn-secondary dropdown-toggle"
@@ -79,12 +69,25 @@ function Header() {
           </li>
           <li className="nav-item">
             <Link className="linknav" to={"/"} onClick={closeMenu}>
+              <b>Otellər</b>
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link className="linknav" to={"/tours"} onClick={closeMenu}>
+              <b>Turistik yerlər</b>
+            </Link>
+          </li>
+
+          <li className="nav-item">
+            <Link className="linknav" to={"/"} onClick={closeMenu}>
               <b>Haqqında</b>
             </Link>
           </li>
           <li className="nav-item">
             <Link className="linknav" to={"/"} onClick={closeMenu}>
-            <b><i class="far fa-globe"></i></b>
+              <b>
+                <i class="far fa-globe"></i>
+              </b>
             </Link>
           </li>
           <li className="nav-item">
