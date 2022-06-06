@@ -43,6 +43,7 @@ function Responsive() {
       <div className="container">
         <div className="row ">
           <h2>Bəyənilən evlər</h2>
+          <h4>secin</h4>
           <Slider {...settings}>
             <div className="col-lg-3 col-md-6 col-sm-12">
               <div className="homeItem px-1">
