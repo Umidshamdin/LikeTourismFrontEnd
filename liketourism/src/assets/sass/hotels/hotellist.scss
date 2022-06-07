@@ -2,9 +2,11 @@
   margin-top: 100px;
   .listItem {
     border: 1px solid lightgray;
-position: relative;
+    position: relative;
     border-radius: 5px;
     display: flex;
+    box-shadow: 3px 3px gray;
+    
     justify-content: space-between;
     gap: 20px;
     width: 100%;
@@ -23,8 +25,8 @@ position: relative;
       .listTitle {
         font-size: 20px;
         color: blue;
-        .iconshotel{
-          i{
+        .iconshotel {
+          i {
             color: orange;
           }
         }

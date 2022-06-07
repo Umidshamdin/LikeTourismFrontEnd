@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 import "../../assets/sass/hoteldetail/reservation.scss";
-import { list } from "@chakra-ui/react";
 
 function Reservation(props) {
   // const region = ["Ekonomic 1 neferlik", "Ekonomic 2 neferlik", "Ekonomic 1 neferlik", "Luks 1 neferlik", "Luks 2 neferlik"];
@@ -12,10 +11,12 @@ function Reservation(props) {
   //   console.log(e.target.value);
   // };
   const [room, setRooms] = useState([]);
+  const [resrooms, setResRooms] = useState([]);
 
   useEffect(() => {
     loadRooms();
-  }, []);
+    setResRooms(JSON.parse(localStorage.getItem("room")));
+  }, [room]);
 
   async function loadRooms() {
     await axios
@@ -25,14 +26,12 @@ function Reservation(props) {
         setRooms(result);
       });
   }
-
-  const handle = () => {
-    localStorage.setItem("room", JSON.stringify(room));
+ 
+  const handle = (resroom) => {
+    localStorage.setItem("room", JSON.stringify(resroom));
   };
 
-  
-  
-  console.log(JSON.parse(localStorage.getItem("room")))
+  // console.log(JSON.parse(localStorage.getItem("room")))
 
   return (
     <div>
@@ -54,6 +53,7 @@ function Reservation(props) {
                     <td>{rooms.roomType}</td>
                     <td>{rooms.roomPrise}</td>
                     <td>{rooms.breakfast}</td>
+
                     <td>
                       <select>
                         <option>1</option>
@@ -64,7 +64,7 @@ function Reservation(props) {
                         <option>6</option>
                       </select>
 
-                      <button onClick={() => handle()}>add</button>
+                      <button onClick={() => handle(rooms)}>add</button>
                     </td>
                   </tr>
                 ))}
@@ -73,7 +73,25 @@ function Reservation(props) {
           </div>
           <div className="col-5">
             <div className="basket">
-              
+            <Table striped bordered hover variant="dark">
+              <thead>
+                <tr>
+                  <th>Otaq növü</th>
+                  <th>Qiymet</th>
+                  <th>Seher yemeyi</th>
+                 
+                </tr>
+              </thead>
+              <tbody>
+              <tr>
+                    <td>{resrooms.roomType}</td>
+                    <td>{resrooms.roomPrise}</td>
+                    <td>{resrooms.breakfast}</td>
+
+                    
+                  </tr>
+              </tbody>
+            </Table>
             </div>
           </div>
         </div>
