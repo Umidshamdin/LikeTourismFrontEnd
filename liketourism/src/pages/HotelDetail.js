@@ -4,7 +4,6 @@ import Accordions from "../components/hoteldetail/Accordions";
 import HotelDescription from "../components/hoteldetail/HotelDescription";
 import Reservation from "../components/hoteldetail/Reservation";
 
-
 function HotelDetail() {
   return (
     <div>
@@ -12,9 +11,8 @@ function HotelDetail() {
 
       <HotelDescription></HotelDescription>
       <Accordions></Accordions>
-     
-        <Reservation></Reservation>
-      
+
+      <Reservation></Reservation>
     </div>
   );
 }

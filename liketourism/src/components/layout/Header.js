@@ -45,33 +45,30 @@ function Header() {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Dropdown button
+                 Yerləşdirmə
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                   <li>
-                    <a class="dropdown-item" href="#">
-                      Action
-                    </a>
+                    <Link className="dropnav" to={"/"}>
+
+                      Oteller
+                    </Link>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">
-                      Another action
-                    </a>
+                  <Link className="dropnav" to={"/"}>
+                    Moteller
+                    </Link>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">
-                      Something else here
-                    </a>
+                  <Link className="dropnav" to={"/"}>
+                    Villalar
+                    </Link>
                   </li>
                 </ul>
               </div>
             </Link>
           </li>
-          <li className="nav-item">
-            <Link className="linknav" to={"/"} onClick={closeMenu}>
-              <b>Otellər</b>
-            </Link>
-          </li>
+        
           <li className="nav-item">
             <Link className="linknav" to={"/tours"} onClick={closeMenu}>
               <b>Turistik yerlər</b>
@@ -81,6 +78,12 @@ function Header() {
           <li className="nav-item">
             <Link className="linknav" to={"/"} onClick={closeMenu}>
               <b>Haqqında</b>
+            </Link>
+          </li>
+          
+          <li className="nav-item">
+            <Link className="linknav" to={"/"} onClick={closeMenu}>
+              <b>Elaqe</b>
             </Link>
           </li>
           <li className="nav-item">

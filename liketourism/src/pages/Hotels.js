@@ -1,7 +1,7 @@
 
 import React from "react";
 import HotelList from "../components/hotels/HotelList";
-import HotelSearch from "../components/hotels/HotelSearch";
+
 
 
 

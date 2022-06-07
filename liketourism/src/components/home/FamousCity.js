@@ -5,7 +5,7 @@ import "../../assets/sass/home/famouscity.scss";
 
 function FamousCity() {
   const [cards, setCards] = useState([]);
-  console.log(cards.slice(1, 3));
+  
   useEffect(() => {
     // Update the document title using the browser API
     loadCards();

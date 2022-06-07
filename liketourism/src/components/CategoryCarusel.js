@@ -75,7 +75,7 @@ function CategoryCarusel() {
                   alt=""
                 />
                 <span className="homeName">
-                  <Link className="linkhome" to={"/citydetail"}>
+                  <Link className="linkhome" to={"/hotels"}>
                     {categories.name}
                   </Link>
                 </span>

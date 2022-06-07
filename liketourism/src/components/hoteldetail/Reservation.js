@@ -30,7 +30,9 @@ function Reservation(props) {
     localStorage.setItem("room", JSON.stringify(room));
   };
 
-  console.log()
+  
+  
+  console.log(JSON.parse(localStorage.getItem("room")))
 
   return (
     <div>

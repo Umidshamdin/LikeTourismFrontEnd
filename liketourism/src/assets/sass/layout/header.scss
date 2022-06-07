@@ -1,10 +1,10 @@
 .header {
-  position: fixed;
+  position: sticky;
   height: 80px;
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 999;
   transition: 0.3s ease-in;
   
 }
@@ -12,6 +12,7 @@
   background-color: black;
   opacity: 1;
 }
+
 
 .header .navbar {
   display: flex;
@@ -42,6 +43,17 @@
   .nav-item {
     .linknav {
       text-decoration: none;
+      .dropdown{
+        .dropdown-toggle{
+          background-color: blue;
+        }
+        .dropdown-menu{
+          margin-left: -20px;
+        }
+        .dropnav{
+         margin-left: 50px;
+        }
+      }
       &:hover b {
         color: green;
       }

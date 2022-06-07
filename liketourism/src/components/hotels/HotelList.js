@@ -6,7 +6,7 @@ import "../../assets/sass/hotels/hotellist.scss";
 import { Link } from "react-router-dom";
 function HotelList() {
   const [hotel, setHotels] = useState([]);
-  const {id} = useParams();
+  const { id } = useParams();
   useEffect(() => {
     // Update the document title using the browser API
     loadHotels();
@@ -34,11 +34,9 @@ function HotelList() {
           <div className="listDesc">
             <h1 className="listTitle">
               <div className="iconshotel">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
+                
+                  <i class="fas fa-star"></i>
+                
               </div>
 
               <Link to={"/HotelDetail"}>{listhotel.name}</Link>
