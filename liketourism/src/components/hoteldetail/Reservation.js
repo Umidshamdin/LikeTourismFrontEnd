@@ -5,14 +5,13 @@ import axios from "axios";
 import "../../assets/sass/hoteldetail/reservation.scss";
 
 function Reservation(props) {
-
   const [room, setRooms] = useState([]);
   const [resrooms, setResRooms] = useState([]);
- 
+
   useEffect(() => {
     loadRooms();
-    setResRooms(JSON.parse(localStorage.getItem("room")));
-  }, [resrooms]);
+    setResRooms(JSON.parse(localStorage.getItem("test")));
+  }, [room]);
 
   async function loadRooms() {
     await axios
@@ -22,14 +21,13 @@ function Reservation(props) {
         setRooms(result);
       });
   }
- 
-  const handle = (resroom) => {
-    localStorage.setItem("room", JSON.stringify(resroom));
+
+  const [test, setTest] = useState([]);
+
+  const handle = (x) => {
+    setTest([...test, x]);
+      localStorage.setItem("test", JSON.stringify(test));
   };
-
-  
-
-  // console.log(JSON.parse(localStorage.getItem("room")))
 
   return (
     <div>
@@ -71,27 +69,29 @@ function Reservation(props) {
           </div>
           <div className="col-5">
             <div className="basket">
-            <Table striped bordered hover variant="dark">
-              <thead>
-                <tr>
-                  <th>Otaq növü</th>
-                  <th>Qiymet</th>
-                  <th>Seher yemeyi</th>
-                 
-                </tr>
-              </thead>
-              <tbody>
-              <tr>
-             
-                   
-                    <td>{resrooms.breakfast}</td>
-                    <td>{resrooms.roomPrise}</td>
-
-
-                    
+              <Table striped bordered hover variant="dark">
+                <thead>
+                  <tr>
+                    <th>Otaq növü</th>
+                    <th>Qiymet</th>
+                    <th>Seher yemeyi</th>
                   </tr>
-              </tbody>
-            </Table>
+                </thead>
+                <tbody>
+                  {
+                    resrooms&&resrooms.map(e=>
+                      {
+                        return(
+                          <tr>
+                            <td>{e.breakfast}</td>
+                            <td>{e.roomType}</td>
+                            <td>{e.roomPrise}</td>
+                          </tr>
+                        )
+                      })
+                  }
+                </tbody>
+              </Table>
             </div>
           </div>
         </div>

@@ -10,6 +10,8 @@ import HotelDetail from "./pages/HotelDetail";
 import Hotels from "./pages/Hotels";
 
 function App() {
+
+
   return (
     <div>
       <Router>

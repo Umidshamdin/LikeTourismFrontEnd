@@ -6,11 +6,15 @@ import "../../assets/sass/hoteldetail/rooms.scss";
 function Rooms() {
   const [room, setRooms] = useState([]);
   const [resrooms, setResRooms] = useState([]);
+  
 
   useEffect(() => {
     loadRooms();
     setResRooms(JSON.parse(localStorage.getItem("room")));
   }, [room]);
+
+
+
   async function loadRooms() {
     await axios
       .get(`https://localhost:44363/api/Reservation/GetAll`)
@@ -20,8 +24,8 @@ function Rooms() {
       });
   }
 
-  const handle = (resroom) => {
-    localStorage.setItem("room", JSON.stringify(resroom));
+  const handle = (room) => {
+    localStorage.setItem("room", JSON.stringify(room));
   };
 
   return (
