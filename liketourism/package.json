@@ -5,7 +5,7 @@
   "dependencies": {
     "@adobe/react-spectrum": "^3.17.0",
     "@chakra-ui/button": "^2.0.0",
-    "@chakra-ui/react": "^2.0.0",
+    "@chakra-ui/react": "^2.2.1",
     "@date-io/date-fns": "^2.14.0",
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
@@ -29,6 +29,7 @@
     "react": "^18.1.0",
     "react-booking-form": "^2.0.0-alpha.64",
     "react-bootstrap": "^2.3.1",
+    "react-context-api": "^1.0.2",
     "react-date-range": "^1.4.0",
     "react-datetime": "^3.1.1",
     "react-datetime-picker": "^3.5.0",

@@ -1,0 +1,44 @@
+.roominfo{
+    display: flex;
+    border: 1px solid black;
+    
+    .roomimg{
+        width: 33.3%;
+        margin-left: -10px;
+    }
+    .infoss{
+        h5{
+            text-align: center;
+        }
+        .iconinfo{
+            display: flex;
+            margin-left: -20px;
+            ul{
+                list-style: none;
+            }
+            i{
+                display: block;
+               margin-top: 10px;
+            }
+        }
+    }
+    .choise{
+        margin-left: 50px;
+        select{
+            margin-top: 20px;
+        }
+    }
+    .price{
+        margin-left: 50px;
+        p{
+            margin-top: 33px;
+        }
+
+    }
+    .but{
+        button{
+            margin-top: 150px;
+            margin-left: -70px;
+        }
+    }
+}

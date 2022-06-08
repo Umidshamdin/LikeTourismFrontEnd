@@ -21,8 +21,6 @@ function App() {
             <Route path="/Tours" element={<Tours />} />
             <Route path="/Hotels/:id" element={<Hotels />} />
             <Route path="/HotelDetail" element={<HotelDetail />} />
-            
-
           </Routes>
 
           <Footer></Footer>

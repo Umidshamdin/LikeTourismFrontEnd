@@ -43,6 +43,12 @@
   .nav-item {
     .linknav {
       text-decoration: none;
+      b{
+        i{
+          color: red;
+          font-size: 30px;
+        }
+      }
       .dropdown{
         .dropdown-toggle{
           background-color: blue;

@@ -5,18 +5,14 @@ import axios from "axios";
 import "../../assets/sass/hoteldetail/reservation.scss";
 
 function Reservation(props) {
-  // const region = ["Ekonomic 1 neferlik", "Ekonomic 2 neferlik", "Ekonomic 1 neferlik", "Luks 1 neferlik", "Luks 2 neferlik"];
 
-  // const onChange = (e) => {
-  //   console.log(e.target.value);
-  // };
   const [room, setRooms] = useState([]);
   const [resrooms, setResRooms] = useState([]);
-
+ 
   useEffect(() => {
     loadRooms();
     setResRooms(JSON.parse(localStorage.getItem("room")));
-  }, [room]);
+  }, [resrooms]);
 
   async function loadRooms() {
     await axios
@@ -30,6 +26,8 @@ function Reservation(props) {
   const handle = (resroom) => {
     localStorage.setItem("room", JSON.stringify(resroom));
   };
+
+  
 
   // console.log(JSON.parse(localStorage.getItem("room")))
 
@@ -84,9 +82,11 @@ function Reservation(props) {
               </thead>
               <tbody>
               <tr>
-                    <td>{resrooms.roomType}</td>
-                    <td>{resrooms.roomPrise}</td>
+             
+                   
                     <td>{resrooms.breakfast}</td>
+                    <td>{resrooms.roomPrise}</td>
+
 
                     
                   </tr>

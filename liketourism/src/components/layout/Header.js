@@ -1,3 +1,4 @@
+import { Button } from "bootstrap";
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
@@ -45,30 +46,29 @@ function Header() {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                 Yerləşdirmə
+                  Yerləşdirmə
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                   <li>
                     <Link className="dropnav" to={"/"}>
-
                       Oteller
                     </Link>
                   </li>
                   <li>
-                  <Link className="dropnav" to={"/"}>
-                    Moteller
+                    <Link className="dropnav" to={"/"}>
+                      Moteller
                     </Link>
                   </li>
                   <li>
-                  <Link className="dropnav" to={"/"}>
-                    Villalar
+                    <Link className="dropnav" to={"/"}>
+                      Villalar
                     </Link>
                   </li>
                 </ul>
               </div>
             </Link>
           </li>
-        
+
           <li className="nav-item">
             <Link className="linknav" to={"/tours"} onClick={closeMenu}>
               <b>Turistik yerlər</b>
@@ -80,19 +80,13 @@ function Header() {
               <b>Haqqında</b>
             </Link>
           </li>
-          
+
           <li className="nav-item">
             <Link className="linknav" to={"/"} onClick={closeMenu}>
               <b>Elaqe</b>
             </Link>
           </li>
-          <li className="nav-item">
-            <Link className="linknav" to={"/"} onClick={closeMenu}>
-              <b>
-                <i class="far fa-globe"></i>
-              </b>
-            </Link>
-          </li>
+
           <li className="nav-item">
             <Link className="linknav" to={"/"} onClick={closeMenu}>
               <button className="btn btn-primary">Login</button>
