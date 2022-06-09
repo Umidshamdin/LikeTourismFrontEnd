@@ -1,44 +1,63 @@
-.roominfo{
-    display: flex;
+.hotelList {
+  
+  .roominfo {
     border: 1px solid black;
-    
-    .roomimg{
-        width: 33.3%;
-        margin-left: -10px;
-    }
-    .infoss{
-        h5{
-            text-align: center;
-        }
-        .iconinfo{
-            display: flex;
-            margin-left: -20px;
-            ul{
-                list-style: none;
-            }
-            i{
-                display: block;
-               margin-top: 10px;
-            }
-        }
-    }
-    .choise{
-        margin-left: 50px;
-        select{
-            margin-top: 20px;
-        }
-    }
-    .price{
-        margin-left: 50px;
-        p{
-            margin-top: 33px;
-        }
+    width: 100%;
+    display: flex;
 
+    .roomimg {
+      width: 250px;
     }
-    .but{
-        button{
-            margin-top: 150px;
-            margin-left: -70px;
+    .infoss {
+      h5 {
+        text-align: center;
+      }
+      .iconinfo {
+        display: flex;
+        margin-left: -20px;
+        ul {
+          list-style: none;
+        }
+        i {
+          display: block;
+          margin-top: 10px;
+        }
+      }
+    }
+    .choise {
+      margin-left: 50px;
+      select {
+        margin-top: 20px;
+      }
+    }
+    .price {
+      margin-left: 50px;
+      p {
+        margin-top: 33px;
+      }
+    }
+    .but {
+      button {
+        margin-top: 150px;
+        margin-left: -70px;
+      }
+    }
+  }
+
+}
+.basket{
+    border: 1px solid black;
+    margin-top: 5px;
+    width: 80%;
+    .baskets{
+        border: none;
+    }
+    .basketrez{
+        display: flex;
+        margin-top: 3px;
+        p{
+            padding: 5px;
         }
     }
+    
 }

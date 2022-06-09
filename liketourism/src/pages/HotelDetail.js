@@ -2,7 +2,7 @@ import React from "react";
 import HotelDetailImages from "../components/hoteldetail/HotelDetailImages";
 import Accordions from "../components/hoteldetail/Accordions";
 import HotelDescription from "../components/hoteldetail/HotelDescription";
-import Reservation from "../components/hoteldetail/Reservation"
+import Rooms from "../components/hoteldetail/Rooms";
 
 
 function HotelDetail() {
@@ -12,7 +12,7 @@ function HotelDetail() {
 
       <HotelDescription></HotelDescription>
       <Accordions></Accordions>
-      <Reservation></Reservation>
+      <Rooms></Rooms>
     
       
     </div>
