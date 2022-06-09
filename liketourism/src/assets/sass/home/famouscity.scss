@@ -26,6 +26,7 @@
           }
           &:hover b {
             height: 70%;
+            transition: transform 1s;
           }
         }
       }

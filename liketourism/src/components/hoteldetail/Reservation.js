@@ -7,6 +7,11 @@ import "../../assets/sass/hoteldetail/reservation.scss";
 function Reservation() {
   const [room, setRooms] = useState([]);
   const [resrooms, setResRooms] = useState([]);
+  let test = [];
+
+  if (JSON.parse(localStorage.getItem("test")) != null) {
+    test = JSON.parse(localStorage.getItem("test"));
+  }
 
   useEffect(() => {
     loadRooms();
@@ -22,10 +27,8 @@ function Reservation() {
       });
   }
 
-  const [test, setTest] = useState([]);
-
   const handle = (x) => {
-    setTest([...test, x]);
+    test.push(x);
     localStorage.setItem("test", JSON.stringify(test));
   };
 
