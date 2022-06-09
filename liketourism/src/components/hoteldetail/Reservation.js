@@ -4,7 +4,7 @@ import axios from "axios";
 
 import "../../assets/sass/hoteldetail/reservation.scss";
 
-function Reservation(props) {
+function Reservation() {
   const [room, setRooms] = useState([]);
   const [resrooms, setResRooms] = useState([]);
 
@@ -26,7 +26,7 @@ function Reservation(props) {
 
   const handle = (x) => {
     setTest([...test, x]);
-      localStorage.setItem("test", JSON.stringify(test));
+    localStorage.setItem("test", JSON.stringify(test));
   };
 
   return (
@@ -78,18 +78,16 @@ function Reservation(props) {
                   </tr>
                 </thead>
                 <tbody>
-                  {
-                    resrooms&&resrooms.map(e=>
-                      {
-                        return(
-                          <tr>
-                            <td>{e.breakfast}</td>
-                            <td>{e.roomType}</td>
-                            <td>{e.roomPrise}</td>
-                          </tr>
-                        )
-                      })
-                  }
+                  {resrooms &&
+                    resrooms.map((e) => {
+                      return (
+                        <tr>
+                          <td>{e.breakfast}</td>
+                          <td>{e.roomType}</td>
+                          <td>{e.roomPrise}</td>
+                        </tr>
+                      );
+                    })}
                 </tbody>
               </Table>
             </div>

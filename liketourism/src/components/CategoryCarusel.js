@@ -24,9 +24,9 @@ function CategoryCarusel() {
     infinite: true,
     arrows: true,
 
-    speed: 400,
+    speed: 200,
     slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToScroll: 1,
     initialSlide: true,
     autoplay: true,
     cssEase: "linear",

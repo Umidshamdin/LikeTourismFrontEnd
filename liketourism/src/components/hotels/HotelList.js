@@ -7,6 +7,18 @@ import { Link } from "react-router-dom";
 function HotelList() {
   const [hotel, setHotels] = useState([]);
   const { id } = useParams();
+
+  const [filterText, setFilterText] = useState("");
+
+  const filtered = hotel.filter((item) => {
+    return Object.keys(item).some((key) =>
+      item[key]
+        .toString()
+        .toLowerCase()
+        .includes(filterText.toLocaleLowerCase())
+    );
+  });
+  console.log("filtered", filtered);
   useEffect(() => {
     // Update the document title using the browser API
     loadHotels();
@@ -23,8 +35,13 @@ function HotelList() {
 
   return (
     <div className="hotels">
-      {hotel.map((listhotel) => (
-        <div className="listItem">
+      <input
+        value={filterText}
+        onChange={(e) => setFilterText(e.target.value)}
+        placeholder="filtered"
+      />
+      {filtered.map((listhotel, i) => (
+        <div key={i} className="listItem">
           <img
             className="listimg"
             src={`data:image/jpeg;base64,${listhotel.image}`}
@@ -34,9 +51,7 @@ function HotelList() {
           <div className="listDesc">
             <h1 className="listTitle">
               <div className="iconshotel">
-                
-                  <i class="fas fa-star"></i>
-                
+                <i class="fas fa-star"></i>
               </div>
 
               <Link to={"/HotelDetail"}>{listhotel.name}</Link>
