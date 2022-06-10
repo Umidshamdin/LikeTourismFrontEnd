@@ -1,5 +1,5 @@
 import React from "react";
-import "../assets/sass/subscripe.scss";
+import "../../assets/sass/home/subscripe.scss";
 
 function Subscripe() {
   return (

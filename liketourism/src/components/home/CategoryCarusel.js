@@ -4,9 +4,9 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
-import "../assets/sass/carusel.scss";
-function Carusel() {
-  const [house, setHouse] = useState([]);
+import "../../assets/sass/home/categorycarusel.scss";
+function CategoryCarusel() {
+  const [category, setCategory] = useState([]);
 
   useEffect(() => {
     // Update the document title using the browser API
@@ -14,9 +14,9 @@ function Carusel() {
   }, []);
 
   async function loadHouse() {
-    const result = await axios.get(`https://localhost:44363/api/House/GetAll`);
+    const result = await axios.get(`https://localhost:44363/api/Category/GetAll`);
 
-    setHouse(result.data);
+    setCategory(result.data);
   }
 
   var settings = {
@@ -60,30 +60,25 @@ function Carusel() {
   };
   return (
     <div className="container">
-      <div className="row mt-5">
+      <div className="row mt-5 exams">
+        <h2>Müəssisə tipinə görə seçim edin</h2>
         <Slider {...settings}>
-          {house.map((hous) => (
+          {category.map((categories) => (
             <div
               className="col-lg-3 col-md-6 col-sm-12 hous"
-              key={hous.id.toString()}
+              key={categories.id.toString()}
             >
               <div className="homeItem px-1">
                 <img
-                  className="homeImg"
-                  src={`data:image/jpeg;base64,${hous.image}`}
+                  className="homeImgs"
+                  src={`data:image/jpeg;base64,${categories.image}`}
                   alt=""
                 />
                 <span className="homeName">
-                  <Link className="linkhome" to={"/citydetail"}>
-                    {hous.name}
+                  <Link className="linkhome" to={"/hotels"}>
+                    {categories.name}
                   </Link>
                 </span>
-                <span className="cityName">{hous.famousCity.name}</span>
-                <span className="roomPrise">{hous.prise}</span>
-                <div className="rating">
-                  <button>8.9</button>
-                  <span>Excellent</span>
-                </div>
               </div>
             </div>
           ))}
@@ -93,4 +88,4 @@ function Carusel() {
   );
 }
 
-export default Carusel;
+export default CategoryCarusel;

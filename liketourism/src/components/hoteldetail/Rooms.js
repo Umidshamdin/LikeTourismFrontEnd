@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-
+import {Link} from "react-router-dom"
 import "../../assets/sass/hoteldetail/rooms.scss";
 
 function Rooms() {
@@ -12,10 +12,12 @@ function Rooms() {
     test = JSON.parse(localStorage.getItem("test"));
   }
 
-  useEffect(() => {
-    loadRooms();
+  
+
+  useEffect(()=>{
     setResRooms(JSON.parse(localStorage.getItem("test")));
-  }, [room]);
+    loadRooms();
+  },[])
 
   async function loadRooms() {
     await axios
@@ -25,10 +27,17 @@ function Rooms() {
         setRooms(result);
       });
   }
+  
+  const handleCount=()=>{
+   console.log('====================================');
+   console.log("sss");
+   console.log('====================================');
+  }
 
   const handle = (x) => {
     test.push(x);
     localStorage.setItem("test", JSON.stringify(test));
+    setResRooms(JSON.parse(localStorage.getItem("test")));
   };
 
   return (
@@ -81,7 +90,7 @@ function Rooms() {
 
                 <div className="choise">
                   <h6>Otaq sec</h6>
-                  <select>
+                  <select onchange={handleCount}>
                     <option>1 otaq</option>
                     <option>2 otaq</option>
                     <option>3 otaq</option>
@@ -130,7 +139,9 @@ function Rooms() {
                 );
               })}
                <hr />
+            <Link to="/">
             <button className="btn btn-primary">Rezervasiya et</button>
+            </Link>
           </div>
         </div>
       </div>
