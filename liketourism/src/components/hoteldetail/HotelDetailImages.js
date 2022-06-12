@@ -73,9 +73,9 @@ function HotelDetailImages() {
 
               <div className="infos">
                 <div className="infodetail">
-                <i class="fas fa-bed"></i>
+                <i className="fas fa-bed"></i>
                   <span>	Harika bir gece uykusu çekmek ister misiniz? Bu otel konforlu yatakları için yüksek puan aldı.</span>
-                  <p><i class="fas fa-parking"></i>  	Tesis bünyesinde ücretsiz özel otopark mevcut</p>
+                  <p><i className="fas fa-parking"></i>  	Tesis bünyesinde ücretsiz özel otopark mevcut</p>
                   
                 </div>
               </div>

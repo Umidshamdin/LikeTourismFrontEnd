@@ -18,7 +18,7 @@ function HotelList() {
         .includes(filterText.toLocaleLowerCase())
     );
   });
-  console.log("filtered", filtered);
+ 
   useEffect(() => {
     // Update the document title using the browser API
     loadHotels();
@@ -54,7 +54,7 @@ function HotelList() {
                 <i class="fas fa-star"></i>
               </div>
 
-              <Link to={"/HotelDetail"}>{listhotel.name}</Link>
+              <Link className="hotelname" to={"/HotelDetail"}>{listhotel.name}</Link>
             </h1>
             <span className="listDistance">{listhotel.distance}</span>
             <span className="listSubTitle">{listhotel.desc}</span>
@@ -69,7 +69,7 @@ function HotelList() {
             <div className="listDetailText">
               <span className="listPrise">{listhotel.prise}$</span>
               <button className="listCheckButton">
-                <Link to={"/HotelDetail"}>See availability</Link>
+                <Link className="detailto" to={"/HotelDetail"}>Detail</Link>
               </button>
             </div>
           </div>

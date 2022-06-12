@@ -25,6 +25,12 @@
       .listTitle {
         font-size: 20px;
         color: blue;
+        .hotelname{
+          text-decoration: none;
+        }
+        &:hover .hotelname{
+          color: red;
+        }
         .iconshotel {
           i {
             color: orange;
@@ -83,6 +89,11 @@
           font-weight: bold;
           padding: 10px 5px;
           border: none;
+          .detailto{
+            color: white;
+            cursor: pointer;
+            text-decoration: none;
+          }
         }
       }
     }

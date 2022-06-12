@@ -36,11 +36,11 @@ function Header() {
           )}
         </div>
         <ul className={click ? "nav-menu active" : "nav-menu"}>
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <Link className="linknav" to={"/"} onClick={closeMenu}>
-              <div class="dropdown">
+              <div className="dropdown">
                 <button
-                  class="btn btn-secondary dropdown-toggle"
+                  className="btn btn-secondary dropdown-toggle"
                   type="button"
                   id="dropdownMenuButton1"
                   data-bs-toggle="dropdown"
@@ -48,7 +48,7 @@ function Header() {
                 >
                   Yerləşdirmə
                 </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                   <li>
                     <Link className="dropnav" to={"/"}>
                       Oteller
@@ -67,8 +67,18 @@ function Header() {
                 </ul>
               </div>
             </Link>
-          </li>
+          </li> */}
 
+          <li className="nav-item">
+            <Link className="linknav" to={"/tours"} onClick={closeMenu}>
+              <b>Otellər</b>
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link className="linknav" to={"/tours"} onClick={closeMenu}>
+              <b>Hostellər</b>
+            </Link>
+          </li>
           <li className="nav-item">
             <Link className="linknav" to={"/tours"} onClick={closeMenu}>
               <b>Turistik yerlər</b>

@@ -8,6 +8,7 @@ import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
 import HotelDetail from "./pages/HotelDetail";
 import Hotels from "./pages/Hotels";
+import Reservation from "./pages/Reservation";
 
 function App() {
 
@@ -23,6 +24,8 @@ function App() {
             <Route path="/Tours" element={<Tours />} />
             <Route path="/Hotels/:id" element={<Hotels />} />
             <Route path="/HotelDetail" element={<HotelDetail />} />
+            <Route path="/Reservation" element={<Reservation />} />
+
           </Routes>
 
           <Footer></Footer>

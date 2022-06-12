@@ -3,6 +3,7 @@ import HotelDetailImages from "../components/hoteldetail/HotelDetailImages";
 import Accordions from "../components/hoteldetail/Accordions";
 import HotelDescription from "../components/hoteldetail/HotelDescription";
 import Rooms from "../components/hoteldetail/Rooms";
+import Rooms2 from "../components/hoteldetail/Rooms2";
 
 
 function HotelDetail() {
@@ -12,8 +13,9 @@ function HotelDetail() {
 
       <HotelDescription></HotelDescription>
       <Accordions></Accordions>
-      <Rooms></Rooms>
-    
+     <Rooms2></Rooms2>
+
+      
       
     </div>
   );

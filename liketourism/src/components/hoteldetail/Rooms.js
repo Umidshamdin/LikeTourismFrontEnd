@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 import "../../assets/sass/hoteldetail/rooms.scss";
 
 function Rooms() {
@@ -12,12 +12,10 @@ function Rooms() {
     test = JSON.parse(localStorage.getItem("test"));
   }
 
-  
-
-  useEffect(()=>{
+  useEffect(() => {
     setResRooms(JSON.parse(localStorage.getItem("test")));
     loadRooms();
-  },[])
+  }, []);
 
   async function loadRooms() {
     await axios
@@ -26,12 +24,6 @@ function Rooms() {
         const result = res.data;
         setRooms(result);
       });
-  }
-  
-  const handleCount=()=>{
-   console.log('====================================');
-   console.log("sss");
-   console.log('====================================');
   }
 
   const handle = (x) => {
@@ -90,7 +82,7 @@ function Rooms() {
 
                 <div className="choise">
                   <h6>Otaq sec</h6>
-                  <select onchange={handleCount}>
+                  <select>
                     <option>1 otaq</option>
                     <option>2 otaq</option>
                     <option>3 otaq</option>
@@ -132,15 +124,13 @@ function Rooms() {
 
                       <p>{e.roomType}</p>
                       <p>{e.roomPrise} AZN</p>
-                     
                     </div>
-                    
                   </div>
                 );
               })}
-               <hr />
-            <Link to="/">
-            <button className="btn btn-primary">Rezervasiya et</button>
+            <hr />
+            <Link to="/reservation">
+              <button className="btn btn-primary">Rezervasiya et</button>
             </Link>
           </div>
         </div>
@@ -242,10 +232,4 @@ function Rooms() {
   );
 }
 
-{
-  /* <td> alt="" /></td> */
-}
-{
-  /* <img src={`data:image/jpeg;base64,${e.image}`}/> */
-}
 export default Rooms;

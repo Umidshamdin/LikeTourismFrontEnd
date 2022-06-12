@@ -1,12 +1,16 @@
 .hotelList {
-  
+  background-color: green;
   .roominfo {
     border: 1px solid black;
+    border-radius: 20px;
     width: 100%;
     display: flex;
+    color: white;
 
     .roomimg {
       width: 250px;
+      border-radius: 20px;
+      height: 30vh;
     }
     .infoss {
       h5 {
@@ -38,26 +42,24 @@
     }
     .but {
       button {
-        margin-top: 150px;
+        margin-top: 160px;
         margin-left: -70px;
       }
     }
   }
-
 }
-.basket{
-    border: 1px solid black;
-    margin-top: 5px;
-    width: 80%;
-    .baskets{
-        border: none;
+.basket {
+  border: 1px solid black;
+  margin-top: 5px;
+  width: 80%;
+  .baskets {
+    border: none;
+  }
+  .basketrez {
+    display: flex;
+    margin-top: 3px;
+    p {
+      padding: 5px;
     }
-    .basketrez{
-        display: flex;
-        margin-top: 3px;
-        p{
-            padding: 5px;
-        }
-    }
-    
+  }
 }
