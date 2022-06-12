@@ -1,100 +1,159 @@
-.roomCard{
-    .roomDetailImg{
-        width: 300px;
+.pro{
+  margin-top: 10px;
+  display: flex;
+ 
+    .roomDetailImg {
+      width: 300px;
     }
     border: 1px solid black;
-   border-radius: 20px;
+    border-radius: 20px;
     display: flex;
     padding: 0 !important;
     position: relative;
-    .roomImg{
-        width: 100%;
-        height: 100%;
-        border-top-right-radius: 0px;
-        border-radius: 20px;
+    .roomImg {
+      width: 100%;
+      height: 100%;
+      border-top-right-radius: 0px;
+      border-radius: 20px;
     }
-    .infoss{
-        .modal-content{
-            margin-top: 100px;
-            width: 1000px;
-            margin-left: -250px;
-            height:80vh;
+    .infoss {
+      .modal-content {
+        margin-top: 100px;
+        width: 1000px;
+        margin-left: -250px;
+        height: 65vh;
+      }
+      .modal-header {
+        h5 {
+          margin-left: 380px;
+          color: blue;
         }
-        .center{
-            width: 300px;
-
-            .image-gallery-image{
-                width: 400px;
-            }
-        }
-        .image-gallery-fullscreen-button{
-            display: none;
-        }
-        .image-gallery-play-button{
-            display: none;
-        }
-        .image-gallery-right-nav{
-            
-        }
-        .image-gallery-thumbnails-container{
-            display: none;
-        }
-        .image-gallery-svg{
-            font-size: 5px;
-        }
-        .image-gallery-using-mouse{
-            width: 400px;
-        }
-        .head{
-            margin-left: 60px;  
-            border: 1px solid blue;     
-            border-top: none;  
-            margin-top: 20px;
-              
-        }
-        .one{
-            margin-left: 60px;
-        }
-        .iconinfo{
-            margin-top: 50px;
-            .btn-primary{
-                width: 100%;
-                font-size: 13px;
-            }
-            ul{
-                list-style: none;
-                display: flex;
-                li{
-                    margin-top: 5px;
-                    padding: 5px;
-
-                }
-            }
-        }
-        h6{
-          position: absolute;
-          top: 70px;     
-          left: 400px;  
-
-        }
-    }
-    .prices{
-        display: block;
-        p{
-            margin-top: 93px;
-            margin-left: 80px;               
-        }
-        b{
+      }
+      .linkName {
+        margin-left: 50px;
+        text-decoration: double;
+        color: blue;
+        font-size: 19px;
+      }
+      .rrr {
+        .roomIconss {
+          margin-left: 20px;
+          h4 {
             margin-left: 50px;
-            margin-top: 10px;
+            color: blue;
+          }
+          p {
+            margin-top: 30px;
+          }
+          .fas {
+            width: 200px;
+          }
         }
-        select{
-            margin-left: 20px;
-            margin-top: 10px;
-
+      }
+      .center {
+        width: 600px;
+  
+        .image-gallery-image {
+          width: 600px;
         }
-        button{            
-          margin-left: 50px;
+      }
+      .image-gallery-fullscreen-button {
+        display: none;
+      }
+      .image-gallery-play-button {
+        display: none;
+      }
+  
+      .image-gallery-thumbnails-container {
+        display: none;
+      }
+      .image-gallery-svg {
+        font-size: 5px;
+      }
+      .image-gallery-using-mouse {
+        width: 500px;
+        height: 100vh;
+      }
+      .head {
+        margin-left: 60px;
+        border: 1px solid blue;
+        border-top: none;
+        margin-top: 20px;
+      }
+      .one {
+        margin-left: 60px;
+      }
+      .iconinfo {
+        margin-top: 50px;
+        .btn-primary {
+          width: 100%;
+          font-size: 13px;
         }
+        ul {
+          list-style: none;
+          display: flex;
+          li {
+            margin-top: 5px;
+            padding: 5px;
+          }
+        }
+      }
+      h6 {
+        position: absolute;
+        top: 70px;
+        left: 400px;
+      }
     }
+    .prices {
+      display: block;
+      margin-top: 10px;
+      p {
+        margin-top: 93px;
+        margin-left: 80px;
+      }
+      b {
+        margin-left: 50px;
+      }
+      select {
+        margin-left: 20px;
+        margin-top: 10px;
+      }
+      button {
+        margin-left: 50px;
+        margin-bottom: 10px;
+      }
+    }
+  
+  
+
+}
+.sidebasket{
+  border: 1px solid black;
+  .centers{
+    margin-left: 200px;
+    margin-top: 50px;
+  }
+  .basketrezz{
+    margin-left: 50px;
+    .reserImgs{
+      .basketImg{
+        border-radius:20px ;
+        width: 200px !important;
+      }
+     
+    }
+
+  
+    p{
+      margin-left: 5px;
+      margin-top: 50px;
+      background-color: blue;
+      color: white;
+      height: 30px;
+      border-radius: 7px;
+    }
+   
+  
+  }
+  
 }
