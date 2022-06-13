@@ -1,16 +1,17 @@
 .blank{
-   .titles{
-    h4{
-        background-color: green;
-        color: white;
-        width: 300px;
-    }
-   }
-    .inputs{
-        width: 300px;
-        margin-top: 100px;
-        box-shadow: 1px;
+ margin-top: 10px;
+    
+    .reservations{
+        width: 70%;
         display: flex;
-        
+        border: 1px solid black;
+        margin-top: 10px;
+        h2{
+            margin-top: 100px;
+        }
+        .getImg{
+            width: 50%;
+        }
     }
+  
 }

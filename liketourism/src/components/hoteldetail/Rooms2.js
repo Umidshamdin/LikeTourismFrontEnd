@@ -1,17 +1,19 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../../assets/sass/hoteldetail/rooms2.scss";
 import RoomDetailCarusel from "./RoomDetailCarusel";
+
 function Rooms2() {
   const [count, setCount] = useState(300);
-  const {id}=useParams();
+  // const { id } = useParams();
   const handless = (e) => {
     setCount(e.target.value * 300);
   };
 
   const [room, setRooms] = useState([]);
   const [resrooms, setResRooms] = useState([]);
+
   let test = [];
 
   if (JSON.parse(localStorage.getItem("test")) != null) {
@@ -38,33 +40,25 @@ function Rooms2() {
     setResRooms(JSON.parse(localStorage.getItem("test")));
   };
 
-  const [images, setImage] = useState([]);
-
-  useEffect(() => {
-    loadSliders();
-  }, []);
-
-  const loadSliders = async () => {
-    const result = await axios.get(
-      `https://localhost:44363/api/RoomImages/GetById/${id}`
-    )
-    setImage(result.data);
-  };
-
-  
-
   let fullImgs = [];
-  images.forEach((image) => {
-    let data = "data:image/jpeg;base64,";
-    let fullImg = data + image.image;
-    var obj = {
-      original: fullImg,
-      thumbnail: fullImg,
-    };
 
-    fullImgs.push(obj);
-  });
+  async function loadRoom(id) {
+    fullImgs.length = 0;
+    await axios
+      .get(`https://localhost:44363/api/Reservation/GetById/${id}`)
+      .then((res) => {
+        res.data.roomImages.forEach((image) => {
+          let data = "data:image/jpeg;base64,";
+          let fullImg = data + image.image;
+          let obj = {
+            original: fullImg,
+            thumbnail: fullImg,
+          };
 
+          fullImgs.push(obj);
+        });
+      });
+  }
   return (
     <div className="container">
       <div className="row mt-5">
@@ -84,6 +78,7 @@ function Rooms2() {
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal"
                   to={"/"}
+                  onClick={() => loadRoom(roomss.id)}
                 >
                   {roomss.roomType}
                 </Link>
