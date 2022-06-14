@@ -8,16 +8,6 @@ function HotelList() {
   const [hotel, setHotels] = useState([]);
   const { id } = useParams();
 
-  const [filterText, setFilterText] = useState("");
-
-  const filtered = hotel.filter((item) => {
-    return Object.keys(item).some((key) =>
-      item[key]
-        .toString()
-        .toLowerCase()
-        .includes(filterText.toLocaleLowerCase())
-    );
-  });
  
   useEffect(() => {
     // Update the document title using the browser API
@@ -32,15 +22,11 @@ function HotelList() {
         setHotels(result);
       });
   }
-
+  console.log(hotel);
   return (
     <div className="hotels">
-      <input
-        value={filterText}
-        onChange={(e) => setFilterText(e.target.value)}
-        placeholder="filtered"
-      />
-      {filtered.map((listhotel, i) => (
+     
+      {hotel.map((listhotel, i) => (
         <div key={i} className="listItem">
           <img
             className="listimg"
@@ -54,7 +40,7 @@ function HotelList() {
                 <i class="fas fa-star"></i>
               </div>
 
-              <Link className="hotelname" to={"/HotelDetail"}>{listhotel.name}</Link>
+              <Link className="hotelname" to={`/HotelDetail/${listhotel.id}`}>{listhotel.name}</Link>
             </h1>
             <span className="listDistance">{listhotel.distance}</span>
             <span className="listSubTitle">{listhotel.desc}</span>
@@ -69,7 +55,7 @@ function HotelList() {
             <div className="listDetailText">
               <span className="listPrise">{listhotel.prise}$</span>
               <button className="listCheckButton">
-                <Link className="detailto" to={"/HotelDetail"}>Detail</Link>
+                <Link className="detailto" to={`/HotelDetail/${listhotel.id}`}>Detail</Link>
               </button>
             </div>
           </div>

@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
+import { Link,useParams } from "react-router-dom";
 import "../../assets/sass/hoteldetail/rooms2.scss";
 import RoomDetailCarusel from "./RoomDetailCarusel";
 
 function Rooms2() {
   const [count, setCount] = useState(300);
-  // const { id } = useParams();
+  const { id } = useParams();
   const handless = (e) => {
     setCount(e.target.value * 300);
   };
@@ -27,7 +27,7 @@ function Rooms2() {
 
   async function loadRooms() {
     await axios
-      .get(`https://localhost:44363/api/Reservation/GetAll`)
+      .get(`https://localhost:44363/api/Reservation/GetAll/${id}`)
       .then((res) => {
         const result = res.data;
         setRooms(result);
