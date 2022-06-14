@@ -4,11 +4,14 @@ import { useParams } from "react-router-dom";
 
 import "../../assets/sass/hotels/hotellist.scss";
 import { Link } from "react-router-dom";
+import HotelDetailImages from "../hoteldetail/HotelDetailImages";
+import RoomDetailCarusel from "../hoteldetail/RoomDetailCarusel";
+import { NavigateNextTwoTone } from "@mui/icons-material";
+
 function HotelList() {
   const [hotel, setHotels] = useState([]);
   const { id } = useParams();
 
- 
   useEffect(() => {
     // Update the document title using the browser API
     loadHotels();
@@ -23,9 +26,12 @@ function HotelList() {
       });
   }
   console.log(hotel);
+
+
+ 
+
   return (
     <div className="hotels">
-     
       {hotel.map((listhotel, i) => (
         <div key={i} className="listItem">
           <img
@@ -40,7 +46,9 @@ function HotelList() {
                 <i class="fas fa-star"></i>
               </div>
 
-              <Link className="hotelname" to={`/HotelDetail/${listhotel.id}`}>{listhotel.name}</Link>
+              <Link className="hotelname" to={`/HotelDetail/${listhotel.id}`}>
+                {listhotel.name}
+              </Link>
             </h1>
             <span className="listDistance">{listhotel.distance}</span>
             <span className="listSubTitle">{listhotel.desc}</span>
@@ -55,9 +63,17 @@ function HotelList() {
             <div className="listDetailText">
               <span className="listPrise">{listhotel.prise}$</span>
               <button className="listCheckButton">
-                <Link className="detailto" to={`/HotelDetail/${listhotel.id}`}>Detail</Link>
+                <Link
+                 
+                  className="detailto"
+                  to={`/HotelDetail/${listhotel.id}`}
+                >
+                  Detail
+                </Link>
               </button>
             </div>
+
+            <div></div>
           </div>
         </div>
       ))}
