@@ -8,7 +8,7 @@ import FamousCity from "../components/home/FamousCity";
 
 import Carusel from "../components/home/Carusel";
 import CategoryCarusel from "../components/home/CategoryCarusel";
-import BelovedHomes from "../components/home/BelovedHomes";
+
 
 function Home() {
   return (

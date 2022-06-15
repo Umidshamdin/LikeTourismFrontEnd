@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import logo from "../../assets/img/home/logo.png";
+
 import "../../assets/sass/layout/header.scss";
 
 function Header() {
@@ -26,7 +26,7 @@ function Header() {
     <div className={color ? "header header-bg" : "header"}>
       <nav className="navbar">
         <a href="/" className="logo">
-          <img src={logo} alt="logo" />
+         
         </a>
         <div className="closeicon" onClick={handleClick}>
           {click ? (

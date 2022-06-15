@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../../assets/sass/reservation/userinfo.scss";
 function UserInfo() {
   const [resrooms, setResRooms] = useState([]);
+  const [rerender, setRerender] = useState();
   
 
   let test = [];
@@ -15,20 +16,15 @@ function UserInfo() {
   }, []);
 
   const deleteItem = (id) => {
-    // let nums=localStorage.removeItem("test")
-    // let arr=[];
-    // if(nums){
-    //   arr=JSON.parse(nums);
-    //   arr.push(this.state.num);
-    //   arr=Array.from(new Set(arr));
-    //   localStorage.removeItem("test",JSON.stringify(arr));
-    // }
-    // else{
-    //   arr=[];
-    //   arr.push(this.state.num);
-    //   localStorage.removeItem("test",JSON.stringify(arr));
-    // }
-    // this.setState({isSaved:true})
+    let result = JSON.parse(localStorage.getItem('test'));
+    for (let i = 0; i < result.length; i++) {
+      if (result[i].id === id) {
+        result.splice(i,1)
+      }
+    }
+    setResRooms(result)
+    localStorage.setItem('test',JSON.stringify(result))
+    
   };
 
   return (

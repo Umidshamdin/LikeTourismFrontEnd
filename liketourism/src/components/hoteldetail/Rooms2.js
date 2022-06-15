@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { Link,useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import "../../assets/sass/hoteldetail/rooms2.scss";
 import RoomDetailCarusel from "./RoomDetailCarusel";
 
@@ -8,11 +8,9 @@ function Rooms2() {
   const [count, setCount] = useState();
   const { id } = useParams();
   const handless = (e) => {
-    setCount(e.target.value * room[0].roomPrise );
-
-   
+    setCount(e.target.value * room[0].roomPrise);
   };
-
+  
   const [room, setRooms] = useState([]);
   const [resrooms, setResRooms] = useState([]);
   console.log(room.roomPrise);
@@ -37,10 +35,17 @@ function Rooms2() {
       });
   }
 
-  
-
   const handle = (x) => {
-    test.push(x);
+    let count = 0;
+    let result = JSON.parse(localStorage.getItem("test"));
+    result.forEach((element) => {
+      if (x.id === element.id) {
+        count++;
+      }
+    });
+    if (count === 0) {
+      test.push(x);
+    }
     localStorage.setItem("test", JSON.stringify(test));
     setResRooms(JSON.parse(localStorage.getItem("test")));
   };
@@ -166,7 +171,7 @@ function Rooms2() {
                   <option value={"3"}>3</option>
                   <option value={"4"}>4</option>
                 </select>
-                <p>{count} AZN</p>
+                <p>{roomss.roomPrise} AZN</p>
 
                 <button
                   onClick={() => handle(roomss)}
@@ -190,6 +195,7 @@ function Rooms2() {
                         className="basketImg"
                         style={{ width: "140px" }}
                         src={`data:image/jpeg;base64,${e.image}`}
+                        alt=""
                       />
                     </div>
 

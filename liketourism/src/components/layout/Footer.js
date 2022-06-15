@@ -8,12 +8,12 @@ function Footer() {
       <div className="container">
         <div className="row">
           <div className="col-lg-3 col-md-4 col-sm-6 footer mt-5">
-            <img
+            {/* <img
               className="imagelogo"
               style={{ width: "150px" }}
               src={require("../../assets/img/home/logo.png")}
               alt=""
-            />
+            /> */}
             <p>
               Lorem ipsum dolor sit amet, consectetur
               
@@ -80,11 +80,11 @@ function Footer() {
 
         <div className="col-12">
         <div className="image">
+          {/* <img src={require("../../assets/img/home/footerimg.png")} alt="" />
           <img src={require("../../assets/img/home/footerimg.png")} alt="" />
           <img src={require("../../assets/img/home/footerimg.png")} alt="" />
           <img src={require("../../assets/img/home/footerimg.png")} alt="" />
-          <img src={require("../../assets/img/home/footerimg.png")} alt="" />
-          <img src={require("../../assets/img/home/footerimg.png")} alt="" />
+          <img src={require("../../assets/img/home/footerimg.png")} alt="" /> */}
           </div>
         </div>
         </div>
