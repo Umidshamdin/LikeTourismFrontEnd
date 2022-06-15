@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
-
 import "../../assets/sass/reservation/userinfo.scss";
 function UserInfo() {
   const [resrooms, setResRooms] = useState([]);
+  
+
   let test = [];
 
   if (JSON.parse(localStorage.getItem("test")) != null) {
@@ -14,15 +15,6 @@ function UserInfo() {
   }, []);
 
   const deleteItem = (id) => {
-    test.forEach((teste) => {
-      console.log(id);
-      if ((test.id = id)) {
-        localStorage.removeItem(test[0]);
-      } else {
-        JSON.parse(localStorage.getItem("test"));
-      }
-    });
-
     // let nums=localStorage.removeItem("test")
     // let arr=[];
     // if(nums){
@@ -35,12 +27,9 @@ function UserInfo() {
     //   arr=[];
     //   arr.push(this.state.num);
     //   localStorage.removeItem("test",JSON.stringify(arr));
-
     // }
     // this.setState({isSaved:true})
   };
-
-  console.log(test);
 
   return (
     <div className="container">
@@ -56,19 +45,51 @@ function UserInfo() {
                     alt=""
                   />
 
-                  <p>Otaq adi</p>
                   <h2>{e.roomType}</h2>
-                  <h2>{e.roomPrise}</h2>
+                  <h3>{e.roomPrise} AZN</h3>
                   <button
                     onClick={() => deleteItem(e.id)}
                     className="btn btn-danger"
                   >
-                    delete
+                    Delete
                   </button>
                 </div>
               );
             })}
         </div>
+      </div>
+
+      <div className="row blank2">
+        <h5>Melumatlari doldurun</h5>
+        <div className="name">
+          <div className="name1">
+            <label htmlFor=""> Ad* </label>
+            <input type="text" />
+          </div>
+          <div className="name2">
+            <label htmlFor=""> Soyad* </label>
+            <input type="text" />
+          </div>
+        </div>
+
+        <div className="emails">
+          <div className="email1">
+            <label htmlFor="">Emaili daxil edin</label>
+            <input type="email" />
+          </div>
+
+          <div className="email2">
+            <label htmlFor="">Emaili tesdiqliyin</label>
+            <input type="email" />
+          </div>
+        </div>
+
+        <div className="cards">
+          <label htmlFor="">Kartin 16 reqemini daxil edin</label>
+           <input placeholder="XXXX/XXXX/XXXX/XXXX" max={16} type="number" />
+        </div>
+
+        <button className="btn btn-success">Rezervasiyani tamamla</button>
       </div>
     </div>
   );

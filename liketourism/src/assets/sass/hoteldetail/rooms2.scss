@@ -34,6 +34,7 @@
         text-decoration: double;
         color: blue;
         font-size: 19px;
+        width: 100%;
       }
       .rrr {
         .roomIconss {
@@ -129,9 +130,10 @@
 }
 .sidebasket{
   border: 1px solid black;
+ 
   .centers{
     margin-left: 200px;
-    margin-top: 50px;
+    margin-top: 30px;
   }
   .basketrezz{
     margin-left: 50px;
@@ -147,8 +149,8 @@
     p{
       margin-left: 5px;
       margin-top: 50px;
-      background-color: blue;
-      color: white;
+      
+      color: teal;
       height: 30px;
       border-radius: 7px;
     }

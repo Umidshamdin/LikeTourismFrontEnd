@@ -5,15 +5,17 @@ import "../../assets/sass/hoteldetail/rooms2.scss";
 import RoomDetailCarusel from "./RoomDetailCarusel";
 
 function Rooms2() {
-  const [count, setCount] = useState(300);
+  const [count, setCount] = useState();
   const { id } = useParams();
   const handless = (e) => {
-    setCount(e.target.value * 300);
+    setCount(e.target.value * room[0].roomPrise );
+
+   
   };
 
   const [room, setRooms] = useState([]);
   const [resrooms, setResRooms] = useState([]);
-
+  console.log(room.roomPrise);
   let test = [];
 
   if (JSON.parse(localStorage.getItem("test")) != null) {
@@ -31,8 +33,11 @@ function Rooms2() {
       .then((res) => {
         const result = res.data;
         setRooms(result);
+        console.log(res.data.roomPrise);
       });
   }
+
+  
 
   const handle = (x) => {
     test.push(x);
@@ -161,7 +166,7 @@ function Rooms2() {
                   <option value={"3"}>3</option>
                   <option value={"4"}>4</option>
                 </select>
-                <p>{roomss.roomPrise} AZN</p>
+                <p>{count} AZN</p>
 
                 <button
                   onClick={() => handle(roomss)}
@@ -189,7 +194,7 @@ function Rooms2() {
                     </div>
 
                     <p>{e.roomType}</p>
-                    <p>{e.roomPrise} AZN</p>
+                    <p>{count} AZN</p>
                   </div>
                 </div>
               );

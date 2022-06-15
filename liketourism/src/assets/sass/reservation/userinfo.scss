@@ -1,23 +1,100 @@
-.blank{
- margin-top: 10px;
-    
-    .reservations{
-        width: 30%;
-        display: flex;
-        border: 1px solid black;
-        margin-top: 10px;
-        h2{
-            margin-top: 100px;
-        }
-        .getImg{
-            width: 50%;
-        }
-        button{
-            width: 39%;
-            height: 30%;
-            margin-top: 100px;
-            margin-left: -150px;
-        }
+.blank {
+  display: flex;
+  .getImg {
+    width: 200px;
+    padding: 0;
+    border-radius: 20px;
+  }
+  .reservations {
+    display: flex;
+    margin-top: 10px;
+    border: 1px solid black;
+    width: 60%;
+    text-align: center;
+    border-radius: 20px;
+    padding: 0px;
+
+    margin-left: 20%;
+    h3 {
+      margin-right: 18px;
+      margin-top: 50px;
+      width: 300px;
     }
-  
+    h2 {
+      margin-right: 18px;
+      margin-top: 50px;
+    }
+    .btn-danger {
+      width: 150px;
+      height: 20%;
+      margin-top: 50px;
+      margin-right: 10px;
+    }
+  }
+}
+.blank2 {
+  position: relative;
+  h5 {
+    text-align: center;
+  }
+  .name {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    display: flex;
+    .name1 {
+      margin-left: 20px;
+      display: inline-grid;
+      input {
+        height: 42px;
+      }
+    }
+    .name2 {
+      margin-left: 20px;
+      display: inline-grid;
+
+      input {
+        height: 42px;
+      }
+    }
+  }
+  .emails {
+    display: inline-grid;
+    justify-content: center;
+    margin-top: 20px;
+
+    .email2 {
+      margin-top: 20px;
+
+      display: inline-grid;
+
+      input {
+        width: 300px;
+      }
+    }
+    .email1 {
+      margin-top: 20px;
+
+      display: inline-grid;
+
+      input {
+        width: 300px;
+      }
+    }
+  }
+  .cards {
+    display: inline-grid;
+    justify-content: center;
+    margin-top: 20px;
+    input {
+      width: 300px;
+    }
+  }
+  .btn-success {
+    width: 300px;
+    margin-left: 500px;
+    justify-content: center;
+    margin-top: 30px;
+  }
 }

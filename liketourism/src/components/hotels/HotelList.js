@@ -4,13 +4,13 @@ import { useParams } from "react-router-dom";
 
 import "../../assets/sass/hotels/hotellist.scss";
 import { Link } from "react-router-dom";
-import HotelDetailImages from "../hoteldetail/HotelDetailImages";
-import RoomDetailCarusel from "../hoteldetail/RoomDetailCarusel";
-import { NavigateNextTwoTone } from "@mui/icons-material";
+
 
 function HotelList() {
   const [hotel, setHotels] = useState([]);
   const { id } = useParams();
+
+  
 
   useEffect(() => {
     // Update the document title using the browser API
@@ -23,16 +23,18 @@ function HotelList() {
       .then((res) => {
         const result = res.data;
         setHotels(result);
+
+
       });
   }
-  console.log(hotel);
-
-
+  
+ 
  
 
   return (
     <div className="hotels">
       {hotel.map((listhotel, i) => (
+        
         <div key={i} className="listItem">
           <img
             className="listimg"
@@ -43,21 +45,32 @@ function HotelList() {
           <div className="listDesc">
             <h1 className="listTitle">
               <div className="iconshotel">
-                <i class="fas fa-star"></i>
+
+                {(() => {
+                  let stars = []
+                  for (let i = 0; i < listhotel?.star; i++) {
+                    stars.push(<i key={i} class="fas fa-star"></i>);
+                  }
+                  return stars;
+                })()}
+                
+                
+                
               </div>
 
               <Link className="hotelname" to={`/HotelDetail/${listhotel.id}`}>
                 {listhotel.name}
               </Link>
             </h1>
-            <span className="listDistance">{listhotel.distance}</span>
+            <span><i class="fas fa-location-arrow"></i>      {listhotel.distance}</span>
+          
             <span className="listSubTitle">{listhotel.desc}</span>
 
-            <span className="listCancel">Free Cancaled</span>
+            
           </div>
           <div className="listDetails">
             <div className="listRating">
-              <span>Excellent</span>
+              <span>{listhotel.ratingTitle}</span>
               <button>{listhotel.rating}</button>
             </div>
             <div className="listDetailText">
