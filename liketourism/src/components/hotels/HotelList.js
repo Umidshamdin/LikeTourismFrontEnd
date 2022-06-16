@@ -74,6 +74,7 @@ function HotelList() {
               <button>{listhotel.rating}</button>
             </div>
             <div className="listDetailText">
+              
               <span className="listPrise">{listhotel.prise}$</span>
               <button className="listCheckButton">
                 <Link
@@ -95,3 +96,9 @@ function HotelList() {
 }
 
 export default HotelList;
+
+
+
+  //   let rooms = JSON.parse(localStorage.getItem("test"));
+  //   let result =rooms.filter(item => item.hotelListId === id);
+  //   setResRooms(result);

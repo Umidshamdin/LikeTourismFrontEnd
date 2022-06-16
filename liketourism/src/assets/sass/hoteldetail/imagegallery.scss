@@ -1,32 +1,6 @@
-.hotelDesc {
-  h4 {
-    color: blue;
-  }
-
-  .iconStar {
-    display: flex;
-    margin-left: 120px;
-
-    p {
-      .fa-star {
-        color: orange;
-      }
-    }
-  }
-  .infos {
-    margin-top: 20px;
-    background-color: #ebf3ff;
-    height: 185px;
-    position: relative;
-    .infodetail {
-      position: absolute;
-      top: 20px;
-      left: 30px;
-      span{
-        margin-left: 5px;
-      }
-      
-    }
+.caruselimages{
+  .image-gallery-image {
+    width: 100%;
   }
 }
 

@@ -3,7 +3,7 @@
   .listItem {
     border: 1px solid lightgray;
     position: relative;
-    border-radius: 5px;
+    border-radius: 25px;
     display: flex;
     box-shadow: 3px 3px gray;
     
@@ -16,6 +16,7 @@
       width: 300px;
       height: 200px;
       object-fit: cover;
+      border-radius: 25px;
     }
     .listDesc {
       display: flex;

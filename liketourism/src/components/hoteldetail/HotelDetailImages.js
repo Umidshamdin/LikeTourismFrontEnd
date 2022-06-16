@@ -14,10 +14,9 @@ function HotelDetailImages() {
       `https://localhost:44363/api/HotelList/GetById/${id}`
     );
     setImages(result.data.hotelListImages);
-    console.log("====================================");
-    console.log(result.data);
-    console.log("====================================");
+    
   };
+  
 
   useEffect(() => {
     loadSlider();
@@ -37,7 +36,7 @@ function HotelDetailImages() {
   });
 
   return (
-    <div>
+    <div className="caruselimages mt-5">
       <ImageGallery items={fullImgs} />
     </div>
 

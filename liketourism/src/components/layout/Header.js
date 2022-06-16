@@ -26,7 +26,7 @@ function Header() {
     <div className={color ? "header header-bg" : "header"}>
       <nav className="navbar">
         <a href="/" className="logo">
-         
+         <img src={require("../../assets/img/home/logo.png")} alt="" />
         </a>
         <div className="closeicon" onClick={handleClick}>
           {click ? (

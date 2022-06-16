@@ -5,24 +5,33 @@ import "../../assets/sass/hoteldetail/rooms2.scss";
 import RoomDetailCarusel from "./RoomDetailCarusel";
 
 function Rooms2() {
-  const [count, setCount] = useState();
+  const [roomCount, setRoomCount] = useState();
   const { id } = useParams();
   const handless = (e) => {
-    setCount(e.target.value * room[0].roomPrise);
+    for(let x of room){
+     
+      console.log(x.roomPrise * e.target.value);
+      setRoomCount(e.target.value * x.roomPrise);
+      console.log(roomCount)
+    }
+   
   };
-  
+
   const [room, setRooms] = useState([]);
   const [resrooms, setResRooms] = useState([]);
-  console.log(room.roomPrise);
   let test = [];
-
   if (JSON.parse(localStorage.getItem("test")) != null) {
     test = JSON.parse(localStorage.getItem("test"));
   }
-
   useEffect(() => {
-    setResRooms(JSON.parse(localStorage.getItem("test")));
     loadRooms();
+
+    localStorage.setItem("test", JSON.stringify(test)); 
+    let result = test.filter(item => item.hotelListId === id);
+    setResRooms(result);
+    
+    setResRooms(JSON.parse(localStorage.getItem("test")));
+
   }, []);
 
   async function loadRooms() {
@@ -31,22 +40,23 @@ function Rooms2() {
       .then((res) => {
         const result = res.data;
         setRooms(result);
-        console.log(res.data.roomPrise);
       });
   }
 
-  const handle = (x) => {
+  const handle = (e) => {
     let count = 0;
     let result = JSON.parse(localStorage.getItem("test"));
     result.forEach((element) => {
-      if (x.id === element.id) {
+      if (e.id === element.id) {
         count++;
       }
     });
     if (count === 0) {
-      test.push(x);
+      test.push(e);
     }
+
     localStorage.setItem("test", JSON.stringify(test));
+
     setResRooms(JSON.parse(localStorage.getItem("test")));
   };
 
@@ -171,13 +181,13 @@ function Rooms2() {
                   <option value={"3"}>3</option>
                   <option value={"4"}>4</option>
                 </select>
-                <p>{roomss.roomPrise} AZN</p>
+                <p>{roomCount} AZN</p>
 
                 <button
                   onClick={() => handle(roomss)}
                   className="btn btn-primary twos"
                 >
-                  Rezervasiya Et
+                  Səbətə at
                 </button>
               </div>
             </div>
@@ -200,7 +210,7 @@ function Rooms2() {
                     </div>
 
                     <p>{e.roomType}</p>
-                    <p>{count} AZN</p>
+                    <p>{e.roomCount} AZN</p>
                   </div>
                 </div>
               );

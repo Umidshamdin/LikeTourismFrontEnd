@@ -14,7 +14,7 @@ function HotelDetail() {
       <HotelDetailImages></HotelDetailImages>
 
       <HotelDescription></HotelDescription>
-      <Accordions></Accordions>
+     
      <Rooms2></Rooms2>
 
       
