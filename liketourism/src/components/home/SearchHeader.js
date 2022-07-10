@@ -1,48 +1,93 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faBed,
-  faCalendarDays,
-  faPerson,
-} from "@fortawesome/free-solid-svg-icons";
+import { faBed } from "@fortawesome/free-solid-svg-icons";
 import "../../assets/sass/home/searchheader.scss";
-import { DateRange } from "react-date-range";
+
 import "react-date-range/dist/styles.css"; // main css file
 import "react-date-range/dist/theme/default.css"; // theme css file
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+import axios from "axios";
+import { Box, Modal, Typography } from "@mui/material";
+import { useTranslation } from "react-i18next";
+
+const style = {
+  search: {
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    width: "350px",
+    height: "500px",
+    bgcolor: "background.paper",
+    borderradius: "20px",
+    boxShadow: 24,
+    p: 4,
+  },
+};
 function SearchHeader() {
-  const [openDate, setOpenDate] = useState(false);
-  const [destination, setDestination] = useState("");
-  
-  const [date, setDate] = useState([
-    {
-      startDate: new Date(),
-      endDate: new Date(),
-      key: "selection",
-    },
-  ]);
+  const { t } = useTranslation();
 
-  const [openOptions, setOpenOptions] = useState(false);
-  const [options, setOptions] = useState({
-    adult: 1,
-    children: 0,
-    room: 1,
-  });
+  // const [openDate, setOpenDate] = useState(false);
+  // const [destination, setDestination] = useState("");
 
-  const navigate = useNavigate();
+  // const [date, setDate] = useState([
+  //   {
+  //     startDate: new Date(),
+  //     endDate: new Date(),
+  //     key: "selection",
+  //   },
+  // ]);
+  const [searchapi, setSearchapi] = useState();
 
-  const handleOption = (name, operation) => {
-    setOptions((prev) => {
-      return {
-        ...prev,
-        [name]: operation === "i" ? options[name] + 1 : options[name] - 1,
-      };
-    });
+  const [searchdata, setSearchdata] = useState([]);
+  async function search() {
+    if (searchapi == null) {
+      searchapi = "";
+    }
+    await axios
+      .get(
+        `https://localhost:44363/api/FamousCity/GetAllByName/${searchapi}`,
+        {},
+        { "Content-Type": "multipart/form-data" }
+      )
+      .then(function (response) {
+        setSearchdata(response.data);
+        if(response.data.length > 0){
+          handleSearchOpen();
+        }
+        console.log(searchdata);
+      })
+      .catch(function (error) {});
+  }
+
+  // const [openOptions, setOpenOptions] = useState(false);
+  // const [options, setOptions] = useState({
+  //   adult: 1,
+  //   children: 0,
+  //   room: 1,
+  // });
+
+  // const navigate = useNavigate();
+
+  // const handleOption = (name, operation) => {
+  //   setOptions((prev) => {
+  //     return {
+  //       ...prev,
+  //       [name]: operation === "i" ? options[name] + 1 : options[name] - 1,
+  //     };
+  //   });
+  // };
+
+  // const handleSearch = () => {
+  //   navigate("/hotels", { state: { destination, date, options } });
+  // };
+  const [searchopen, setSearchOpen] = useState(false);
+
+  const handleSearchOpen = () => {
+    setSearchOpen(true);
   };
 
-  const handleSearch = () => {
-    navigate("/hotels", { state: { destination, date, options } });
-  };
+  const handleSearchClose = () => setSearchOpen(false);
 
   return (
     <div>
@@ -50,16 +95,41 @@ function SearchHeader() {
         <div className="row">
           <div className="headerSearch  mb-5">
             <div className="headerSearchItem">
-              <FontAwesomeIcon icon={faBed} className="headerIcon" />
+              
               <input
                 type="text"
-                placeholder="Where from"
+                placeholder="enter city name"
                 className="headerSearchInput"
-                onChange={(e) => setDestination(e.target.value)}
+                onChange={(e) => setSearchapi(e.target.value)}
               />
             </div>
 
-            <div className="headerSearchItem">
+            <Modal
+              open={searchopen}
+              onClose={handleSearchClose}
+              aria-labelledby="modal-modal-title"
+              aria-describedby="modal-modal-description"
+            >
+              <Box sx={style.search} className="overflow-hidden">
+                <div className="modal-size">
+                  <Typography
+                    component="span"
+                    id="modal-modal-body"
+                    sx={{ mt: 2 }}
+                  >
+                    <ul>
+                      {searchdata.map((searchdat) => (
+                        <Link to={`/Hotels/${searchdat?.id}`}>
+                          <li><p>{searchdat?.name}</p></li>
+                        </Link>
+                      ))}
+                    </ul>
+                  </Typography>
+                </div>
+              </Box>
+            </Modal>
+
+            {/* <div className="headerSearchItem">
               <FontAwesomeIcon icon={faCalendarDays} className="headerIcon" />
 
               <span
@@ -161,10 +231,10 @@ function SearchHeader() {
                   </div>
                 </div>
               )}
-            </div>
+            </div> */}
             <div className="headerSearchItem">
-              <button className="headerBtn" onClick={handleSearch}>
-                Search
+              <button onClick={(e) => search(e)} className="headerBtn btn btn-primary">
+              {t("Searchs")}
               </button>
             </div>
           </div>

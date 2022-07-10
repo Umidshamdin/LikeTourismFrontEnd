@@ -11,9 +11,9 @@ function HotelDetailImages() {
 
   const loadSlider = async () => {
     const result = await axios.get(
-      `https://localhost:44363/api/HotelList/GetById/${id}`
+      `https://localhost:44363/api/HotelListImages/GetAll/${id}`
     );
-    setImages(result.data.hotelListImages);
+    setImages(result.data);
     
   };
   

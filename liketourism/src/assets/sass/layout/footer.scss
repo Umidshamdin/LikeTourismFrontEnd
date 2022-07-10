@@ -1,33 +1,36 @@
-.foot{
-  margin-top: 10px;
-  .image{
-    img{
+.foot {
+  margin-top: 20px;
+  .image {
+    img {
       margin-left: 150px;
-      
     }
   }
   background-color: #00224f;
-  .footer{
+  height: 40vh;
+  .footer {
     text-align: center;
-    p{
+    h4 {
+      color: white;
+    }
+    p {
       color: white;
       text-decoration: none;
     }
-    h4{
+    h4 {
       color: white;
     }
-    ul{
-      li{
+    ul {
+      li {
         list-style: none;
         margin-top: 20px;
-        .linkfooter{
+        .linkfooter {
           text-decoration: none;
           color: white;
         }
       }
     }
-    .icons{
-      i{
+    .icons {
+      i {
         margin-left: 10px;
         background-color: teal;
         width: 50px;
@@ -39,7 +42,7 @@
         border-radius: 20px;
       }
     }
-    img{
+    img {
       margin-left: 50px;
     }
   }

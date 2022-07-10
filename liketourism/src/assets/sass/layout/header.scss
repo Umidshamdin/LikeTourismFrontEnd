@@ -1,18 +1,16 @@
 .header {
-  position: sticky;
-  height: 80px;
+  position: fixed;
+  height: 90px;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 999;
   transition: 0.3s ease-in;
-  
 }
 .header-bg {
   background-color: black;
   opacity: 1;
 }
-
 
 .header .navbar {
   display: flex;
@@ -27,8 +25,6 @@
     transform: scale(1);
     transition: all 0.6s ease-in-out 0.2s;
   }
-
- 
 }
 
 .header .nav-menu a {
@@ -43,21 +39,21 @@
   .nav-item {
     .linknav {
       text-decoration: none;
-      b{
-        i{
+      b {
+        i {
           color: red;
           font-size: 30px;
         }
       }
-      .dropdown{
-        .dropdown-toggle{
+      .dropdown {
+        .dropdown-toggle {
           background-color: blue;
         }
-        .dropdown-menu{
+        .dropdown-menu {
           margin-left: -20px;
         }
-        .dropnav{
-         margin-left: 50px;
+        .dropnav {
+          margin-left: 50px;
         }
       }
       &:hover b {
@@ -69,8 +65,10 @@
 
 .header .navbar img {
   width: 140px;
-  border-top-right-radius: 100px;
-  border-top-left-radius: 100px;
+  border-top-right-radius: 200px;
+  border-top-left-radius: 200px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 
   height: auto;
 }
@@ -88,12 +86,28 @@
 }
 
 .header .nav-item {
+  .linknav {
+    .fa-globe {
+      font-size: 30px;
+      color: blue;
+    }
+    .btn-primary {
+      border-radius: 20px;
+    }
+    .multi {
+      margin-left: 5px;
+      border-radius: 10px;
+    }
+  }
+
   padding: 1rem;
   font-weight: 500;
   &:hover a {
     color: green;
     text-decoration: dashed;
   }
+}
+.header .nav-item .multi {
 }
 .nav-item .ex {
   color: green;
@@ -153,13 +167,12 @@
   }
 }
 
-@media screen and (max-width: 415px){
+@media screen and (max-width: 415px) {
   .closeicon {
     display: block;
     margin-right: 150px;
   }
-  .nav-item{
+  .nav-item {
     margin-left: -90px;
-   
   }
 }

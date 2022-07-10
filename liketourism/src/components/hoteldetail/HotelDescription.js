@@ -14,37 +14,41 @@ function HotelDescription() {
     );
     setDescrip(result.data.hotelDescriptions);
   };
-  return (
-    <div className="container">
-      {descrip.map((descs) => (
-        <div className="row">
-          <div className="col-6">
-            <p>
-              {/* */}
-      {descs.longDesc}
-            </p>
-          </div>
-          <div className="col-6">
-            <div className="hotelInfos">
-              <i class="fas fa-coffee"> Seher yemeyi qiymete daxildir</i>
+  let desc ;
+  if(descrip[0] != null){
+    desc = descrip?.map((descs) => (
+      <div className="row mt-5">
+        <div className="col-6">
+          <p>
+            {/* */}
+            {descs?.longDesc}
+          </p>
+        </div>
+        <div className="col-6">
+          <div className="hotelInfos">
+            <i class="fas fa-coffee cof">{descs?.breakfast}</i>
 
-              <p>
-                <b>Seher yemeyi novleri:Kondinental,Aciq bufe</b>
-              </p>
+            
+            <i class="fas fa-coffee">Səhər yeməyi növü:{descs?.breakfastType}</i>
+            
 
-              <i className="fas fa-parking">{descs.parking}giz </i>
-              <i className="fas fa-utensils">
-                {" "}
-                Tesis bünyesinde 1 restoran var
-              </i>
+            <i className="fas fa-parking">{descs?.parking} </i>
+           
 
-              <i class="fas fa-paw"> Evcil hayvan giremez. </i>
+            <i class="fas fa-paw">{descs?.animal}</i>
 
-              <i class="fas fa-user">Check-in için minimum yaş sınırı yok</i>
-            </div>
+            <i class="fas fa-user">{descs?.checkIn}</i>
           </div>
         </div>
-      ))}
+      </div>
+    ))
+  }else{
+    desc = <div></div>
+  }
+  
+  return (
+    <div className="container">
+      {desc}
     </div>
   );
 }

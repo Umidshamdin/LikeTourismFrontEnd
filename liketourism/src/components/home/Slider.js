@@ -29,7 +29,7 @@ function Slider() {
             />
             <h2 className="title">{slide.title}</h2>
             <p className="description">
-              {slide.desc}
+              <b>{slide.desc}</b>
             </p>
           </div>
         ))}

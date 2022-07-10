@@ -34,6 +34,7 @@
 }
 .blank2 {
   position: relative;
+  margin-bottom: 20px;
   h5 {
     text-align: center;
   }
@@ -96,5 +97,15 @@
     margin-left: 500px;
     justify-content: center;
     margin-top: 30px;
+  }
+}
+
+.totals{
+  position:absolute;
+  top: 210px;
+  left: 990px;
+  .totalss{
+    border: 1px solid blue;
+    width: 300px;
   }
 }

@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link, useParams } from "react-router-dom";
 import "../../assets/sass/hoteldetail/rooms2.scss";
-import RoomDetailCarusel from "./RoomDetailCarusel";
+import RoomDetailCarusel from "../hoteldetail/RoomDetailCarusel";
 
-function Rooms2() {
+function HouseRooms() {
   // const [roomCount, setRoomCount] = useState();
   const { id } = useParams();
   // const handless = (e) => {
@@ -73,7 +73,7 @@ function Rooms2() {
 
   async function loadRooms() {
     await axios
-      .get(`https://localhost:44363/api/Reservation/GetAll/${id}`)
+      .get(`https://localhost:44363/api/HouseRoom/GetAll/${id}`)
       .then((res) => {
         const result = res.data;
         setRooms(result);
@@ -103,7 +103,7 @@ function Rooms2() {
   async function loadRoom(id) {
     fullImgs.length = 0;
     await axios
-      .get(`https://localhost:44363/api/RoomImages/GetAll/${id}`)
+      .get(`https://localhost:44363/api/HouseRoomImages/GetById/${id}`)
       .then((res) => {
         res.data.forEach((image) => {
           let data = "data:image/jpeg;base64,";
@@ -157,7 +157,7 @@ function Rooms2() {
                   to={"/"}
                   onClick={() => loadRoom(roomss.id)}
                 >
-                  <h5>{roomss.roomType}</h5>
+                  {roomss.roomType}
                 </Link>
                 <div
                   class="modal fade"
@@ -169,7 +169,9 @@ function Rooms2() {
                   <div class="modal-dialog">
                     <div class="modal-content">
                       <div class="modal-header">
-                        
+                        <h5 class="modal-title" id="exampleModalLabel">
+                          Otaq Haqqinda etrafli
+                        </h5>
                         <button
                           type="button"
                           class="btn-close"
@@ -303,4 +305,4 @@ function Rooms2() {
   );
 }
 
-export default Rooms2;
+export default HouseRooms;

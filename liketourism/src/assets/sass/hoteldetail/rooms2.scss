@@ -1,161 +1,177 @@
-.pro{
+.pro {
   margin-top: 10px;
   display: flex;
- 
-    .roomDetailImg {
-      width: 300px;
-    }
-    border: 1px solid black;
+  height: 200px !important;
+
+  .roomDetailImg {
+    width: 300px;
+  }
+  border: 1px solid black;
+  border-radius: 20px;
+  display: flex;
+  padding: 0 !important;
+  position: relative;
+  .roomImg {
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 0px;
     border-radius: 20px;
-    display: flex;
-    padding: 0 !important;
-    position: relative;
-    .roomImg {
-      width: 100%;
-      height: 100%;
-      border-top-right-radius: 0px;
-      border-radius: 20px;
+  }
+  .infoss {
+    h5{
+      font-size: 16px;
+      margin-left: 3px;
+      width: 400px;
     }
-    .infoss {
-      .modal-content {
-        margin-top: 100px;
-        width: 1000px;
-        margin-left: -250px;
-        height: 65vh;
+    .modal-content {
+      margin-top: 100px;
+      width: 1000px;
+      margin-left: -250px;
+      height: 65vh;
+    }
+    .modal-header {
+      h5 {
+        margin-left: 380px;
+        color: blue;
       }
-      .modal-header {
-        h5 {
-          margin-left: 380px;
+    }
+    .linkName {
+      margin-left: 50px;
+      text-decoration: double;
+      color: blue;
+      font-size: 19px;
+      width: 100%;
+    }
+    .rrr {
+      margin-left: 200px;
+      .roomIconss {
+        margin-left: 20px;
+        h4 {
+          margin-left: 50px;
           color: blue;
         }
-      }
-      .linkName {
-        margin-left: 50px;
-        text-decoration: double;
-        color: blue;
-        font-size: 19px;
-        width: 100%;
-      }
-      .rrr {
-        .roomIconss {
-          margin-left: 20px;
-          h4 {
-            margin-left: 50px;
-            color: blue;
-          }
-          p {
-            margin-top: 30px;
-          }
-          .fas {
-            width: 200px;
-          }
+        p {
+          margin-top: 30px;
         }
-      }
-      .center {
-        width: 600px;
-  
-        .image-gallery-image {
-          width: 600px;
+        .fas {
+          width: 200px;
         }
-      }
-      .image-gallery-fullscreen-button {
-        display: none;
-      }
-      .image-gallery-play-button {
-        display: none;
-      }
-  
-      .image-gallery-thumbnails-container {
-        display: none;
-      }
-      .image-gallery-svg {
-        font-size: 5px;
-      }
-      .image-gallery-using-mouse {
-        width: 500px;
-        height: 100vh;
-      }
-      .head {
-        margin-left: 60px;
-        border: 1px solid blue;
-        border-top: none;
-        margin-top: 20px;
-      }
-      .one {
-        margin-left: 60px;
-      }
-      .iconinfo {
-        margin-top: 50px;
-        .btn-primary {
-          width: 100%;
-          font-size: 13px;
-        }
-        ul {
-          list-style: none;
-          display: flex;
-          li {
-            margin-top: 5px;
-            padding: 5px;
-          }
-        }
-      }
-      h6 {
-        position: absolute;
-        top: 70px;
-        left: 400px;
       }
     }
-    .prices {
-      display: block;
-      margin-top: 10px;
-      p {
-        margin-top: 93px;
-        margin-left: 80px;
-      }
-      b {
-        margin-left: 50px;
-      }
-      select {
-        margin-left: 20px;
-        margin-top: 10px;
-      }
-      button {
-        margin-left: 50px;
-        margin-bottom: 10px;
-      }
-    }
-  
-  
+    .center {
+      width: 600px;
 
+      .image-gallery-image {
+        width: 100%;
+        height: 50vh ;
+        
+      }
+    }
+    .image-gallery-fullscreen-button {
+      display: block;
+    }
+    .image-gallery-play-button {
+      display: block;
+      margin-left: 50px;
+    }
+
+    .image-gallery-thumbnails-container {
+      display: none;
+    }
+    .image-gallery-svg {
+      font-size: 5px;
+    }
+    .image-gallery-using-mouse {
+      width: 500px;
+      height: 100vh;
+    }
+    .head {
+      margin-left: 60px;
+      border: 1px solid blue;
+      border-top: none;
+      margin-top: 20px;
+    }
+    .one {
+      margin-left: 60px;
+    }
+    .iconinfo {
+      margin-top: 50px;
+      .btn-primary {
+        width: 100%;
+        font-size: 13px;
+      }
+      ul {
+        list-style: none;
+        display: flex;
+        li {
+          margin-top: 5px;
+          padding: 5px;
+        }
+      }
+    }
+    h6 {
+      position: absolute;
+      top: 70px;
+      left: 400px;
+    }
+  }
+  .prices {
+    display: block;
+    margin-top: 10px;
+    .count{
+      margin-right: 10px;
+      .text-center{
+        height: 38px;
+      }
+      
+    }
+    .twos{
+      margin-left: 40px;
+    }
+    p {
+      margin-top: 25px;
+      margin-left: 80px;
+    }
+    b {
+      margin-left: 50px;
+    }
+    select {
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+    button {
+      margin-bottom: 10px;
+    }
+  }
 }
-.sidebasket{
+.sidebasket {
   border: 1px solid black;
- 
-  .centers{
+
+  .centers {
     margin-left: 200px;
     margin-top: 30px;
   }
-  .basketrezz{
+  .basketrezz {
     margin-left: 50px;
-    .reserImgs{
-      .basketImg{
-        border-radius:20px ;
+    .reserImgs {
+      .basketImg {
+        border-radius: 20px;
         width: 200px !important;
       }
-     
     }
 
-  
-    p{
+    p {
       margin-left: 5px;
       margin-top: 50px;
-      
+
       color: teal;
       height: 30px;
       border-radius: 7px;
     }
-   
-  
   }
-  
 }
+
+
+
+
+

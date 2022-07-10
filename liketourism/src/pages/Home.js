@@ -16,9 +16,9 @@ function Home() {
       <FamousCity></FamousCity>
       <Carusel></Carusel>
 
-      <CategoryCarusel></CategoryCarusel>
+      {/* <CategoryCarusel></CategoryCarusel> */}
 
-      <Subscripe></Subscripe>
+      {/* <Subscripe></Subscripe> */}
     </div>
   );
 }

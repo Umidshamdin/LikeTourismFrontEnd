@@ -74,15 +74,15 @@ function Carusel() {
                   alt=""
                 />
                 <span className="homeName">
-                  <Link className="linkhome" to={"/citydetail"}>
+                  <Link className="linkhome" to={`/HouseDetail/${hous.id}`}>
                     {hous.name}
                   </Link>
                 </span>
-                <span className="cityName">{hous.famousCity.name}</span>
-                <span className="roomPrise">{hous.prise}</span>
+                {/* <span className="cityName">{hous.famousCity.name}</span> */}
+                <span className="roomPrise">En ucuz {hous.prise}</span>
                 <div className="rating">
-                  <button>8.9</button>
-                  <span>Excellent</span>
+                  <button>{hous.rating}</button>
+                  <span>{hous.ratingCommit}</span>
                 </div>
               </div>
             </div>

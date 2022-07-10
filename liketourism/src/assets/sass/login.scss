@@ -1,0 +1,26 @@
+
+.loginhead{
+    margin-top: 100px;
+    position: relative;
+
+  .eye{
+    position: relative;
+    .btn{
+        position: absolute;
+        top: -10px;
+        left: 920px;
+        cursor: pointer;
+        font-size: 23px;
+    }
+  }
+    .logins{
+        width: 30% !important;
+        align-items: center;
+        margin-left: 500px;
+        margin-top: 20px;
+    }
+    .warning{
+        margin-left: 650px;
+        width: 150px;
+    }
+}

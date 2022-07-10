@@ -1,0 +1,12 @@
+.caruselimages {
+  margin-top: 100px;
+  .image-gallery-slides {
+    .image-gallery-image {
+      width: 1300px;
+      max-height: none !important;
+
+      height: 100vh;
+      margin-top: 100px;
+    }
+  }
+}
