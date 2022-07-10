@@ -17,6 +17,7 @@ import ResetPassword from "./pages/ResetPassword";
 import { useState } from "react";
 import ChangePassword from "./pages/ChangePassword";
 import HouseDetail from "./pages/HouseDetail";
+import Villas from "./pages/Villas";
 
 function App() {
   const [render, setRender] = useState();
@@ -39,6 +40,8 @@ function App() {
             <Route path="/ForgotPassword" element={<ForgotPassword />} />
             <Route path="/ResetPassword/:email/*" element={<ResetPassword />} />
             <Route path="/ChangePassword" element={<ChangePassword />} />
+            <Route path="/Villas" element={<Villas />} />
+
 
 
             <Route path="/Register" element={<Register render={setRender} />} />

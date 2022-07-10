@@ -84,6 +84,11 @@ function Header() {
               <b>{t("Otellər")}</b>
             </Link>
           </li>
+          <li className="nav-item">
+            <Link className="linknav" to={"/Villas"} onClick={closeMenu}>
+              <b>Villas</b>
+            </Link>
+          </li>
 
           <li className="nav-item">
             <Link className="linknav" to={"/"} onClick={closeMenu}>
