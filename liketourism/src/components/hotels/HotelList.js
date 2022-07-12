@@ -61,9 +61,6 @@ function HotelList() {
               />
             </Stack>
 
-            {/* <StickyBox offsetTop={20} offsetBottom={20}>
-              
-            </StickyBox> */}
           </div>
         </div>
         <div className="col-8">

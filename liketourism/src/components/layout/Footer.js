@@ -48,9 +48,9 @@ function Footer() {
               </li> */}
 
               <li>
-               <p style={{color:"white"}}> <i style={{fontSize:"30px"}} class="fas fa-envelope"></i> liketourism13@gmail.com</p>
+               <p style={{color:"white"}}> <i style={{fontSize:"30px"}} className="fas fa-envelope"></i> liketourism13@gmail.com</p>
 
-               <p><i class="fas fa-phone"></i>+994506855256</p>
+               <p><i className="fas fa-phone"></i>+994506855256</p>
               </li>
             </ul>
           </div>

@@ -20,8 +20,8 @@ function Slider() {
   return (
     <div>
       <Carousel>
-        {slider.map((slide) => (
-          <div>
+        {slider.map((slide,i) => (
+          <div key={i}>
             <img
               className="headerslider"
               src={`data:image/jpeg;base64,${slide.image}`}

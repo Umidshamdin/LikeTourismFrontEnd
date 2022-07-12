@@ -22,10 +22,10 @@ function FamousCity() {
     <section id="famous-cities">
       <div className="container mt-5">
         <div className="row">
-          {cards.slice(0, 2).map((card) => (
+          {cards.slice(0, 2).map((card,i) => (
             <div
               className="col-lg-6 col-md-6 col-sm-12 mt-3 cards"
-              key={card.toString()}
+              key={i}
 
             >
               <Link className="link" to={`hotels/${card.id}`}>
@@ -36,10 +36,10 @@ function FamousCity() {
             </div>
           ))}
 
-          {cards.slice(2, 5).map((cardx) => (
+          {cards.slice(2, 5).map((cardx,i) => (
             <div
               className="col-lg-4 col-md-6 col-sm-12 mt-3 cards"
-              key={cardx.toString()}
+              key={i}
             >
               <Link className="link" to={`hotels/${cardx.id}`}>
                 <img src={`data:image/jpeg;base64,${cardx.image}`} alt="" />
