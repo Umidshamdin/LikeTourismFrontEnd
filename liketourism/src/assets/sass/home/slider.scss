@@ -3,6 +3,27 @@
   height: 85vh;
   position: relative;
 }
+@media (max-width: 768px) {
+  .headerslider{
+    height: 30vh !important;
+    margin-top: 90px;
+  }
+  .carousel-root{
+    .carousel-slider{
+      .control-arrow{
+   
+    
+    
+        width: 28px !important;
+        height: 32vh; 
+        margin-top: 90px !important;
+        
+        
+      }
+    }
+   
+  }
+}
 .carousel {
   .thumbs {
     display: none;

@@ -7,7 +7,6 @@ function Slider() {
   const [slider, setSliders] = useState([]);
 
   useEffect(() => {
-    // Update the document title using the browser API
     loadSliders();
   }, []);
 
@@ -17,6 +16,7 @@ function Slider() {
       setSliders(result);
     });
   }
+ 
   return (
     <div>
       <Carousel>
@@ -27,10 +27,10 @@ function Slider() {
               src={`data:image/jpeg;base64,${slide.image}`}
               alt=""
             />
-            <h2 className="title">{slide.title}</h2>
+            {/* <h2 className="title">{slide.title}</h2>
             <p className="description">
               <b>{slide.desc}</b>
-            </p>
+            </p> */}
           </div>
         ))}
       </Carousel>

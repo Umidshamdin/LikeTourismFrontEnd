@@ -1,5 +1,5 @@
 .header {
-  position: sticky;
+  position: fixed;
   height: 90px;
   width: 100%;
   top: 0;
@@ -135,7 +135,7 @@
 
   .closeicon {
     display: block;
-    margin-right: 100px;
+    margin-right: 2px !important;
   }
 
   .nav-menu {
@@ -156,11 +156,13 @@
 
   .nav-menu.active {
     left: 0;
+    height: 70vh !important;
+    .nav-item {
+      margin: 1.5rem 0;
+    }
   }
 
-  .nav-item {
-    margin: 1.5rem 0;
-  }
+ 
 
   .header .navbar img {
     width: 100px;

@@ -99,7 +99,7 @@ function SearchHeader() {
               <input
                 type="text"
                 placeholder="enter city name"
-                className="headerSearchInput"
+                className="form-control"
                 onChange={(e) => setSearchapi(e.target.value)}
               />
             </div>

@@ -60,7 +60,6 @@ function HotelList() {
                 size="large"
               />
             </Stack>
-
           </div>
         </div>
         <div className="col-8">
